@@ -1,4 +1,3 @@
-// Sample data for items in the add-items.html page
 const itemsData = [
     {
         id: 1,
