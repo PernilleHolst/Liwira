@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byg din egen gavekurv - Liwi</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar (same as index.html) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="logo">LIWI</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Produkter</a></li>
+                    <li><a href="gift-basket.html">Gavekurve</a></li>
+                    <li><a href="#">Nyheder</a></li>
+                    <li><a href="#">Inspiration</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Søg...">
+                    <button><i class="search-icon">🔍</i></button>
+                </div>
+                <div class="shopping-bag">🛍️</div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gift Basket Builder -->
+    <section class="basket-builder">
+        <div class="container">
+            <h1>build your own gift basket</h1>
+            <div class="basket-container">
+                <div class="basket-image">
+                    <img src="img/gavekurv1.jpg" alt="Gavekurv">
+                </div>
+                <div class="basket-details">
+                    <h2>Gavekurv, 1 stk.</h2>
+                    <p class="basket-price">Samlet pris: 0 kr.</p>
+                </div>
+            </div>
+
+            <div class="add-items">
+                <h3>tilføj vare til din kurv</h3>
+                <button class="add-button" onclick="window.location.href='add-items.html'">+</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-column">
+                <h3>Kontakt</h3>
+                <p>info@liwi.dk</p>
+                <p>+45 12 34 56 78</p>
+            </div>
+            <div class="footer-column">
+                <h3>Adresse</h3>
+                <p>Liwi Gadesalg</p>
+                <p>Gadevej 123, 1000 København</p>
+            </div>
+            <div class="footer-column">
+                <h3>Åbningstider</h3>
+                <p>Man-Fre: 10-18</p>
+                <p>Lør: 10-15</p>
+                <p>Søn: Lukket</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
