@@ -73,15 +73,21 @@ h3 {
 
 /* Navigation Bar */
 .logo img {
-    height: 60px;
+    height: 50px;
+    /* Bevar den oprindelige højde */
     width: auto;
     display: block;
     margin-right: 60px;
+    transform: scale(1.5);
+    /* Gør 1.5x større (juster efter behov) */
+    transform-origin: left;
+    /* Sikrer, at logoet skaleres fra venstre */
 }
 
 .navbar {
     background-color: var(--bg-color);
-    padding: 20px 0;
+    padding: 13px 0;
+    overflow: visible;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -92,7 +98,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 12000px;
     margin: 0 auto;
     padding: 0 40px;
     /* Add more padding on sides */
@@ -190,9 +196,7 @@ h3 {
     width: auto;
     /* or max-content */
     white-space: nowrap;
-    /* prevents text breaking/wrapping */
     padding: 50px;
-    /* optional - adds some spacing from edges */
     padding-top: 150px;
 }
 
@@ -649,7 +653,7 @@ h3 {
 }
 
 /* Responsive Styles */
-@media (max-width: 1024px) {
+@media (max-width: 1201px) {
     .nav-links {
         display: none;
     }

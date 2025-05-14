@@ -4,35 +4,35 @@ const itemsData = [
         id: 1,
         name: "Rødvin fra Toscana",
         price: 199,
-        image: "https://via.placeholder.com/300x200",
+        image: "img/gavekurv1",
         category: "wine"
     },
     {
         id: 2,
         name: "Håndlavet IPA",
         price: 59,
-        image: "https://via.placeholder.com/300x200",
+        image: "img/gavekurv1",
         category: "beer"
     },
     {
         id: 3,
         name: "Single Malt Whisky",
         price: 399,
-        image: "https://via.placeholder.com/300x200",
+        image: "img/gavekurv1",
         category: "spirits"
     },
     {
         id: 4,
         name: "Mørk chokolade med havsalt",
         price: 89,
-        image: "https://via.placeholder.com/300x200",
+        image: "img/gavekurv1",
         category: "chocolate"
     },
     {
         id: 5,
         name: "Hvidvin fra Loire",
         price: 179,
-        image: "https://via.placeholder.com/300x200",
+        image: "img/gavekurv1",
         category: "wine"
     },
     {
@@ -173,6 +173,6 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
     const video = document.querySelector('.video-container video');
     if (video) {
-        video.playbackRate = 0.7; // Slows down to 70% speed
+        video.playbackRate = 0.7;
     }
 });
