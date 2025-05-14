@@ -186,7 +186,7 @@ h3 {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white;
+    color: #fffdf5;
     z-index: 2;
     width: 100%;
 }
@@ -224,6 +224,7 @@ h3 {
     padding: 10px 20px;
     background-color: var(--text-color);
     color: white;
+    background-color: #e7ad8d;
     text-decoration: none;
     font-family: var(--primary-font);
     font-weight: 600;
@@ -232,7 +233,7 @@ h3 {
 }
 
 .cta-button:hover {
-    background-color: #6b5d56;
+    background-color: #d58052;
 }
 
 /* Easy Section */
@@ -444,7 +445,8 @@ h3 {
 /* Footer */
 .footer {
     background-color: var(--text-color);
-    color: white;
+    color: #48403d;
+    background-color: #d2e4f1;
     padding: 60px 0 30px;
 }
 
@@ -455,7 +457,7 @@ h3 {
 .footer-column h3 {
     font-size: 1.3rem;
     margin-bottom: 20px;
-    color: white;
+    color: #48403d;
 }
 
 .footer-column p {
