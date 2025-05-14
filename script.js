@@ -172,6 +172,6 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
     const video = document.querySelector('.video-container video');
     if (video) {
-        video.playbackRate = 0.7;
+        video.playbackRate = 0.6;
     }
 });
