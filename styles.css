@@ -249,25 +249,31 @@ h3 {
 
 /* Easy Section */
 .easy-section {
-    padding: 2rem 0;
+    padding: 3rem 0;
     text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .easy-section h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 10px;
+    text-align: left;
+    padding-left: 1rem;
 }
 
 .subtitle {
     margin-bottom: 2rem;
-    text-align: center;
+    text-align: left;
     color: #8b7d76;
+    padding-left: 1rem;
 }
 
 .gift-baskets {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
+    padding: 0 1rem;
 }
 
 .basket {
@@ -283,10 +289,10 @@ h3 {
 
 .basket-title {
     margin-bottom: 1rem;
-    text-align: center;
-    font-size: 1.2rem;
+    text-align: left;
+    font-size: 1.5rem;
     order: -1;
-    /* Placerer titlen før billedet */
+    padding-left: 0.5rem;
 }
 
 .basket-image {
@@ -294,6 +300,7 @@ h3 {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
+    aspect-ratio: 1 / 1.2;
 }
 
 .basket-image img {
@@ -301,22 +308,11 @@ h3 {
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: transform 0.3s ease;
 }
 
 .basket-image:hover img {
     transform: scale(1.05);
-}
-
-.basket-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(74, 64, 61, 0.8);
-    color: white;
-    padding: 15px;
-    font-family: var(--primary-font);
-    font-weight: 500;
 }
 
 /* Selection Section */
