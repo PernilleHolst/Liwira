@@ -72,6 +72,14 @@ h3 {
 
 
 /* Navigation Bar */
+.logo img {
+    height: 40px;
+    /* Adjust based on your needs */
+    width: auto;
+    /* Maintain aspect ratio */
+    display: block;
+}
+
 .navbar {
     background-color: var(--bg-color);
     padding: 20px 0;
