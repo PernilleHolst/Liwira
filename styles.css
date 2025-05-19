@@ -498,6 +498,139 @@ b {
     object-fit: cover;
 }
 
+
+/* SLIDESHOW */
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/*tilføj maks højde?*/
+.slideshow-container {
+    /* max-width: 80%; */
+    position: relative;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+/* style for previous and next buttoms */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    font-family: 'Open Sans';
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #C5DFE2;
+}
+
+
+/* style for dots */
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #972620;
+}
+
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .9;
+    }
+
+    to {
+        opacity: 1.5;
+    }
+}
+
+
+@keyframes fade {
+    from {
+        opacity: .9;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*responsive*/
+@media only screen and (max-width:430px) {
+
+    .prev,
+    .next {
+        font-size: 11px;
+    }
+
+    .dot {
+        height: 7px;
+        width: 7px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    .prev,
+    .next {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .maui-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .slideshow-container {
+        max-width: 100%;
+    }
+}
+
+
+
 /* History Section */
 .history-section {
     padding: 80px 0;

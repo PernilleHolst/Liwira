@@ -10,6 +10,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script type="text/javascript" defer src="Js/pauseknap.js"></script>
+    <script defer src="js/slideshow.js"></script>
 </head>
 
 <body>
@@ -213,9 +214,50 @@
     <section class="news-section">
         <div class="container">
             <h2>Nyheder</h2>
-            <div class="news-image">
-                <img src="img/gavekurv1.jpg" alt="Nyheder">
-            </div>
+            <div class="maui-content">
+                <div class="maui-image">
+                    <!-- <img src="images/maui.png" alt="Maui the Cat"> -->
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="/images/maui1.jpg" style="width: 100%;" alt="Maui kat 1">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="/images/maui2.jpg" style="width: 100%;" alt="Maui kat 2">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="/images/maui3.jpg" style="width: 100%;" alt="Maui kat 3">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="/images/maui4.jpg" style="width: 100%;" alt="Maui kat 4">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="/images/maui5.jpg" style="width: 100%;" alt="Maui kat 5">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="/images/maui6.jpg" style="width: 100%;" alt="Maui kat 6">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="/images/maui7.jpg" style="width: 100%;" alt="Maui kat 7">
+                        </div>
+
+                        <!-- previous and next buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    </div>
+
+                    <!-- dots that indicate slides -->
+                    <br>
+                    <div style="text-align: center">
+                        <span class="dot" onclick="currentSlides(1)"></span>
+                        <span class="dot" onclick="currentSlides(2)"></span>
+                        <span class="dot" onclick="currentSlides(3)"></span>
+                        <span class="dot" onclick="currentSlides(4)"></span>
+                        <span class="dot" onclick="currentSlides(5)"></span>
+                        <span class="dot" onclick="currentSlides(6)"></span>
+                        <span class="dot" onclick="currentSlides(7)"></span>
+                    </div>
+                </div>
         </div>
     </section>
 
