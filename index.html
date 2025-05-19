@@ -9,16 +9,16 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" defer src="Js/pauseknap.js"></script>
 </head>
 
 <body>
-    <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-left">
                 <div class="logo">
                     <a href="/">
-                        <img src="img/logobeige.png" alt="LIWIRA Logo">
+                        <img src="img/logo.png" alt="LIWIRA Logo">
                     </a>
                 </div>
                 <ul class="nav-links">
@@ -31,14 +31,16 @@
             </div>
             <div class="nav-right">
                 <div class="search-bar">
-                    <input type="text" placeholder="Søg...">
-                    <button><i class="search-icon">🔍</i></button>
+                    <i class="search-icon">🔍</i>
+                    <input type="text" placeholder="Input">
                 </div>
-                <div class="shopping-bag">🛍️</div>
+                <div class="shopping-bag">
+                    🛍️
+                </div>
             </div>
         </div>
     </nav>
-
+    
 
 
     <!-- Hero Section with Video Background -->
@@ -56,95 +58,134 @@
                         <a href="gift-basket.html" class="cta-button">start here</a>
                     </div>
                 </div>
+                 <!-- Pause/Play Button -->
+                  <button class="video-toggle" aria-label="Pause video">⏸️</button>
             </div>
         </div>
 
     </section>
 
-    <!-- Easy Section -->
-    <section class="easy-section">
-        <div class="container">
-            <h2>Vi gør det <b>nemt</b> for dig at <b>glæde</b> andre</h2>
-            <p class="subtitle">andre kiggede også på...</p>
-            <div class="product-grid">
-                <div class="product">
-                    <div class="product-label">
-                        <h3 class="product-label-title">Sommer Gavekurv</h3>
-                    </div>
-                    <div class="product-image">
-                        <img src="img/gavekurv1.jpg" alt="Gavekurv 1">
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="product-label">
-                        <h3 class="product-label-title">Sommer Gavekurv</h3>
-                    </div>
-                    <div class="product-image">
-                        <img src="img/gavekurv1.jpg" alt="Gavekurv 1">
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="product-label">
-                        <h3 class="product-label-title">Sommer Gavekurv</h3>
-                    </div>
-                    <div class="product-image">
-                        <img src="img/gavekurv1.jpg" alt="Gavekurv 1">
-                    </div>
-                </div>
+<!-- Easy Section -->
+<section class="easy-section">
+    <div class="container">
+      <h2>Vi gør det <b>nemt</b> for dig at <b>glæde</b> andre</h2>
+      <p class="subheading">Udbringning til erhverv og privat</p>
+      <h2>Gavekurve</h2>
+      <div class="product-grid">
+        <div class="product">
+          <div class="product-image">
+            <img src="img/gavekurv1.jpg" alt="Gavekurve med chokolade" />
+            <div class="product-label center">
+              <h3 class="product-label-title">Gavekurve med chokolade</h3>
             </div>
+          </div>
         </div>
-    </section>
-
-    <!-- Selection Section -->
-    <section class="selection-section">
-        <div class="container">
-            <h2>se vores udvalg</h2>
-            <div class="product-grid">
-                <div class="product">
-                    <div class="product-label">
-                        <h3 class="product-label-title">Sommer Gavekurv</h3>
-                    </div>
-                    <div class="product-image">
-                        <img src="img/gavekurv1.jpg" alt="Gavekurv 1">
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="product-label">
-                        <h3 class="product-label-title">Sommer Gavekurv</h3>
-                    </div>
-                    <div class="product-image">
-                        <img src="img/gavekurv1.jpg" alt="Gavekurv 1">
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="product-label">
-                        <h3 class="product-label-title">Sommer Gavekurv</h3>
-                    </div>
-                    <div class="product-image">
-                        <img src="img/gavekurv1.jpg" alt="Gavekurv 1">
-                    </div>
-                </div>
+        <div class="product">
+          <div class="product-image">
+            <img src="img/gavekurv2.jpg" alt="Gavekurve med Vin" />
+            <div class="product-label center">
+              <h3 class="product-label-title">Gavekurve med Vin</h3>
             </div>
+          </div>
         </div>
-    </section>
+        <div class="product">
+          <div class="product-image">
+            <img src="img/gavekurv3.jpg" alt="Gavekurve med Keramik" />
+            <div class="product-label center">
+              <h3 class="product-label-title">Gavekurve med Keramik</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Selection Section -->
+  <section class="selection-section">
+    <div class="container">
+      <h2>Se vores udvalg</h2>
+      <div class="product-grid">
+        <div class="product">
+          <div class="product-image">
+            <img src="img/legetoj1.jpg" alt="Legetøj" />
+            <div class="product-label center">
+              <h3 class="product-label-title">Legetøj</h3>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <img src="img/pleje.jpg" alt="Pleje" />
+            <div class="product-label center">
+              <h3 class="product-label-title">Pleje</h3>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <img src="img/legetoj2.jpg" alt="Legetøj" />
+            <div class="product-label center">
+              <h3 class="product-label-title">Legetøj</h3>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <img src="img/keramik.jpg" alt="Keramik" />
+            <div class="product-label center">
+              <h3 class="product-label-title">Keramik</h3>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <img src="img/kaffe.jpg" alt="Kaffe" />
+            <div class="product-label center">
+              <h3 class="product-label-title">Kaffe</h3>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <img src="img/delikatesse.jpg" alt="Delikatesser" />
+            <div class="product-label center">
+              <h3 class="product-label-title">Delikatesser</h3>
+            </div>
+          </div>
+        </div>
+        <!-- You can add 3 more here if needed for 3x3 -->
+      </div>
+    </div>
+  </section>  
+  
 
-    <!-- About Section -->
-    <section class="about-section">
-        <div class="container">
-            <h2>Vores unikke gavekurve</h2>
-            <p class="about-text">
-                Hver gavekurv er samlet med omhu og kærlighed til detaljer. Vi kombinerer kunst, interiør og
-                delikatesser
-                for at skabe en helhed, der både imponerer og glæder. Vores kurve er perfekte til enhver lejlighed -
-                fødselsdage, jubilæer, eller bare for at vise, at du tænker på dem du holder af.
-            </p>
-        </div>
-    </section>
+  <section class="about-section">
+    <div class="container">
+      <h2>Vælg værdien, så pakker vi den for dig!</h2>
+      <p class="intro-text">
+        Vil du gerne give en gavekurv af kvalitet og hygge, men mangler du tid eller inspiration til, hvad der skal i
+        gavekurven? Så lad os pakke den for dig!
+      </p>
+  
+      <div class="steps">
+        <div class="step-box">1.<br />Vælg gavekurvens værdi</div>
+        <div class="arrow">&#10140;</div>
+        <div class="step-box">2.<br />Fortæl os om modtageren af gavekurven</div>
+        <div class="arrow">&#10140;</div>
+        <div class="step-box">3.<br />Bestil gavekurven</div>
+        <div class="arrow">&#10140;</div>
+        <div class="step-box">4.<br />Så pakker vi en gavekurv der matcher modtageren!</div>
+      </div>
+  
+      <button href="gift-basket.html" class="cta-button">Tryk her</button>
+      <p class="cta-subtext">for at komme i gang.</p>
+    </div>
+  </section>
 
     <!-- Inspiration Section -->
     <section class="inspiration-section">
         <div class="container">
-            <h2>inspiration</h2>
+            <h2>Inspiration</h2>
             <div class="inspiration-grid">
                 <div class="inspiration-item">
                     <img src="img/gavekurv1.jpg" alt="Inspiration 1">
@@ -171,7 +212,7 @@
     <!-- News Section -->
     <section class="news-section">
         <div class="container">
-            <h2>nyheder</h2>
+            <h2>Nyheder</h2>
             <div class="news-image">
                 <img src="img/gavekurv1.jpg" alt="Nyheder">
             </div>
