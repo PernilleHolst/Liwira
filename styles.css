@@ -292,7 +292,8 @@ b {
 }
 
 /* Easy & Selection Sections */
-.easy-section, .selection-section {
+.easy-section,
+.selection-section {
     padding: 3rem 0;
     max-width: 1200px;
     margin: 0 auto;
@@ -323,7 +324,7 @@ b {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     padding: 1rem;
 }
@@ -358,17 +359,17 @@ b {
 .product-label.center {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
+    left: 0;
     background-color: rgba(206, 229, 242, 0.9);
     padding: 1rem 1rem;
     border-radius: 8px;
-    text-align: center;
     width: 100%;
 }
 
 .product-label-title {
     margin: 0;
+    text-align: center !important;
     font-size: 1.1rem;
     font-weight: 500;
     color: #333;
@@ -379,33 +380,33 @@ b {
     background-color: #d4ecf9;
     padding: 80px 20px;
     text-align: center;
-  }
-  
-  .about-section h2 {
+}
+
+.about-section h2 {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
     color: #3e3e3e;
-  }
-  
-  .intro-text {
+}
+
+.intro-text {
     font-size: 1.1rem;
     color: #555;
     max-width: 800px;
     margin: 0 auto 40px auto;
     line-height: 1.6;
-  }
-  
-  .steps {
+}
+
+.steps {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 15px;
     margin-bottom: 40px;
-  }
-  
-  .step-box {
+}
+
+.step-box {
     background-color: #fff;
     border: 2px solid #aaa;
     padding: 15px 20px;
@@ -414,14 +415,20 @@ b {
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.4;
-  }
-  
-  .arrow {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.arrow {
     font-size: 1.5rem;
     color: #555;
-  }
-  
-  .cta-button {
+    margin: auto 0;
+}
+
+.cta-button {
     background-color: #faa285;
     color: white;
     padding: 12px 30px;
@@ -430,17 +437,17 @@ b {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .cta-button:hover {
+}
+
+.cta-button:hover {
     background-color: #f8926f;
-  }
-  
-  .cta-subtext {
+}
+
+.cta-subtext {
     margin-top: 10px;
     color: #555;
     font-size: 0.9rem;
-  }
+}
 
 /* Inspiration Section */
 .inspiration-section {
@@ -514,7 +521,8 @@ img {
     position: relative;
     margin: auto;
     flex-wrap: wrap;
-    overflow: visible; /* Vigtigt for at vise knapper udenfor */
+    overflow: visible;
+    /* Vigtigt for at vise knapper udenfor */
 }
 
 /* style for previous and next buttoms */
@@ -541,7 +549,7 @@ img {
 }
 
 .prev {
-    left: -60px; 
+    left: -60px;
     border-radius: 0 3px 3px 0;
 }
 
@@ -606,13 +614,13 @@ img {
     }
 
     .next {
-    right: -40px;
+        right: -40px;
 
-}
+    }
 
-.prev {
-    left: -40px; 
-}
+    .prev {
+        left: -40px;
+    }
 
     .dot {
         height: 7px;
@@ -809,11 +817,10 @@ img {
     padding: 0 20px;
 }
 
-.container h1,
-.container h2,
-.container h3 {
+
+
+.text-left {
     text-align: left;
-    padding-left: 20px;
 }
 
 .item-card {
@@ -959,5 +966,18 @@ img {
     .footer-column {
         width: 100%;
         margin-bottom: 30px;
+    }
+
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step-box {
+        width: 100%;
+    }
+
+    .arrow {
+        transform: rotate(90deg);
     }
 }
