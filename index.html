@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="styles.css">
   <script type="text/javascript" defer src="Js/pauseknap.js"></script>
   <script defer src="js/slideshow.js"></script>
+  <script src="js/samarbejdspartnere.js"></script>
+  <script src="js/scroll-up-knap.js"></script>
+
 </head>
 
 <body>
@@ -261,43 +264,89 @@
       </div>
   </section>
 
-  <!-- History Section -->
-  <section class="history-section">
+<!-- History Section -->
+<section class="history-section">
     <div class="container">
       <h2>Liwiras historie</h2>
-      <div class="history-content">
-        <div class="history-part">
-          <p>Liwi startede som en lille butik i hjertet af København med en passion for at kombinere skønhed
-            og smag. Vores vision var altid at skabe unikke oplevelser gennem omhyggeligt udvalgte
-            produkter.</p>
+      <div class="history-grid">
+        <div class="history-column">
+          <p>Liwira er en lokal butik, der er opstartet som en del af 
+            <a href="#">Pejsemontørring Fyn</a>. Butikken befinder sig i Langeskov på Fyn. 
+            Liwira startede med ønsket om at sælge produkter med <strong>følelsen af hygge</strong> og <strong>dansk kvalitet</strong>. 
+            Vi bestræber os på at give alle mulighed for at købe <strong>gode produkter</strong> af <strong>høj kvalitet</strong> til en 
+            <strong>fornuftig pris</strong>.</p>
+  
+          <p>Vi ønsker, at det skal være <strong>nemt</strong> at give en god gave. Det skal ikke bare være nemt at give en gave. 
+            Det skal være <strong>nemt</strong> at give en <strong>gave af kvalitet</strong>, og som kan <strong>sprede hygge</strong> omkring sig. 
+            Derfor har vi et tæt samarbejde med flere <strong>lokale</strong> virksomheder og leverandører, der bidrager til størstedelen af vores sortiment. 
+            Vi sælger også varer fra udlandet, men kun fra leverandører, der kan garantere os <strong>gode arbejdsforhold</strong> for deres ansatte.</p>
         </div>
-        <div class="history-part">
-          <p>I dag er vi en anerkendt virksomhed, der stadig bærer præg af vores oprindelige værdier. Hver
-            gavekurv fortæller en historie, og vi elsker at være en del af jeres specielle øjeblikke.</p>
+  
+        <div class="history-column">
+          <p>Hos Liwira går vi op i socialt ansvar, og det er blandt andet derfor, at vi 
+            <strong>støtter lokale</strong> producenter og leverandører, tager praktikanter ind i butikken og sikrer arbejdsforholdene hos vores leverandører. 
+            Som del af Liwiras <strong>sociale ansvar</strong>, giver vi en del af vores overskud tilbage til <strong>Langeskovs lokalsamfund</strong>, 
+            som f.eks. Foreninger, sportsklubber, sportsfester, ældre sagen og Team Rynkeby.</p>
+  
+          <p>Vi tilbyder mulighed for at <strong>låne lokale</strong> i vores butik til møder og sammenkomster til både private og erhverv. 
+            <strong>Kontakt</strong> Liwira på <strong>mail:</strong> kontakt@dinpejs.dk eller <strong>tlf.:</strong> 24267071 for at høre mere.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!--Samarbejdspartnere sektion-->
+  <section class="partner-slider-section">
+    <h2>Samarbejdspartnere</h2>
+    <div class="partner-slider" id="partnerSlider">
+      <div class="partner-track" id="partnerTrack">
+        <!-- JavaScript tilføjer partnere her -->
+      </div>
+    </div>
+  </section>
+
+  <!--Scroll up knap-->
+  <button class="scroll-up" id="scrollUpBtn" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24">
+      <path d="M6 15l6-6 6 6" />
+    </svg>
+  </button>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-column">
       <h3>Kontakt</h3>
-      <p>info@liwi.dk</p>
-      <p>+45 12 34 56 78</p>
+      <p>Mail: <a href="mailto:kontakt@dinpejs.dk">kontakt@dinpejs.dk</a></p>
+      <p>Tlf.: <a href="tel:+4524267071">24267071</a></p>
+  
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-width="2" d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-width="2" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6-1.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+          </svg>
+        </a>
+      </div>
     </div>
+  
     <div class="footer-column">
       <h3>Adresse</h3>
-      <p>Liwi Gadesalg</p>
-      <p>Gadevej 123, 1000 København</p>
+      <p>Jernbanegade 16, 5550 Langeskov</p>
     </div>
+  
     <div class="footer-column">
       <h3>Åbningstider</h3>
-      <p>Man-Fre: 10-18</p>
-      <p>Lør: 10-15</p>
-      <p>Søn: Lukket</p>
+      <p>Mandag – fredag 11:00 – 17:00</p>
+      <p>Lørdag 10:00 – 12:00 samt efter aftale</p>
+      <p>Lukket søndag og helligdage</p>
     </div>
   </footer>
+  
+  
 
   <script src="script.js"></script>
 </body>
