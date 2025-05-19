@@ -510,10 +510,11 @@ img {
 
 /*tilføj maks højde?*/
 .slideshow-container {
-    /* max-width: 80%; */
+    max-width: 80%;
     position: relative;
     margin: auto;
     flex-wrap: wrap;
+    overflow: visible; /* Vigtigt for at vise knapper udenfor */
 }
 
 /* style for previous and next buttoms */
@@ -535,12 +536,12 @@ img {
 }
 
 .next {
-    right: 0;
+    right: -60px;
     border-radius: 3px 0 0 3px;
 }
 
 .prev {
-    left: 0;
+    left: -60px; 
     border-radius: 0 3px 3px 0;
 }
 
@@ -604,6 +605,15 @@ img {
         font-size: 11px;
     }
 
+    .next {
+    right: -40px;
+
+}
+
+.prev {
+    left: -40px; 
+}
+
     .dot {
         height: 7px;
         width: 7px;
@@ -625,7 +635,7 @@ img {
     }
 
     .slideshow-container {
-        max-width: 100%;
+        max-width: 80%;
     }
 }
 
