@@ -525,7 +525,7 @@ img {
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: white;
+    color: #4A403D;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -544,10 +544,10 @@ img {
     border-radius: 0 3px 3px 0;
 }
 
-.prev:hover,
+/* .prev:hover,
 .next:hover {
     background-color: #C5DFE2;
-}
+} */
 
 
 /* style for dots */
@@ -556,7 +556,7 @@ img {
     height: 10px;
     width: 10px;
     margin: 0 2px;
-    background-color: white;
+    background-color: #F7D7C8;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -564,7 +564,7 @@ img {
 
 .active,
 .dot:hover {
-    background-color: #972620;
+    background-color: #4A403D;
 }
 
 
