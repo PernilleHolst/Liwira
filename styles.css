@@ -303,7 +303,7 @@ b {
 .easy-section h2 {
     font-size: 2rem;
     margin-bottom: 10px;
-    text-align: left; 
+    text-align: left;
     color: #4A403D;
     margin-left: 22px;
 }
@@ -657,95 +657,97 @@ img {
     opacity: 90%;
     font-family: 'Helvetica Neue', sans-serif;
     color: #3d3d3d;
-  }
-  
-  .history-section h2 {
+}
+
+.history-section h2 {
     text-align: left;
     font-size: 2rem;
     margin-bottom: 40px;
     font-weight: 600;
     margin-left: 82px;
-  }
-  
-  .history-grid {
+}
+
+.history-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
     max-width: 1000px;
     margin: 0 auto;
-  }
-  
-  .history-column {
+}
+
+.history-column {
     flex: 1 1 450px;
     font-size: 1.1rem;
     line-height: 1.8;
-  }
-  
-  .history-column a {
+}
+
+.history-column a {
     color: #965f46;
     text-decoration: underline;
-  }
-  
-  .history-column strong {
+}
+
+.history-column strong {
     font-weight: 700;
-  }
+}
 
 
-  /*Samarbejdspartnere*/
-  .partner-slider-section {
+/*Samarbejdspartnere*/
+.partner-slider-section {
     background-color: #f9f7f0;
     padding: 60px 0;
     font-family: 'Georgia', serif;
     text-align: center;
     overflow: hidden;
-  }
-  
-  .partner-slider-section h2 {
+}
+
+.partner-slider-section h2 {
     font-size: 1.8rem;
     color: #3d3d3d;
     margin-bottom: 30px;
-  }
-  
-  .partner-slider {
+}
+
+.partner-slider {
     position: relative;
     width: 100%;
     overflow: hidden;
-  }
-  
-  .partner-track {
+}
+
+.partner-track {
     display: flex;
     gap: 60px;
     white-space: nowrap;
     transition: transform 0.1s linear;
-  }
-  
-  .partner-track span {
+}
+
+.partner-track span {
     font-size: 1.1rem;
     color: #333;
     white-space: nowrap;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .partner-track {
-      gap: 40px;
+        gap: 40px;
     }
-  
+
     .partner-track span {
-      font-size: 1rem;
+        font-size: 1rem;
     }
-  }
-  
-  
- /* Scroll up knap */
+}
+
+
+/* Scroll up knap */
 .scroll-up {
     position: fixed;
     bottom: 20px;
     right: 30px;
     width: 40px;
     height: 40px;
-    background-color: #F2AA87; /* Lys orange */
+    background-color: #F2AA87;
+    /* Lys orange */
     border: none;
-    border-radius: 50%; /* Gør den cirkulær */
+    border-radius: 50%;
+    /* Gør den cirkulær */
     cursor: pointer;
     transition: background-color 0.3s, opacity 0.3s;
     opacity: 0;
@@ -774,7 +776,7 @@ img {
 /* Hover-effekt */
 .scroll-up:hover {
     background-color: #e8966f;
-} 
+}
 
 /*Footer sektion*/
 .footer {
@@ -786,61 +788,61 @@ img {
     justify-content: space-between;
     gap: 40px;
     font-family: 'Arial', sans-serif;
-  }
-  
-  .footer-column {
+}
+
+.footer-column {
     flex: 1 1 300px;
     max-width: 33%;
-  }
-  
-  .footer-column h3 {
+}
+
+.footer-column h3 {
     font-size: 1.2rem;
     font-weight: 700;
     color: #3b3b3b;
     margin-bottom: 15px;
     margin-left: 80px
-  }
-  
-  .footer-column p {
+}
+
+.footer-column p {
     margin: 5px 0;
     font-size: 1rem;
     line-height: 1.6;
     margin-left: 80px;
-  }
-  
-  .footer-column a {
+}
+
+.footer-column a {
     color: inherit;
     text-decoration: none;
-  }
-  
-  .social-icons {
+}
+
+.social-icons {
     margin-top: 20px;
     display: flex;
     gap: 15px;
     margin-left: 80px;
-  }
-  
-  .social-icons a {
+}
+
+.social-icons a {
     color: #2b2b2b;
     transition: color 0.2s ease;
-  }
-  
-  .social-icons a:hover {
+}
+
+.social-icons a:hover {
     color: #555;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .footer {
-      flex-direction: column;
-      align-items: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
     }
-  
+
     .footer-column {
-      max-width: 100%;
+        max-width: 100%;
     }
-  }
-  
-  
+}
+
+
 
 /* Gift Basket Page Styles */
 .basket-builder {
@@ -1022,6 +1024,55 @@ img {
 
 .quantity-value {
     font-weight: 600;
+}
+
+.cart-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cart-item {
+    display: flex;
+    align-content: stretch;
+    gap: 2rem;
+    max-height: 120px;
+}
+
+.cart-item .cart-item-img img {
+    height: 100%;
+    aspect-ratio: 13/9;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.cart-item-details {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.cart-item-details .cart-item-title {
+    font-size: 1rem;
+}
+
+.cart-item-details .cart-item-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.cart-item-details .cart-item-quantity {
+    display: flex;
+    gap: 1rem;
+}
+
+.cart-item-details .cart-item-quantity-minus {
+    outline: none;
+}
+
+
+.spacer {
+    flex-grow: 1;
 }
 
 /* Responsive Styles */
