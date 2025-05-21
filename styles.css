@@ -231,7 +231,7 @@ b {
   left: -100%;
   width: 70%;
   height: 100vh;
-  padding: 80px 20px 20px;
+  padding: 15px 20px 20px;
   transition: left 0.3s ease;
   z-index: 100;
 }
@@ -307,8 +307,28 @@ b {
     display: none;
   }
 }
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.menu-header .logo img {
+  height: 40px;
+  width: auto;
+}
 
 .close-menu {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #4A403D;
+  cursor: pointer;
+  z-index: 101; 
+}
+
+/*.close-menu {
   position: absolute;
   top: 20px;
   right: 25px;
@@ -317,9 +337,9 @@ b {
   border: none;
   color: #4A403D;
   cursor: pointer;
-  z-index: 101; /* make sure it's above overlay/menu */
-}
-
+  z-index: 101; 
+}*/
+/* make sure it's above overlay/menu */
 
 /* Hero Section */
 .hero {
@@ -1294,7 +1314,7 @@ img {
     }
 
     .logo {
-        margin-right: 30px;
+        margin-right: -80px;
     }
 }
 
