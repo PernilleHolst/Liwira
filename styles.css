@@ -177,7 +177,7 @@ b {
 
 .search-icon {
     font-size: 1.1rem;
-    color: #666;
+    color: #666666;
 }
 
 .shopping-bag {
@@ -205,7 +205,8 @@ b {
 
 .burger-icon span {
   height: 2px;
-  background: var(--text-color);
+  background: #666666; /* icon color*/
+  /*background: var(--text-color);*/
   transition: all 0.3s ease;
 }
 
@@ -221,18 +222,20 @@ b {
   color: var(--text-color);
 }
 
+
 /* Mobile Menu */
 .mobile-menu {
+  background: #fffdf5 !important;
   position: fixed;
   top: 0;
   left: -100%;
   width: 70%;
   height: 100vh;
-  background: var(--bg-color);
   padding: 80px 20px 20px;
   transition: left 0.3s ease;
   z-index: 100;
 }
+
 
 .mobile-menu.active {
   left: 0;
@@ -249,9 +252,15 @@ b {
 
 .mobile-menu a {
   text-decoration: none;
-  color: var(--text-color);
+  color:#4A403D; 
+  /*color: var(--text-color);*/
   font-size: 18px;
 }
+
+.mobile-menu a:hover {
+    color: #e7ad8d; /* Peach hover */
+}
+
 
 /* Overlay */
 .overlay {
@@ -260,7 +269,7 @@ b {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.5); /*fade*/
   z-index: 99;
   display: none;
 }
@@ -300,6 +309,7 @@ b {
     display: none;
   }
 }
+
 
 
 /* Hero Section */
