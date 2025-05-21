@@ -14,7 +14,10 @@
   <script src="js/samarbejdspartnere.js"></script>
   <script src="js/scroll-up-knap.js"></script>
   <script src="burger-menu.js"></script>
-
+  <!-- Font Awesome for icons -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 
 <body>
@@ -60,9 +63,13 @@
         </a>
       </div>
       
-      <div class="mobile-right">
+      <div class="mobile-right"><!--
         <a href="#" class="search-icon">🔍</a>
-        <a href="gift-basket.html" class="shopping-bag">🛍️</a>
+        <a href="gift-basket.html" class="shopping-bag">🛍️</a>-->
+        <a href="#" class="search-icon" aria-label="Søg">
+          <i class="fas fa-search"></i></a>
+        <a href="gift-basket.html" class="shopping-bag" aria-label="Kurv">
+          <i class="fas fa-shopping-basket"></i></a>
       </div>
     </div>
 
@@ -75,7 +82,7 @@
        </div>
         <button class="close-menu" id="close-menu" aria-label="Close menu">✕</button>
       </div>
-      
+
     <div class="mobile-menu-content"></div>
       <ul>
         <li><a href="#">Produkter</a></li>
@@ -105,7 +112,10 @@
           </div>
         </div>
         <!-- Pause/Play Button -->
-        <button class="video-toggle" aria-label="Pause video">⏸️</button>
+        <!--<button class="video-toggle" aria-label="Pause video">⏸️</button>-->
+        <button class="video-toggle" aria-label="Pause video">
+        <i class="fas fa-pause"></i></button>
+        <i class="fas fa-play"></i></button>
       </div>
     </div>
 
