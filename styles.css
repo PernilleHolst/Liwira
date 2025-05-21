@@ -236,7 +236,6 @@ b {
   z-index: 100;
 }
 
-
 .mobile-menu.active {
   left: 0;
 }
@@ -260,7 +259,6 @@ b {
 .mobile-menu a:hover {
     color: #e7ad8d; /* Peach hover */
 }
-
 
 /* Overlay */
 .overlay {
@@ -310,6 +308,17 @@ b {
   }
 }
 
+.close-menu {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #4A403D;
+  cursor: pointer;
+  z-index: 101; /* make sure it's above overlay/menu */
+}
 
 
 /* Hero Section */
