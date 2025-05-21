@@ -201,6 +201,7 @@ b {
   gap: 5px;
   width: 25px;
   cursor: pointer;
+  z-index: 100;
 }
 
 .burger-icon span {
