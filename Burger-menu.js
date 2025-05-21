@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
   const burgerButton = document.getElementById("burger-icon");
   const mobileMenu = document.getElementById("mobile-menu");
   const body = document.body;
+  const closeMenuBtn = document.getElementById("close-menu"); //new//
+
   
   // ===== 3. ARRAYS =====
   const menuItems = ["Produkter", "Gavekurve", "Nyheder", "Inspiration", "Kontakt"];
@@ -42,6 +44,10 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   overlay.addEventListener("click", toggleMenu);
+
+  if (closeMenuBtn) {
+  closeMenuBtn.addEventListener("click", toggleMenu);
+}
 
   // ===== 8. LOOPS =====
   document.querySelectorAll(".mobile-menu a").forEach(link => {
