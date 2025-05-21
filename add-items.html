@@ -18,7 +18,7 @@
             <div class="nav-left">
                 <div class="logo">
                     <a href="/">
-                        <img src="img/logobeige.png" alt="LIWIRA Logo">
+                        <img src="img/logo.png" alt="LIWIRA Logo">
                     </a>
                 </div>
                 <ul class="nav-links">
@@ -34,7 +34,11 @@
                     <input type="text" placeholder="Søg...">
                     <button><i class="search-icon">🔍</i></button>
                 </div>
-                <div class="shopping-bag">🛍️</div>
+                <a href="gift-basket.html">
+                    <div class="shopping-bag">
+                        🛍️
+                    </div>
+                </a>
             </div>
         </div>
     </nav>
@@ -42,16 +46,22 @@
     <!-- Add Items Section -->
     <section class="add-items-section">
         <div class="container">
+            <div class="back-button-container">
+                <a href="index.html" class="back-button">
+                    <span class="back-arrow">←</span> Tilbage til forsiden
+                </a>
+            </div>
             <h1>Vælg varer til din gavekurv</h1>
 
             <div class="category-buttons">
                 <button class="category-buttons__button category-buttons__button--active"
-                    data-category="all">Alle</button>
-                <button class="category-buttons__button" data-category="wine">Vin</button>
-                <button class="category-buttons__button" data-category="beer">Øl</button>
-                <button class="category-buttons__button" data-category="spirits">Spiritus</button>
-                <button class="category-buttons__button" data-category="chocolate">Chokolade</button>
-                <button class="category-buttons__button" data-category="other">Andet</button>
+                    data-category="all">Vin</button>
+                <button class="category-buttons__button" data-category="wine">Øl</button>
+                <button class="category-buttons__button" data-category="beer">Spiritus</button>
+                <button class="category-buttons__button" data-category="spirits">Legetøj</button>
+                <button class="category-buttons__button" data-category="chocolate">Keramik og Kunst</button>
+                <button class="category-buttons__button" data-category="other">Kaffe</button>
+                <button class="category-buttons__button" data-category="other">Delikatesser</button>
             </div>
 
             <div class="items-grid" id="itemsContainer">
@@ -74,25 +84,42 @@
     </section>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer-column">
-                <h3>Kontakt</h3>
-                <p>info@liwi.dk</p>
-                <p>+45 12 34 56 78</p>
-            </div>
-            <div class="footer-column">
-                <h3>Adresse</h3>
-                <p>Liwi Gadesalg</p>
-                <p>Gadevej 123, 1000 København</p>
-            </div>
-            <div class="footer-column">
-                <h3>Åbningstider</h3>
-                <p>Man-Fre: 10-18</p>
-                <p>Lør: 10-15</p>
-                <p>Søn: Lukket</p>
+        <div class="footer-column">
+            <h3>Kontakt</h3>
+            <p>Mail: <a href="mailto:kontakt@dinpejs.dk">kontakt@dinpejs.dk</a></p>
+            <p>Tlf.: <a href="tel:+4524267071">24267071</a></p>
+
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-width="2"
+                            d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2z" />
+                    </svg>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-width="2"
+                            d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6-1.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                    </svg>
+                </a>
             </div>
         </div>
+
+        <div class="footer-column">
+            <h3>Adresse</h3>
+            <p>Jernbanegade 16, 5550 Langeskov</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Åbningstider</h3>
+            <p>Mandag – fredag 11:00 – 17:00</p>
+            <p>Lørdag 10:00 – 12:00 samt efter aftale</p>
+            <p>Lukket søndag og helligdage</p>
+        </div>
     </footer>
+
 
 
 </body>
