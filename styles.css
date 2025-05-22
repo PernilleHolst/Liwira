@@ -211,6 +211,20 @@ b {
   transition: all 0.3s ease;
 }
 
+.logo-mobil-nav img{
+    height: 50px;
+    width: auto;
+    margin-right: 60px;
+    transform: scale(1.2);
+    transform-origin: left;
+    
+}
+@media (max-width: 768px) {
+    .logo-mobil-nav {
+        margin-right: -80px;
+    }
+}
+
 .mobile-right {
   display: flex;
   gap: 20px;
