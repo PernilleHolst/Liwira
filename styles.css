@@ -110,7 +110,7 @@ b {
     padding: 0 40px;
 }
 
-.nav-left {
+.nav__container--left {
     display: flex;
     align-items: center;
 }
