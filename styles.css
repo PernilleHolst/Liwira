@@ -101,7 +101,7 @@ b {
     box-shadow: none;
 }
 
-.nav-container {
+.nav__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -285,7 +285,7 @@ b {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .nav-container {
+  .nav__container {
     display: none;
   }
   
@@ -1346,7 +1346,7 @@ img {
 }
 
 @media (max-width: 768px) {
-    .nav-container {
+    .nav__container {
         padding: 0 20px;
     }
 
