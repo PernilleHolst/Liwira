@@ -170,7 +170,7 @@ b {
     background: transparent;
     font-family: var(--secondary-font);
     font-size: 1rem;
-    padding-left: 8px;
+    /*padding-left: 8px;*/
     flex-grow: 1;
     color: #333;
 }
@@ -178,13 +178,17 @@ b {
 .search-icon {
     font-size: 1.1rem;
     color: #666666;
+    z-index: 50px;
+
 }
 
 .shopping-bag {
     font-size: 24px;
     cursor: pointer;
-    padding: 6px;
+    padding: 30px;
 }
+
+
 
 /* Mobile Navigation - Hidden by Default */
 .mobile-nav {
@@ -222,6 +226,12 @@ b {
 @media (max-width: 768px) {
     .logo-mobil-nav {
         margin-right: -80px;
+    }
+    
+    .shopping-bag {
+         font-size: 24px;
+         cursor: pointer;
+        padding: 6px;
     }
 }
 
