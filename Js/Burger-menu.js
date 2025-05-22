@@ -1,72 +1,76 @@
-// ===== 1. DOM CONTENT LOADED =====
-document.addEventListener("DOMContentLoaded", function() {
-  console.log("Page loaded!");
+// Simple and beginner-friendly JavaScript for burger menu
+// Includes all pensumkrav (curriculum requirements)
 
-  // ===== 2. VARIABLES AND TYPES =====
-  const burgerButton = document.getElementById("burger-icon");
-  const mobileMenu = document.getElementById("mobile-menu");
-  const body = document.body;
-  const closeMenuBtn = document.getElementById("close-menu"); //new//
+// 1. Placering og udførelse af JS (external JS file, placed at end of HTML with defer)
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("JS loaded and running!"); // Fejlfinding
 
-  
-  // ===== 3. ARRAYS =====
-  const menuItems = ["Produkter", "Gavekurve", "Nyheder", "Inspiration", "Kontakt"];
-  
-  // ===== 4. OBJECTS =====
-  const menu = {
-    isOpen: false,
-    toggle: function() {
-      this.isOpen = !this.isOpen;
-      return this.isOpen;
+  // 2. Variabler og typer
+  let burgerButton = document.getElementById("burger-icon");
+  let mobileMenu = document.getElementById("mobile-menu");
+  let closeButton = document.getElementById("close-menu");
+  let overlay = document.createElement("div");
+  overlay.className = "overlay";
+  document.body.appendChild(overlay);
+
+  let isOpen = false; // boolean
+
+  // 3. Arrays
+  let menuLinks = ["Produkter", "Gavekurve", "Nyheder", "Inspiration", "Kontakt"];
+
+  // 4. Objekter
+  let menu = {
+    toggle: function () {
+      isOpen = !isOpen;
+      return isOpen;
     }
   };
 
-  // ===== 5. DOM MANIPULATION =====
-  const overlay = document.createElement('div');
-  overlay.className = 'overlay';
-  document.body.appendChild(overlay);
-
-  // ===== 6. FUNCTIONS =====
+  // 5. Funktion (med variabel scope + DOM)
   function toggleMenu() {
     burgerButton.classList.toggle("active");
     mobileMenu.classList.toggle("active");
-    overlay.style.display = menu.isOpen ? 'none' : 'block';
-    body.classList.toggle("no-scroll");
+    overlay.style.display = isOpen ? "none" : "block";
+    document.body.classList.toggle("no-scroll");
     menu.toggle();
   }
 
-  // ===== 7. EVENT LISTENERS =====
+  // 6. Kontrolstruktur (if-else) + Events
   if (burgerButton && mobileMenu) {
-    burgerButton.addEventListener("click", function(event) {
-      event.stopPropagation();
+    burgerButton.addEventListener("click", function () {
+      toggleMenu();
+    });
+  }
+
+  if (closeButton) {
+    closeButton.addEventListener("click", function () {
       toggleMenu();
     });
   }
 
   overlay.addEventListener("click", toggleMenu);
 
-  if (closeMenuBtn) {
-  closeMenuBtn.addEventListener("click", toggleMenu);
-}
+  // 7. Loops + DOM Events
+  let links = document.querySelectorAll(".mobile-menu a");
+  for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", function () {
+      toggleMenu();
+    });
+  }
 
-  // ===== 8. LOOPS =====
-  document.querySelectorAll(".mobile-menu a").forEach(link => {
-    link.addEventListener("click", toggleMenu);
-  });
-
-  // ===== 9. JQUERY EXAMPLE =====
+  // 8. jQuery eksempel (bonus for pensum)
   if (window.jQuery) {
-    $(window).on('resize', function() {
-      if (window.innerWidth > 768 && menu.isOpen) {
+    $(window).on("resize", function () {
+      if (window.innerWidth > 768 && isOpen) {
         toggleMenu();
       }
     });
   }
 
-  // ===== 10. ERROR HANDLING =====
+  // 9. Fejlhåndtering
   try {
-    if (!burgerButton) throw new Error("Burger button not found");
-  } catch (error) {
-    console.error("Error:", error.message);
+    if (!burgerButton) throw new Error("Burger knap ikke fundet");
+  } catch (err) {
+    console.error("Fejl:", err.message);
   }
 });
