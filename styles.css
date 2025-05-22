@@ -314,9 +314,23 @@ b {
   padding: 20px 20px;
 }
 
+/*the logo inside the menu*/
 .menu-header .logo img {
   height: 40px;
   width: auto;
+}
+
+.menu-header .logo-text {
+  font-family: 'Montserrat', sans-serif; /* Or your primary font */
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4A403D;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .logo-text {
+    font-size: 1.2rem;
+  }
 }
 
 .close-menu {
