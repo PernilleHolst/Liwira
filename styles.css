@@ -1350,7 +1350,7 @@ img {
         padding: 0 20px;
     }
 
-    .logo {
+    .nav__container--logo {
         margin-right: -80px;
     }
 }
