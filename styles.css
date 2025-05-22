@@ -177,7 +177,7 @@ b {
 
 .search-icon {
     font-size: 1.1rem;
-    color: #666;
+    color: #666666;
 }
 
 .shopping-bag {
@@ -186,6 +186,187 @@ b {
     padding: 6px;
 }
 
+/* Mobile Navigation - Hidden by Default */
+.mobile-nav {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.burger-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 25px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.burger-icon span {
+  height: 2px;
+  background: #666666; /* icon color*/
+  /*background: var(--text-color);*/
+  transition: all 0.3s ease;
+}
+
+.mobile-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.search-icon {
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  background: #fffdf5 !important;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 70%;
+  height: 100vh;
+  padding: 15px 20px 20px;
+  transition: left 0.3s ease;
+  z-index: 100;
+}
+
+.mobile-menu.active {
+  left: 0;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-menu li {
+  margin: 20px 0;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color:#4A403D; 
+  /*color: var(--text-color);*/
+  font-size: 18px;
+}
+
+.mobile-menu a:hover {
+    color: #e7ad8d; /* Peach hover */
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /*fade*/
+  z-index: 99;
+  display: none;
+}
+
+/* Active States */
+.burger-icon.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.burger-icon.active span:nth-child(2) {
+  opacity: 0;
+}
+.burger-icon.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-container {
+    display: none;
+  }
+  
+  .mobile-nav {
+    display: flex;
+  }
+  
+  .search-bar {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-nav {
+    display: none;
+  }
+  
+  /*.search-icon {
+    display: none;
+  }*//*just so it shows up*/
+}
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+/*the logo inside the menu*/
+.menu-header .logo img {
+  height: 40px;
+  width: auto;
+}
+
+.menu-header .logo-text {
+  font-family: 'Montserrat', sans-serif; /* Or your primary font */
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4A403D;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .logo-text {
+    font-size: 1.2rem;
+  }
+}
+
+.close-menu {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #4A403D;
+  cursor: pointer;
+  z-index: 101; 
+}
+
+/*.close-menu {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #4A403D;
+  cursor: pointer;
+  z-index: 101; 
+}*/
+/* make sure it's above overlay/menu */
+
+/*new icons for search and basket*/
+.search-icon i,
+.shopping-bag i {
+  font-size: 20px;
+  color: #4A403D; /* match your color palette */
+  transition: color 0.3s ease;
+}
+
+.search-icon i:hover,
+.shopping-bag i:hover {
+  color: #d58052; /* hover color */
+}
 
 /* Hero Section */
 .hero {
@@ -241,7 +422,7 @@ b {
     color: #333;
     border: none;
     font-size: 20px;
-    padding: 6px 10px;
+    padding: 5px 10px;
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
@@ -251,6 +432,16 @@ b {
 
 .video-toggle:hover {
     background-color: #f2e9dc;
+}
+
+.video-toggle i {
+  font-size: 15px;
+  color: #fffdf5;
+}
+
+.video-toggle i:hover {
+  font-size: 15px;
+    color: #333;
 }
 
 .cta-box {
@@ -364,7 +555,7 @@ b {
     left: 0;
     background-color: rgba(206, 229, 242, 0.9);
     padding: 1rem 1rem;
-    border-radius: 8px;
+    border-radius: 0px;
     width: 100%;
 }
 
@@ -1160,7 +1351,7 @@ img {
     }
 
     .logo {
-        margin-right: 30px;
+        margin-right: -80px;
     }
 }
 
