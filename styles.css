@@ -541,7 +541,7 @@ b {
     left: 0;
     background-color: rgba(206, 229, 242, 0.9);
     padding: 1rem 1rem;
-    border-radius: 8px;
+    border-radius: 0px;
     width: 100%;
 }
 
