@@ -223,7 +223,6 @@ b {
   color: var(--text-color);
 }
 
-
 /* Mobile Menu */
 .mobile-menu {
   background: #fffdf5 !important;
@@ -304,9 +303,9 @@ b {
     display: none;
   }
   
-  .search-icon {
+  /*.search-icon {
     display: none;
-  }
+  }*//*just so it shows up*/
 }
 .menu-header {
   display: flex;
