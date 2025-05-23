@@ -15,33 +15,83 @@
 <body>
     <nav class="navbar">
         <div class="nav__container">
-            <div class="nav__container--left">
-                <div class="nav__container--logo">
-                    <a href="/">
-                        <img src="img/logo.svg" alt="LIWIRA Logo">
-                    </a>
-                </div>
-                <ul class="nav__container--links">
-                    <li><a href="index.html">Produkter</a></li>
-                    <li><a href="gift-basket.html">Gavekurve</a></li>
-                    <li><a href="#">Nyheder</a></li>
-                    <li><a href="#">Inspiration</a></li>
-                    <li><a href="#">Kontakt</a></li>
-                </ul>
+          <div class="nav__container--left">
+            <div class="nav__container--logo">
+              <a href="/">
+                <img src="img/Logo from Convertio.svg" alt="LIWIRA Logo">
+              </a>
             </div>
-            <div class="nav-right">
-                <div class="search-bar">
-                    <input type="text" placeholder="Søg...">
-                    <button><i class="search-icon">🔍</i></button>
-                </div>
-                <a href="gift-basket.html">
-                    <div class="shopping-bag">
-                        🛍️
-                    </div>
-                </a>
-            </div>
+            <ul class="nav__container--links">
+              <li><a href="#">Produkter</a></li>
+              <li><a href="gift-basket.html">Gavekurve</a></li>
+              <li><a href="#">Nyheder</a></li>
+              <li><a href="#">Inspiration</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </div>
+          <div class="nav-right">
+            <div class="search-bar">
+              <input type="text" placeholder="Søg...">
+              <!-- new icons-->
+              <a href="#" class="search-icon" aria-label="Søg">
+              <i class="fas fa-search"></i></a>
+            </div> 
+            <!-- <a href="gift-basket.html">
+              <div class="shopping-bag">
+                🛍️
+              </div>--> <!-- new icons-->
+             <a href="gift-basket.html" class="shopping-bag" aria-label="Kurv">
+              <i class="fas fa-shopping-basket"></i></a>
+            </a>
+          </div>
         </div>
-    </nav>
+    
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav">
+          <div class="burger-icon" id="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          
+          <div class="logo">
+            <a href="/">
+            <img src="img/Logo from Convertio.svg" alt="LIWIRA Logo">
+            </a>
+          </div>
+          
+          <div class="mobile-right"><!--
+            <a href="#" class="search-icon">🔍</a>
+            <a href="gift-basket.html" class="shopping-bag">🛍️</a>-->
+            <a href="#" class="search-icon" aria-label="Søg">
+              <i class="fas fa-search"></i></a>
+            <a href="gift-basket.html" class="shopping-bag" aria-label="Kurv">
+              <i class="fas fa-shopping-basket"></i></a>
+          </div>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+          <div class="menu-header">
+          <div class="logo">
+           <!--<a href="/">  
+             <img src="img/logo.png" alt="LIWIRA Logo"></a>-->
+             <!-- writen logo?-->
+              <a href="/" class="logo-text">LIWIRA</a>
+           </div>
+            <button class="close-menu" id="close-menu" aria-label="Close menu">✕</button>
+          </div>
+    
+        <div class="mobile-menu-content"></div>
+          <ul>
+            <li><a href="#">Produkter</a></li>
+            <li><a href="gift-basket.html">Gavekurve</a></li>
+            <li><a href="#">Nyheder</a></li>
+            <li><a href="#">Inspiration</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
 
     <!-- Add Items Section -->
     <section class="add-items-section">
