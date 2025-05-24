@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // 8. jQuery eksempel (bonus for pensum)
   if (window.jQuery) {
     $(window).on("resize", function () {
-      if (window.innerWidth > 768 && isOpen) {
+      if (window.innerWidth > 1024 && isOpen) {
         toggleMenu();
       }
     });

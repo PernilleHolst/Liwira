@@ -189,7 +189,6 @@ b {
 }
 
 
-
 /* Mobile Navigation - Hidden by Default */
 .mobile-nav {
   display: none;
@@ -200,12 +199,12 @@ b {
 }
 
 .burger-icon {
+  z-index: 999 !important; 
   display: flex;
   flex-direction: column;
   gap: 5px;
   width: 25px;
   cursor: pointer;
-  z-index: 100;
 }
 
 .burger-icon span {
@@ -223,14 +222,15 @@ b {
     transform-origin: left;
     
 }
-@media (max-width: 768px) {
+
+@media (max-width: 1024px) {
     .logo-mobil-nav {
         margin-right: -80px;
     }
     
     .shopping-bag {
-         font-size: 24px;
-         cursor: pointer;
+        font-size: 24px;
+        cursor: pointer;
         padding: 6px;
     }
 }
@@ -249,6 +249,8 @@ b {
 
 /* Mobile Menu */
 .mobile-menu {
+  z-index: 999 !important;
+  pointer-events: auto;
   background: #fffdf5 !important;
   position: fixed;
   top: 0;
@@ -257,7 +259,7 @@ b {
   height: 100vh;
   padding: 15px 20px 20px;
   transition: left 0.3s ease;
-  z-index: 100;
+  
 }
 
 .mobile-menu.active {
@@ -267,6 +269,7 @@ b {
 .mobile-menu ul {
   list-style: none;
   padding: 0;
+  padding-top: 20px;
 }
 
 .mobile-menu li {
@@ -281,7 +284,7 @@ b {
 }
 
 .mobile-menu a:hover {
-    color: #e7ad8d; /* Peach hover */
+    color: #e7ad8d; /* hover */
 }
 
 /* Overlay */
@@ -292,7 +295,7 @@ b {
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,0.5); /*fade*/
-  z-index: 99;
+  z-index: 998;
   display: none;
 }
 
@@ -308,7 +311,8 @@ b {
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+
+@media (max-width: 1024px) {
   .nav__container {
     display: none;
   }
@@ -322,7 +326,7 @@ b {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
   .mobile-nav {
     display: none;
   }
@@ -334,8 +338,9 @@ b {
 .menu-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px 20px;
+  align-items: left;
+  padding: 0px 20px;
+  padding-top: 20px;
 }
 
 /*the logo inside the menu*/
@@ -350,8 +355,9 @@ b {
   font-weight: 700;
   color: #4A403D;
   text-decoration: none;
+  margin-left: -20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .logo-text {
     font-size: 1.2rem;
   }
