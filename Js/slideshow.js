@@ -1,3 +1,6 @@
+//Hjælp og inspiration fra Youtube video: https://www.youtube.com/watch?v=DpHi9Ruu8R4&list=PLkvRxTIq_zOlKkaeovkMQtyCXDrOFuyds&index=3
+
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
