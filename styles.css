@@ -395,6 +395,7 @@ b {
 .hero {
     position: relative;
     height: 60vh;
+    min-height: 450px;
     overflow: hidden;
     padding-bottom: 5px;
 }
