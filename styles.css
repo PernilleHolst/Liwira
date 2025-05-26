@@ -1347,7 +1347,7 @@ img {
 .faerdig-button {
     position: fixed;
     bottom: 20px;
-    left: 45%;
+    left: 45%; /*what the heck*/
     background-color: #f2aa87;
     color: white;
     padding: 15px 50px;
