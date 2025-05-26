@@ -199,7 +199,7 @@ b {
 }
 
 .burger-icon {
-  z-index: 999 !important; 
+  z-index: 999 !important; /*it on the top of everything*/
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -371,19 +371,6 @@ b {
   cursor: pointer;
   z-index: 101; 
 }
-
-/*.close-menu {
-  position: absolute;
-  top: 20px;
-  right: 25px;
-  font-size: 2rem;
-  background: none;
-  border: none;
-  color: #4A403D;
-  cursor: pointer;
-  z-index: 101; 
-}*/
-/* make sure it's above overlay/menu */
 
 /*new icons for search and basket*/
 .search-icon i,
