@@ -184,7 +184,7 @@ b {
 .search-icon {
     font-size: 1.1rem;
     color: #666666;
-    z-index: 50px;
+    z-index: 50;
 
 }
 
@@ -1279,7 +1279,7 @@ img {
 
 .item-name {
     font-family: var(--primary-font);
-    font-weight: 00;
+    font-weight: 400;
     margin-bottom: 10px;
 }
 
@@ -1544,6 +1544,8 @@ img {
 }
 
 
+
+
 /* Responsive Styles */
 @media (max-width: 1201px) {
     .nav__container--links {
@@ -1594,11 +1596,6 @@ img {
     .video-overlay h1 {
         font-size: 40px;
     }
-
-    /* .product-grid {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-
-    } */
 
     .gift-baskets,
     .selection-grid,
