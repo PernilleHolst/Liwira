@@ -1343,28 +1343,28 @@ img {
     flex-grow: 1;
 }
 
+/*Faerdig button*/
 .faerdig-button {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #f4b496; /* light peach */
-  color: #000;
-  border: none;
-  padding: 12px 30px;
-  border-radius: 12px;
-  font-size: 16px;
-  font-family: sans-serif;
-  cursor: pointer;
-  z-index: 9999;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
+    position: fixed;
+    bottom: 20px;
+    left: 45%;
+    background-color: #f2aa87;
+    color: white;
+    padding: 15px 50px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .faerdig-button:hover {
+    background-color: #e89d78;
+  }
 
-.faerdig-button:hover {
-  background-color: #e79d7c;
-}
+
 
 
 /*Kort sektion*/
