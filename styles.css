@@ -91,7 +91,10 @@ b {
     --text-color: #3a3634;
 }
 
-/* === Navbar === */
+
+
+
+/* === Navigationsbar=== */
 .navbar {
     background-color: var(--bg-color);
     padding: 12px 0;
@@ -145,7 +148,10 @@ b {
     color: #8b7d76;
 }
 
-/* === Search and Bag === */
+
+
+
+/* === Søgefelt, søgeikon og kurv ikon === */
 .nav-right {
     display: flex;
     align-items: center;
@@ -190,7 +196,8 @@ b {
 
 
 
-/* Mobile Navigation - Hidden by Default */
+
+/* Mobile Navigation - Hidden by default, usynlig ved normal menu*/
 .mobile-nav {
     display: none;
     justify-content: space-between;
@@ -211,8 +218,6 @@ b {
 .burger-icon span {
     height: 2px;
     background: #666666;
-    /* icon color*/
-    /*background: var(--text-color);*/
     transition: all 0.3s ease;
 }
 
@@ -249,6 +254,9 @@ b {
     color: var(--text-color);
 }
 
+
+
+
 /* Mobile Menu */
 .mobile-menu {
     background: #fffdf5 !important;
@@ -283,7 +291,6 @@ b {
 
 .mobile-menu a:hover {
     color: #e7ad8d;
-    /* Peach hover */
 }
 
 /* Overlay */
@@ -331,11 +338,6 @@ b {
     .mobile-nav {
         display: none;
     }
-
-    /*.search-icon {
-    display: none;
-  }*/
-    /*just so it shows up*/
 }
 
 .menu-header {
@@ -375,23 +377,22 @@ b {
     z-index: 101;
 }
 
-
-/*new icons for search and basket*/
 .search-icon i,
 .shopping-bag i {
     font-size: 20px;
     color: #4A403D;
-    /* match your color palette */
     transition: color 0.3s ease;
 }
 
 .search-icon i:hover,
 .shopping-bag i:hover {
     color: #d58052;
-    /* hover color */
 }
 
-/* Hero Section */
+
+
+
+/* Hero Sektion med kørende video */
 .hero {
     position: relative;
     height: 60vh;
@@ -414,7 +415,6 @@ b {
     height: calc(100% - 120px);
     object-fit: cover;
     filter: brightness(0.8);
-    /* 0.7 = 70% brightness (30% darker) */
 }
 
 .video-overlay {
@@ -425,7 +425,6 @@ b {
     z-index: 2;
     width: 100%;
     height: 100%;
-    /* white-space: nowrap; */
     padding: 50px 0;
 }
 
@@ -436,8 +435,10 @@ b {
     line-height: 1.3;
 }
 
-/*for pause knappen*/
 
+
+
+/*Pause og play knap*/
 .video-toggle {
     position: absolute;
     bottom: 170px;
@@ -506,7 +507,10 @@ b {
     background-color: #d58052;
 }
 
-/* Easy & Selection Sections */
+
+
+
+/* Easy (Allerede eksisterende gavekurve) & Selection (Se vores udvalg) Sektioner */
 .easy-section,
 .selection-section {
     padding: 3rem 0;
@@ -572,7 +576,8 @@ b {
     transform: scale(1.05);
 }
 
-/* Centered label on image */
+
+/* Centeret label på billede */
 .product-label.center {
     position: absolute;
     top: 50%;
@@ -666,7 +671,10 @@ b {
     font-size: 14px;
 }
 
-/* Inspiration Section */
+
+
+
+/* Inspiration Sektion */
 .inspiration-section {
     padding: 60px 0;
     background-color: #f9f7f0;
@@ -700,7 +708,10 @@ b {
     transform: scale(1.05);
 }
 
-/* News Section */
+
+
+
+/* Nyheder Sektion */
 .news-section {
     padding: 80px 0;
     text-align: center;
@@ -770,11 +781,6 @@ img {
     border-radius: 0 3px 3px 0;
 }
 
-/* .prev:hover,
-.next:hover {
-    background-color: #C5DFE2;
-} */
-
 
 /* style for dots */
 .dot {
@@ -822,7 +828,10 @@ img {
     }
 }
 
-/*responsive*/
+
+
+
+/*Responsive*/
 @media only screen and (max-width:430px) {
 
     .prev,
@@ -866,7 +875,8 @@ img {
 
 
 
-/* History Section */
+
+/* History Sektion (Liwiras historie) */
 .history-section {
     padding: 80px 20px;
     background-color: #F5DBCF;
@@ -907,7 +917,9 @@ img {
 }
 
 
-/*Samarbejdspartnere*/
+
+
+/*Samarbejdspartnere sektion*/
 .partner-slider-section {
     background-color: #f9f7f0;
     padding: 60px 0;
@@ -952,6 +964,8 @@ img {
 }
 
 
+
+
 /* Scroll up knap */
 .scroll-up {
     position: fixed;
@@ -989,10 +1003,12 @@ img {
     fill: none;
 }
 
-/* Hover-effekt */
 .scroll-up:hover {
     background-color: #e8966f;
 }
+
+
+
 
 /*Footer sektion*/
 .footer {
@@ -1062,7 +1078,8 @@ img {
 
 
 
-/* Gift Basket Page Styles */
+
+/* Gift Basket Page (Gavekurv underside) Styles */
 .basket-builder {
     padding: 80px 0;
 }
@@ -1183,7 +1200,10 @@ img {
     background-color: #e89d78;
 }
 
-/* Add Items Page Styles */
+
+
+
+/* Add Items Page (Tilføj varer til kurv) Styles */
 .add-items-section {
     padding: 80px 0;
 }
@@ -1224,8 +1244,6 @@ img {
     max-width: 1200px;
     padding: 0 20px;
 }
-
-
 
 .text-left {
     text-align: left;
@@ -1308,7 +1326,6 @@ img {
     gap: 1rem;
     padding: 2rem;
     flex-wrap: wrap;
-    /* Beholder padding rundt om hele listen */
 }
 
 .cart-item {
@@ -1322,7 +1339,6 @@ img {
     border: 1px solid rgba(0, 0, 0, 0.18);
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
     padding: 1rem;
-    /* Tilføjer padding til hver enkelt vare */
 }
 
 .cart-item .cart-item-img img {
@@ -1362,7 +1378,8 @@ img {
 
 
 
-/*Kort sektion*/
+
+/*Kort sektion (Kort underside)*/
 .card-section {
     padding: 80px 20px;
     background-color: #fffdf6;
@@ -1380,20 +1397,15 @@ img {
 .card-grid {
     display: grid;
     grid-template-columns: repeat(4, 200px);
-    /* 4 kolonner á 200px */
     gap: 20px;
     justify-content: center;
-    /* Centrer hele grid’et */
     margin: 40px auto;
 }
 
 .card-image {
     width: 200px;
-    /* Tidligere 100px */
     height: 260px;
-    /* Tidligere 130px */
     object-fit: cover;
-    /* Ændret fra contain → fylder hele området ensartet */
     border-radius: 8px;
     border: 2px solid transparent;
     cursor: pointer;
@@ -1446,7 +1458,6 @@ img {
 
 .next-button {
     display: inline-block;
-    /* eller block */
     background-color: #f2aa87;
     color: white;
     border: none;
@@ -1457,14 +1468,16 @@ img {
     cursor: pointer;
     transition: 0.2s;
     text-decoration: none;
-    /* vigtigt for <a> */
 }
 
 .next-button:hover {
     background-color: #e89d78;
 }
 
-/*Betaling sektion*/
+
+
+
+/*Betaling sektion (Betalingsunderside)*/
 .payment-section {
     padding: 60px 20px;
     background-color: #fffdf6;
