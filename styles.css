@@ -394,7 +394,7 @@ b {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 70vh;
+    height: 60vh;
     overflow: hidden;
     padding-bottom: 5px;
 }
@@ -1536,9 +1536,6 @@ img {
         display: none;
     }
 
-    .hero {
-        height: 60vh;
-    }
 
     .video-overlay h1 {
         font-size: 40px;
