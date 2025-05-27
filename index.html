@@ -1,39 +1,46 @@
-<!DOCTYPE html>
-<html lang="da">
+<!DOCTYPE html> <!-- Angiver at dette er et HTML5-dokument -->
+<html lang="da"> <!-- Starter HTML-dokumentet og sætter sproget til dansk -->
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Liwira - Kunst, Interiør og Delikatesser</title>
+  <meta charset="UTF-8"> <!-- Angiver tegnsættet som UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sikrer korrekt visning på mobile enheder -->
+  <title>Liwira - Kunst, Interiør og Delikatesser</title> <!-- Titel på siden vist i browserfanen -->
+  
+  <!-- Import af Google Fonts til brug i designet -->
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css"> <!-- Linker til det eksterne stylesheet -->
+  
+  <!-- Import af forskellige JavaScript-filer til funktionalitet -->
   <script src="Js/pauseknap.js"></script>
   <script defer src="js/slideshow.js"></script>
   <script src="js/samarbejdspartnere.js"></script>
   <script src="js/scroll-up-knap.js"></script>
   <script src="js/burger-menu.js"></script>
+  
+  
   <!-- Font Awesome for icons -->
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script src="js/video-toggles.js"></script>
+  <script src="js/video-toggles.js"></script> <!-- Kode til videoens play/pause funktion -->
 </head>
 
 
 
 <!--Navigationsbar-->
 <body>
-  <nav class="navbar">
-    <div class="nav__container">
-      <div class="nav__container--left">
-        <div class="nav__container--logo">
-          <a href="/">
-            <img src="img/logo_from_Convertio.svg" alt="LIWIRA Logo">
+  <nav class="navbar"> <!-- Hovednavigation -->
+    <div class="nav__container"> <!-- Container til nav-indhold -->
+      <div class="nav__container--left"> <!-- Venstreside af navigation -->
+        <div class="nav__container--logo"> <!-- Logo -->
+          <a href="/"> <!-- Link til forsiden -->
+            <img src="img/logo_from_Convertio.svg" alt="LIWIRA Logo"> <!-- Logo billede -->
           </a>
         </div>
-        <ul class="nav__container--links">
+
+        <ul class="nav__container--links"> <!-- Navigation links -->
           <li><a href="index.html">Produkter</a></li>
           <li><a href="gift-basket.html">Gavekurve</a></li>
           <li><a href="#Nyheder">Nyheder</a></li>
@@ -41,14 +48,15 @@
           <li><a href="#kontakt">Kontakt</a></li>
         </ul>
       </div>
-      <div class="nav-right">
-        <div class="search-bar">
-          <input type="text" placeholder="Søg...">
+
+      <div class="nav-right"> <!-- Højreside af navigation -->
+        <div class="search-bar"> <!-- Søgning -->
+          <input type="text" placeholder="Søg..."> <!-- Søg inputfelt -->
           <!-- new icons-->
-          <a href="#" class="search-icon" aria-label="Søg">
+          <a href="#" class="search-icon" aria-label="Søg"> <!-- Søg ikon -->
           <i class="fas fa-search"></i></a>
         </div> 
-         <a href="gift-basket.html" class="shopping-bag" aria-label="Kurv">
+         <a href="gift-basket.html" class="shopping-bag" aria-label="Kurv"> <!-- Indkøbskurv ikon -->
           <i class="fas fa-shopping-basket"></i></a>
       </div>
     </div>
@@ -56,8 +64,8 @@
    
    
     <!-- Mobile Navigation -->
-    <div class="mobile-nav">
-      <div class="burger-icon" id="burger-icon">
+    <div class="mobile-nav"> <!--Navigationen på mobilen/Wrapperen-->
+      <div class="burger-icon" id="burger-icon"> <!--Burger ikonet-->
         <span></span>
         <span></span>
         <span></span>
@@ -65,14 +73,14 @@
       
       <div class="logo-mobil-nav">
         <a href="/">
-        <img src="img/logo_from_Convertio.svg" alt="LIWIRA Logo">
+        <img src="img/logo_from_Convertio.svg" alt="LIWIRA Logo"> <!--Logoet-->
         </a>
       </div>
       
       <div class="mobile-right">
-        <a href="#" class="search-icon" aria-label="Søg">
+        <a href="#" class="search-icon" aria-label="Søg"> <!--Søgeikonet-->
           <i class="fas fa-search"></i></a>
-        <a href="gift-basket.html" class="shopping-bag" aria-label="Kurv">
+        <a href="gift-basket.html" class="shopping-bag" aria-label="Kurv"> <!--Indkøbskurv ikon-->
           <i class="fas fa-shopping-basket"></i></a>
       </div>
     </div>
@@ -83,12 +91,12 @@
     <div class="mobile-menu" id="mobile-menu">
       <div class="menu-header">
       <div class="logo">
-          <a href="/" class="logo-text">LIWIRA</a>
+          <a href="/" class="logo-text">LIWIRA</a> <!--Logo tekst-->
        </div>
-        <button class="close-menu" id="close-menu" aria-label="Close menu">✕</button>
+        <button class="close-menu" id="close-menu" aria-label="Close menu">✕</button> <!--Lukkeknappen på burgermenuen-->
       </div>
 
-    <div class="mobile-menu-content"></div>
+    <div class="mobile-menu-content"></div> <!--Links til undersiderne i burgermenuen-->
       <ul>
         <li><a href="index.html">Produkter</a></li>
         <li><a href="gift-basket.html">Gavekurve</a></li>
@@ -102,46 +110,48 @@
 
 
   <!-- Hero sektion med video -->
-  <section class="hero">
-    <div class="video-container"> 
-      <video autoplay muted loop>
-        <source src="videos/liwira.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+  <section class="hero"> <!-- Sektion til hero-område med video -->
+    <div class="video-container"> <!-- Container til videoen -->
+      <video autoplay muted loop> <!-- Video afspilles automatisk, uden lyd og i loop -->
+        <source src="videos/liwira.mp4" type="video/mp4"> <!-- Videokilde -->
       </video>
-      <div class="video-overlay">
-        <div class="container full-height">
-          <h1>KUNST, INTERIØR OG DELIKATESSER</h1>
-          <div class="cta-box">
-            <p>Send en hjemmelavet gavekurv her</p>
-            <a href="gift-basket.html" class="cta-button">Start here</a>
+      <div class="video-overlay"> <!-- Overlay til at placere tekst og knapper oven på video -->
+        <div class="container full-height"> <!-- Centreret container med fuld højde -->
+          <h1>KUNST, INTERIØR OG DELIKATESSER</h1> <!-- Overskrift -->
+          <div class="cta-box"> <!-- Call-to-action boks -->
+            <p>Send en hjemmelavet gavekurv her</p> <!-- Undertekst -->
+            <a href="gift-basket.html" class="cta-button">Start here</a> <!-- Knap -->
           </div>
         </div>
 
         <!-- Pause/Play knap -->
-        <button class="video-toggle" aria-label="Pause video">
-        <i class="fas fa-pause"></i> </button>
+      <button class="video-toggle" aria-label="Pause video"> <!-- Knap til at pause video -->
+        <i class="fas fa-pause"></i> <!-- Pause-ikon -->
+      </button>
     </div>
-    </div>
-
-  </section>
+  </div>
+</section>
 
 
 
   <!-- Easy Section/Allerede eksisterende gavekurve -->
-  <section class="easy-section">
-    <div class="container">
-      <h2>Vi gør det <b>nemt</b> for dig at <b>glæde</b> andre</h2>
-      <p class="subheading">Udbringning til erhverv og privat</p>
-      <h2>Gavekurve</h2>
-      <div class="product-grid">
-        <div class="product">
-          <div class="product-image">
-            <img src="img/gavekurv1.webp" alt="Gavekurve med chokolade">
-            <div class="product-label center">
+  <section class="easy-section"> <!-- Sektion med introduktion til gavekurve -->
+    <div class="container"> <!-- Centreret indhold -->
+      <h2>Vi gør det <b>nemt</b> for dig at <b>glæde</b> andre</h2> <!-- Overskrift -->
+      <p class="subheading">Udbringning til erhverv og privat</p> <!-- Underoverskrift -->
+      <h2>Gavekurve</h2> <!-- Titel til gavekurvafsnit -->
+      
+      <!--Gavekurv -->
+      <div class="product-grid"> <!-- Grid med gavekurve -->
+        <div class="product"> <!-- Enkelt produkt -->
+          <div class="product-image"> <!-- Billede af produkt -->
+            <img src="img/gavekurv1.webp" alt="Gavekurve med chokolade"> <!-- Produktbillede -->
+            <div class="product-label center"> <!-- Etiket med produktnavn -->
               <h3 class="product-label-title">Gavekurve med chokolade</h3>
             </div>
           </div>
         </div>
+        <!--Gentaget for hver gavekurv -->
         <div class="product">
           <div class="product-image">
             <img src="img/gavekurv2.webp" alt="Gavekurve med Vin">
@@ -150,6 +160,7 @@
             </div>
           </div>
         </div>
+        <!--Gentaget for hver gavekurv -->
         <div class="product">
           <div class="product-image">
             <img src="img/gavekurv3.webp" alt="Gavekurve med Keramik">
@@ -165,18 +176,22 @@
 
 
   <!-- Selection Section/Se vores udvalg -->
-  <section class="selection-section">
-    <div class="container">
-      <h2 class="text-left">Se vores udvalg</h2>
-      <div class="product-grid">
+<!-- Selection Section/Se vores udvalg -->
+<section class="selection-section"> <!-- Sektion med andre produkter end gavekurve -->
+  <div class="container">
+    <h2 class="text-left">Se vores udvalg</h2> <!-- Titel -->
+    <div class="product-grid"> <!-- Grid med produkter -->
+    
         <div class="product">
           <div class="product-image">
-            <img src="img/legetoej.webp" alt="Legetøj">
+            <img src="img/legetoej.webp" alt="Legetøj"> <!--Billede af produkt-->
             <div class="product-label center">
-              <h3 class="product-label-title">Legetøj</h3>
+              <h3 class="product-label-title">Legetøj</h3> <!--Titel på produkt-->
             </div>
           </div>
         </div>
+        
+        <!-- Gentaget produkt-element -->
         <div class="product">
           <div class="product-image">
             <img src="img/duft.webp" alt="Pleje">
@@ -185,6 +200,8 @@
             </div>
           </div>
         </div>
+
+        <!-- Gentaget produkt-element -->
         <div class="product">
           <div class="product-image">
             <img src="img/bamse.webp" alt="Legetøj">
@@ -193,6 +210,8 @@
             </div>
           </div>
         </div>
+
+        <!-- Gentaget produkt-element -->
         <div class="product">
           <div class="product-image">
             <img src="img/keramik.webp" alt="Keramik">
@@ -201,6 +220,8 @@
             </div>
           </div>
         </div>
+
+        <!-- Gentaget produkt-element -->
         <div class="product">
           <div class="product-image">
             <img src="img/kaffe.webp" alt="Kaffe">
@@ -209,6 +230,8 @@
             </div>
           </div>
         </div>
+
+        <!-- Gentaget produkt-element -->
         <div class="product">
           <div class="product-image">
             <img src="img/sauce.webp" alt="Delikatesser">
@@ -226,7 +249,7 @@
   <!--Vælg pakken, så pakker vi den for dig sektion-->
   <section class="about-section">
     <div class="container">
-      <h2>Vælg værdien, så pakker vi den for dig!</h2>
+      <h2>Vælg værdien, så pakker vi den for dig!</h2> <!-- Overskrift -->
       <p class="intro-text">
         Vil du gerne give en gavekurv af kvalitet og hygge, men mangler du tid eller inspiration til, hvad der skal i
         gavekurven? Så lad os pakke den for dig!
@@ -236,21 +259,21 @@
         <div class="step-box">
           <div>1.<br>Vælg gavekurvens værdi</div>
         </div>
-        <div class="arrow">&#10140;</div>
+        <div class="arrow">&#10140;</div> <!-- Pil -->
         <div class="step-box">
           <div>2.<br>Fortæl os om modtageren af gavekurven</div>
         </div>
-        <div class="arrow">&#10140;</div>
+        <div class="arrow">&#10140;</div> <!-- Pil -->
         <div class="step-box">
           <div>3.<br>Bestil gavekurven</div>
         </div>
-        <div class="arrow">&#10140;</div>
+        <div class="arrow">&#10140;</div> <!-- Pil -->
         <div class="step-box">
           <div>4.<br>Så pakker vi en gavekurv der matcher modtageren!</div>
         </div>
       </div>
 
-      <a href="gift-basket.html" class="cta-button">Tryk her</a>
+      <a href="gift-basket.html" class="cta-button">Tryk her</a> <!-- Call-to-action knap -->
       <p id="inspiration" class="cta-subtext">for at komme i gang.</p>
     </div> 
   </section>
@@ -260,29 +283,29 @@
   <!-- Inspiration Sektion -->
   <section class="inspiration-section">
     <div class="container">
-      <h2>Inspiration</h2>
-      <div class="inspiration-grid">
+      <h2>Inspiration</h2> <!-- Overskrift -->
+      <div class="inspiration-grid"> <!-- Grid med billeder -->
         <div class="inspiration-item">
-          <img src="img/rødvin.webp" alt="Inspiration 1">
+          <img src="img/rødvin.webp" alt="Inspiration 1"> <!--Billede i inspirationsgrid-->
         </div>
         <div class="inspiration-item">
-          <img src="img/kop.webp" alt="Inspiration 2">
+          <img src="img/kop.webp" alt="Inspiration 2"> <!--Billede i inspirationsgrid-->
         </div>
         <div class="inspiration-item">
-          <img src="img/gave.webp" alt="Inspiration 3">
+          <img src="img/gave.webp" alt="Inspiration 3"> <!--Billede i inspirationsgrid-->
         </div>
         <div class="inspiration-item">
-          <img src="img/snaps.webp" alt="Inspiration 4">
+          <img src="img/snaps.webp" alt="Inspiration 4"> <!--Billede i inspirationsgrid-->
         </div>
         <div class="inspiration-item">
-          <img src="img/sennep.webp" alt="Inspiration 5">
+          <img src="img/sennep.webp" alt="Inspiration 5"> <!--Billede i inspirationsgrid-->
         </div>
         <div class="inspiration-item">
-          <img src="img/slik.webp" alt="Inspiration 6">
+          <img src="img/slik.webp" alt="Inspiration 6"> <!--Billede i inspirationsgrid-->
         </div>
       </div> 
     </div>
-    <div id="Nyheder"></div>
+    <div id="Nyheder"></div> <!-- Ankerpunkt til næste sektion -->
   </section>
 
   
@@ -290,35 +313,39 @@
   <!-- Nyheder sektion -->
   <section class="news-section">
     <div class="container"> 
-      <h2>Nyheder</h2>
+      <h2>Nyheder</h2> <!-- Overskrift -->
       <div class="news-content">
         <div class="slideshow-image">
-          <div class="slideshow-container">
+          <div class="slideshow-container"> <!-- Container til slideshow -->
+
+            <!-- Hver slide med fade-effekt -->
             <div class="mySlides fade">
-              <img src="img/saebe.webp" style="width: 100%;" alt="sæbe">
+              <img src="img/saebe.webp" style="width: 100%;" alt="sæbe"> <!--Billede i slideshow-->
             </div>
             <div class="mySlides fade">
-              <img src="img/legetoej.webp" style="width: 100%;" alt="legetøj">
+              <img src="img/legetoej.webp" style="width: 100%;" alt="legetøj"> <!--Billede i slideshow-->
             </div>
             <div class="mySlides fade">
-              <img src="img/duftolie.webp" style="width: 100%;" alt="duft olie">
+              <img src="img/duftolie.webp" style="width: 100%;" alt="duft olie"> <!--Billede i slideshow-->
             </div>
             <div class="mySlides fade">
-              <img src="img/duft.webp" style="width: 100%;" alt="duft pinde">
+              <img src="img/duft.webp" style="width: 100%;" alt="duft pinde"> <!--Billede i slideshow-->
             </div>
             <div class="mySlides fade">
-              <img src="img/dottir.webp" style="width: 100%;" alt="starinlys og vaser fra mærket Dottir">
+              <img src="img/dottir.webp" style="width: 100%;" alt="starinlys og vaser fra mærket Dottir"> <!--Billede i slideshow-->
             </div>
 
             <!-- previous and next buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!-- Forrige knap -->
+            <a class="next" onclick="plusSlides(1)">&#10095;</a> <!-- Næste knap -->
 
           </div>
 
           <!-- dots that indicate slides -->
           <br>
           <div style="text-align: center">
+
+            <!-- Navigationsprikker til slideshow – klik åbner det tilsvarende slide -->
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
@@ -335,11 +362,11 @@
   <!-- Liweras historie sektion-->
   <section class="history-section">
     <div class="container">
-      <h2>Liwiras historie</h2>
+      <h2>Liwiras historie</h2> <!--Overskrift-->
       <div class="history-grid">
         <div class="history-column">
           <p>Liwira er en lokal butik, der er opstartet som en del af
-            <a href="https://www.pejsemontering.dk/liwira-kunst-interioer/">Pejsemontørring Fyn</a>. Butikken befinder sig i Langeskov på Fyn.
+            <a href="https://www.pejsemontering.dk/liwira-kunst-interioer/">Pejsemontørring Fyn</a>. Butikken befinder sig i Langeskov på Fyn. <!--Indeholder direkte link til deres hjemmeside-->
             Liwira startede med ønsket om at sælge produkter med <strong>følelsen af hygge</strong> og <strong>dansk
               kvalitet</strong>.
             Vi bestræber os på at give alle mulighed for at købe <strong>gode produkter</strong> af <strong>høj
@@ -359,7 +386,7 @@
 
         <div class="history-column">
           <p>Hos Liwira går vi op i socialt ansvar, og det er blandt andet derfor, at vi
-            <strong>støtter lokale</strong> producenter og leverandører, tager praktikanter ind i butikken og sikrer
+            <strong>støtter lokale</strong> producenter og leverandører, tager praktikanter ind i butikken og sikrer <!--Strong giver bold effekt til teksten-->
             arbejdsforholdene hos vores leverandører.
             Som del af Liwiras <strong>sociale ansvar</strong>, giver vi en del af vores overskud tilbage til
             <strong>Langeskovs lokalsamfund</strong>,
@@ -379,10 +406,10 @@
 
 
   <!--Samarbejdspartnere sektion-->
-  <section id="kontakt" class="partner-slider-section">
+  <section id="kontakt" class="partner-slider-section"> <!-- Sektion med samarbejdspartnere -->
     <h2>Samarbejdspartnere</h2>
-    <div class="partner-slider" id="partnerSlider">
-      <div class="partner-track" id="partnerTrack">
+    <div class="partner-slider" id="partnerSlider"> <!-- Slider-container -->
+      <div class="partner-track" id="partnerTrack"> <!-- Spor til partners logoer -->
       </div>
     </div>
   </section>
@@ -437,7 +464,7 @@
 
 
 <!--Link til Javascript-->
-  <script src="Js/script.js"></script>
+  <script src="Js/script.js"></script> <!-- Indlæser Hero video JavaScript -->
 </body>
 
 </html>

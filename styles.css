@@ -1,197 +1,195 @@
 /* Global Styles */
 :root {
-    --bg-color: #fffdf5;
-    --text-color: #4A403D;
-    --primary-font: 'Montserrat', sans-serif;
-    --secondary-font: 'Open Sans', sans-serif;
+    --bg-color: #fffdf5; /* Definerer en global variabel for baggrundsfarven */
+    --text-color: #4A403D; /* Definerer en global variabel for tekstfarven */
+    --primary-font: 'Montserrat', sans-serif; /* Definerer en global variabel for primær skrifttype */
+    --secondary-font: 'Open Sans', sans-serif; /* Definerer en global variabel for sekundær skrifttype */
 }
 
 .basket-image img,
 .selection-item img,
 .inspiration-item img,
 .item-card {
-    border-radius: 12px;
+    border-radius: 12px; /* Giver afrundede hjørner på billeder og item-kort */
 }
 
 .item-card,
 .basket-image img,
 .selection-item img,
 .inspiration-item img {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tilføjer skyggeeffekt for dybde */
+    transition: transform 0.3s, box-shadow 0.3s; /* Giver glidende overgang ved hover */
 }
 
 .item-card:hover,
 .basket-image img:hover,
 .selection-item img:hover,
 .inspiration-item img:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Øger skyggeeffekten ved hover */
 }
 
 /* Round buttons */
 .cta-button,
 .add-button,
 .category-buttons__button {
-    border-radius: 20px;
+    border-radius: 20px; /* Gør knapperne ovale */
 }
 
 /* Round search bar */
 .search-bar input {
-    border-radius: 20px 0 0 20px;
+    border-radius: 20px 0 0 20px; /* Afrunder venstre side af søgefeltet */
 }
 
 .search-bar button {
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 20px 20px 0; /* Afrunder højre side af søgeknappen */
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Fjerner standard margin fra alle elementer */
+    padding: 0; /* Fjerner standard padding fra alle elementer */
+    box-sizing: border-box; /* Inkluderer padding og border i elementets bredde og højde */
 }
 
 body {
-    font-family: var(--secondary-font);
-    color: var(--text-color);
-    background-color: var(--bg-color);
-    line-height: 1.6;
+    font-family: var(--secondary-font); /* Anvender den sekundære skrifttype */
+    color: var(--text-color); /* Anvender den definerede tekstfarve */
+    background-color: var(--bg-color); /* Anvender den definerede baggrundsfarve */
+    line-height: 1.6; /* Øger linjeafstand for bedre læsbarhed */
 }
 
 h1,
 h2,
 h3 {
-    font-family: var(--primary-font);
-    font-weight: 300;
+    font-family: var(--primary-font); /* Anvender den primære skrifttype til overskrifter */
+    font-weight: 300; /* Gør overskrifterne lette i vægt */
 }
 
 .red {
-    background-color: red !important;
+    background-color: red !important; /* Tvinger baggrundsfarven til rød (bruger !important) */
 }
 
 b {
     /* Browsers didn't agree on bold weight */
-    font-weight: 700;
+    font-weight: 700; /* Gør teksten fed (bruges til <b> tag) */
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-    position: relative
+    max-width: 1200px; /* Sætter en maksimal bredde på containeren */
+    margin: 0 auto; /* Centrerer containeren horisontalt */
+    padding: 0 1rem; /* Tilføjer lidt vandret indre afstand */
+    position: relative /* Gør det muligt at positionere elementer relativt til containeren */
 }
 
 .full-height {
-    height: 100%;
+    height: 100%; /* Sætter elementets højde til 100% af dets overordnede element */
 }
 
 
 /* === Base Colors === */
 :root {
-    --bg-color: #fffdf5;
-    --text-color: #3a3634;
+    --bg-color: #fffdf5; /* (Gentagelse) Definerer baggrundsfarven igen */
+    --text-color: #3a3634; /* (Gentagelse) Opdaterer tekstfarven til en lidt mørkere nuance */
 }
+
 
 
 
 
 /* === Navigationsbar=== */
 .navbar {
-    background-color: var(--bg-color);
-    padding: 12px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: none;
+    background-color: var(--bg-color); /* Sætter baggrundsfarven via CSS-variabel */
+    padding: 12px 0; /* Lodret padding på 12px */
+    position: sticky; /* Gør navbaren klistret til toppen ved scroll */
+    top: 0; /* Fastgør til toppen af viewport */
+    z-index: 1000; /* Sørger for at navbaren ligger øverst */
+    box-shadow: none; /* Fjerner skygge */
 }
 
 .nav__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 40px;
+    display: flex; /* Bruger flexbox til layout */
+    justify-content: space-between; /* Placerer børn med plads imellem */
+    align-items: center; /* Centrerer børn vertikalt */
+    max-width: 1300px; /* Maksimal bredde */
+    margin: 0 auto; /* Centrerer containeren horisontalt */
+    padding: 0 40px; /* Vandret padding */
 }
 
 .nav__container--left {
-    display: flex;
-    align-items: center;
+    display: flex; /* Flex container */
+    align-items: center; /* Centrerer elementer vertikalt */
 }
 
 .nav__container--logo img {
-    height: 50px;
-    width: auto;
-    margin-right: 60px;
-    transform: scale(1.2);
-    transform-origin: left;
+    height: 50px; /* Fast højde på logo */
+    width: auto; /* Automatisk bredde, så aspektforhold bevares */
+    margin-right: 60px; /* Afstand til højre */
+    transform: scale(1.2); /* Forstørrer logoet med 20% */
+    transform-origin: left; /* Transformation udgår fra venstre kant */
 }
 
 .nav__container--links {
-    display: flex;
-    list-style: none;
+    display: flex; /* Laver links som en række */
+    list-style: none; /* Fjerner punktform */
 }
 
 .nav__container--links li {
-    margin-right: 35px;
+    margin-right: 35px; /* Afstand mellem links */
 }
 
 .nav__container--links a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: 500;
-    font-size: 16px;
-    font-family: var(--secondary-font);
-    transition: color 0.3s;
+    text-decoration: none; /* Fjerner understregning */
+    color: var(--text-color); /* Bruger defineret tekstfarve */
+    font-weight: 500; /* Mellem fed tekst */
+    font-size: 16px; /* Skriftstørrelse */
+    font-family: var(--secondary-font); /* Anvender sekundær skrifttype */
+    transition: color 0.3s; /* Blød overgang på farve ved hover */
 }
 
 .nav__container--links a:hover {
-    color: #8b7d76;
+    color: #8b7d76; /* Ændrer farve ved hover */
 }
-
-
 
 
 /* === Søgefelt, søgeikon og kurv ikon === */
 .nav-right {
-    display: flex;
-    align-items: center;
-    gap: 25px;
+    display: flex; /* Flex container */
+    align-items: center; /* Centrerer indhold vertikalt */
+    gap: 25px; /* Afstand mellem børn */
 }
 
 .search-bar {
-    position: relative;
-    display: flex;
-    align-items: center;
-    background-color: #fffdf5;
-    border: 2px solid #999;
-    border-radius: 999px;
-    padding: 6px 16px;
-    height: 44px;
-    width: 230px;
+    position: relative; /* Position relativ til børn (fx ikoner) */
+    display: flex; /* Flex layout */
+    align-items: center; /* Centrerer vertikalt */
+    background-color: #fffdf5; /* Lys baggrundsfarve */
+    border: 2px solid #999; /* Grå kant */
+    border-radius: 999px; /* Ekstrem afrunding (oval) */
+    padding: 6px 16px; /* Lodret og vandret padding */
+    height: 44px; /* Fast højde */
+    width: 230px; /* Fast bredde */
 }
 
 .search-bar input {
-    border: none;
-    outline: none;
-    background: transparent;
-    font-family: var(--secondary-font);
-    font-size: 16px;
-    /*padding-left: 8px;*/
-    flex-grow: 1;
-    color: #333;
+    border: none; /* Fjerner kant */
+    outline: none; /* Fjerner fokus-streg */
+    background: transparent; /* Gør baggrunden gennemsigtig */
+    font-family: var(--secondary-font); /* Skrifttype */
+    font-size: 16px; /* Skriftstørrelse */
+    /*padding-left: 8px;*/ /* Kommentar: tidligere padding */
+    flex-grow: 1; /* Input vokser tilgængelig plads */
+    color: #333; /* Mørk tekstfarve */
 }
 
 .search-icon {
-    font-size: 1.1rem;
-    color: #666666;
-    z-index: 50;
-
+    font-size: 1.1rem; /* Størrelse på søgeikon */
+    color: #666666; /* Grå farve */
+    z-index: 50; /* Lægger ikonet over baggrunden */
 }
 
 .shopping-bag {
-    font-size: 24px;
-    cursor: pointer;
-    padding: 30px;
+    font-size: 24px; /* Størrelse på ikon */
+    cursor: pointer; /* Gør cursor til hånd */
+    padding: 30px; /* Stor klik-flade */
 }
 
 
@@ -199,626 +197,620 @@ b {
 
 /* Mobile Navigation - Hidden by default, usynlig ved normal menu*/
 .mobile-nav {
-    display: none;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    position: relative;
+    display: none; /* Skjules som standard */
+    justify-content: space-between; /* Plads mellem elementer */
+    align-items: center; /* Vertikal centrering */
+    padding: 15px 20px; /* Indvendig afstand */
+    position: relative; /* Bruges til indre elementers placering */
 }
 
 .burger-icon {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    width: 25px;
-    cursor: pointer;
-    z-index: 100;
+    display: flex; /* Række af spans */
+    flex-direction: column; /* Lægger spans vertikalt */
+    gap: 5px; /* Afstand mellem linjer */
+    width: 25px; /* Bredde på burger */
+    cursor: pointer; /* Hånd-cursor */
+    z-index: 100; /* Over andet indhold */
 }
 
 .burger-icon span {
-    height: 2px;
-    background: #666666;
-    transition: all 0.3s ease;
+    height: 2px; /* Højde på hver linje */
+    background: #666666; /* Grå farve */
+    transition: all 0.3s ease; /* Glidende overgang ved klik */
 }
 
 .logo-mobil-nav img {
-    height: 50px;
-    width: auto;
-    margin-right: 60px;
-    transform: scale(1.2);
-    transform-origin: left;
-
+    height: 50px; /* Højde på logo */
+    width: auto; /* Bevarer aspektforhold */
+    margin-right: 60px; /* Afstand højre */
+    transform: scale(1.2); /* Forstørrelse */
+    transform-origin: left; /* Skaler fra venstre kant */
 }
 
 @media (max-width: 768px) {
     .logo-mobil-nav {
-        margin-right: -80px;
+        margin-right: -80px; /* Mindsker højre margen på små skærme */
     }
 
     .shopping-bag {
-        font-size: 24px;
-        cursor: pointer;
-        padding: 6px;
+        font-size: 24px; /* Fast størrelse */
+        cursor: pointer; /* Klikbart */
+        padding: 6px; /* Mindre klikområde */
     }
 }
 
 .mobile-right {
-    display: flex;
-    gap: 20px;
-    align-items: center;
+    display: flex; /* Flex layout */
+    gap: 20px; /* Afstand mellem elementer */
+    align-items: center; /* Centrerer indhold vertikalt */
 }
 
 .search-icon {
-    font-size: 20px;
-    text-decoration: none;
-    color: var(--text-color);
+    font-size: 20px; /* Størrelse */
+    text-decoration: none; /* Fjerner understregning */
+    color: var(--text-color); /* Bruger global tekstfarve */
 }
-
-
 
 
 /* Mobile Menu */
 .mobile-menu {
-    background: #fffdf5 !important;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 70%;
-    height: 100vh;
-    padding: 15px 20px 20px;
-    transition: left 0.3s ease;
-    z-index: 100;
+    background: #fffdf5 !important; /* Lys baggrund, med !important */
+    position: fixed; /* Fast position på skærmen */
+    top: 0; /* Starter i top */
+    left: -100%; /* Starter skjult til venstre */
+    width: 70%; /* Fylder 70% af bredden */
+    height: 100vh; /* Fylder hele højden */
+    padding: 15px 20px 20px; /* Indvendig afstand */
+    transition: left 0.3s ease; /* Glidende ind/ud overgang */
+    z-index: 100; /* Over andre elementer */
 }
 
 .mobile-menu.active {
-    left: 0;
+    left: 0; /* Viser menuen når aktiv */
 }
 
 .mobile-menu ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Fjerner punktopstilling */
+    padding: 0; /* Fjerner padding */
 }
 
 .mobile-menu li {
-    margin: 20px 0;
+    margin: 20px 0; /* Lodret afstand mellem menupunkter */
 }
 
 .mobile-menu a {
-    text-decoration: none;
-    color: #4A403D;
-    font-size: 16px;
+    text-decoration: none; /* Fjerner understregning */
+    color: #4A403D; /* Mørk tekstfarve */
+    font-size: 16px; /* Skriftstørrelse */
 }
 
 .mobile-menu a:hover {
-    color: #e7ad8d;
+    color: #e7ad8d; /* Ændrer farve ved hover */
 }
+
 
 /* Overlay */
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    position: fixed; /* Fast position ovenpå indhold */
+    top: 0; /* Starter i top */
+    left: 0; /* Starter i venstre hjørne */
+    width: 100%; /* Fylder hele bredden */
+    height: 100%; /* Fylder hele højden */
+    background: rgba(0, 0, 0, 0.5); /* Halvtransparent sort */
     /*fade*/
-    z-index: 99;
-    display: none;
+    z-index: 99; /* Lige under menu */
+    display: none; /* Skjult som standard */
 }
+
 
 /* Active States */
 .burger-icon.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg) translate(5px, 5px); /* Drejer øverste linje */
 }
 
 .burger-icon.active span:nth-child(2) {
-    opacity: 0;
+    opacity: 0; /* Gør midterste linje usynlig */
 }
 
 .burger-icon.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+    transform: rotate(-45deg) translate(5px, -5px); /* Drejer nederste linje */
 }
+
 
 /* Responsive Styles */
 @media (max-width: 1201px) {
     .nav__container {
-        display: none;
+        display: none; /* Skjuler desktop navigation */
     }
 
     .mobile-nav {
-        display: flex;
+        display: flex; /* Viser mobilnavigation */
     }
 
     .search-bar {
-        display: none;
+        display: none; /* Skjuler søgelinje */
     }
 }
 
 @media (min-width: 1202px) {
     .mobile-nav {
-        display: none;
+        display: none; /* Skjuler mobilnavigation på desktop */
     }
 }
 
 .menu-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 20px;
+    display: flex; /* Flex layout */
+    justify-content: space-between; /* Plads mellem elementer */
+    align-items: center; /* Centrerer vertikalt */
+    padding: 20px 20px; /* Indvendig afstand */
 }
+
 
 /*the logo inside the menu*/
 .menu-header .nav__container--logo img {
-    height: 40px;
-    width: auto;
+    height: 40px; /* Højde på logo i mobilmenu */
+    width: auto; /* Bevarer proportioner */
 }
 
 .menu-header .logo-text {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Skrifttype */
     /* Or your primary font */
-    font-size: 30px;
-    font-weight: 700;
-    color: #4A403D;
-    text-decoration: none;
+    font-size: 30px; /* Stor skrift */
+    font-weight: 700; /* Fed tekst */
+    color: #4A403D; /* Tekstfarve */
+    text-decoration: none; /* Fjerner understregning */
 }
 
 @media (max-width: 768px) {
     .logo-text {
-        font-size: 24px;
+        font-size: 24px; /* Mindre skrift på små skærme */
     }
 }
 
 .close-menu {
-    font-size: 2rem;
-    background: none;
-    border: none;
-    color: #4A403D;
-    cursor: pointer;
-    z-index: 101;
+    font-size: 2rem; /* Stor ikon */
+    background: none; /* Ingen baggrund */
+    border: none; /* Ingen kant */
+    color: #4A403D; /* Farve */
+    cursor: pointer; /* Klikbar */
+    z-index: 101; /* Ligger over alt andet */
 }
 
 .search-icon i,
 .shopping-bag i {
-    font-size: 20px;
-    color: #4A403D;
-    transition: color 0.3s ease;
+    font-size: 20px; /* Ikonstørrelse */
+    color: #4A403D; /* Ikonfarve */
+    transition: color 0.3s ease; /* Glidende farveovergang */
 }
 
 .search-icon i:hover,
 .shopping-bag i:hover {
-    color: #d58052;
+    color: #d58052; /* Ændrer farve ved hover */
 }
+
 
 
 
 
 /* Hero Sektion med kørende video */
 .hero {
-    position: relative;
-    height: 60vh;
-    min-height: 450px;
-    overflow: hidden;
-    padding-bottom: 5px;
+    position: relative; /* Positionerer elementet relativt for at kunne placere child-elementer absolut */
+    height: 60vh; /* Sætter højden til 60% af viewportens højde */
+    min-height: 450px; /* Minimumshøjde på 450px */
+    overflow: hidden; /* Skjuler indhold der går uden for boksen */
+    padding-bottom: 5px; /* Lidt luft i bunden */
 }
 
 .video-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+    position: absolute; /* Gør det muligt at placere containeren over .hero */
+    top: 0; /* Starter fra toppen */
+    left: 0; /* Starter fra venstre */
+    width: 100%; /* Fylder hele bredden */
+    height: 100%; /* Fylder hele højden */
+    z-index: 1; /* Lægger sig bag overlay og knapper */
 }
 
 .video-container video {
-    width: 100%;
-    height: calc(100% - 120px);
-    object-fit: cover;
-    filter: brightness(0.8);
+    width: 100%; /* Video fylder hele bredden */
+    height: calc(100% - 120px); /* Trækker 120px fra højden */
+    object-fit: cover; /* Skalerer og beskærer videoen så den dækker hele området */
+    filter: brightness(0.8); /* Gør videoen mørkere */
 }
 
 .video-overlay {
-    position: absolute;
-    top: 15px;
-    text-align: left;
-    color: #ffffff;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    padding: 50px 0;
+    position: absolute; /* Placeres ovenpå videoen */
+    top: 15px; /* 15px fra toppen */
+    text-align: left; /* Venstrejusteret tekst */
+    color: #ffffff; /* Hvid tekst */
+    z-index: 2; /* Over videoen */
+    width: 100%; /* Fylder hele bredden */
+    height: 100%; /* Fylder hele højden */
+    padding: 50px 0; /* Lodret polstring */
 }
 
 .video-overlay h1 {
-    font-size: 40px;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-    margin-bottom: 20px;
-    line-height: 1.3;
+    font-size: 40px; /* Stor skrifttype */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Sort skygge for bedre læsbarhed */
+    margin-bottom: 20px; /* Afstand under overskriften */
+    line-height: 1.3; /* Linjeafstand */
 }
-
-
 
 
 /*Pause og play knap*/
 .video-toggle {
-    position: absolute;
-    bottom: 170px;
-    left: 20px;
-    background-color: #4A403D;
-    color: #333;
-    border: none;
-    font-size: 20px;
-    padding: 5px 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
-    z-index: 10;
-    transition: background-color 0.3s;
+    position: absolute; /* Placeres ovenpå video */
+    bottom: 170px; /* 170px fra bunden */
+    left: 20px; /* 20px fra venstre */
+    background-color: #4A403D; /* Mørk baggrund */
+    color: #333; /* Tekstfarve */
+    border: none; /* Ingen kant */
+    font-size: 20px; /* Størrelse på tekst/ikon */
+    padding: 5px 10px; /* Indvendig afstand */
+    border-radius: 50%; /* Gør knappen rund */
+    cursor: pointer; /* Markøren bliver en hånd */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25); /* Let skygge */
+    z-index: 10; /* Ligger øverst */
+    transition: background-color 0.3s; /* Glidende ændring ved hover */
 }
 
 .video-toggle:hover {
-    background-color: #f2e9dc;
+    background-color: #f2e9dc; /* Lysere baggrund ved hover */
 }
 
 .video-toggle i {
-    font-size: 15px;
-    color: #fffdf5;
+    font-size: 15px; /* Ikonstørrelse */
+    color: #fffdf5; /* Lys farve på ikonet */
 }
 
 .video-toggle i:hover {
-    font-size: 15px;
-    color: #333;
+    font-size: 15px; /* Beholder størrelse ved hover */
+    color: #333; /* Skifter til mørk farve ved hover */
 }
 
 .cta-box {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    padding: 50px;
-    margin: 0 1rem;
-    z-index: 3;
-    max-width: 340px;
-    border-radius: 20px;
-    background: #FFFDF5;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    text-align: center;
-    color: var(--text-color);
+    position: absolute; /* Placeres fast i nederste højre hjørne */
+    right: 0; /* Justeret til højre */
+    bottom: 0; /* Justeret til bunden */
+    padding: 50px; /* Indvendig afstand */
+    margin: 0 1rem; /* Vandret margin */
+    z-index: 3; /* Over videoen */
+    max-width: 340px; /* Maks bredde */
+    border-radius: 20px; /* Afrundede hjørner */
+    background: #FFFDF5; /* Lys baggrund */
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); /* Let skygge */
+    text-align: center; /* Centreret tekst */
+    color: var(--text-color); /* Bruger defineret tekstfarve */
 }
 
 .cta-box p {
-    font-family: var(--secondary-font);
-    font-size: 20px;
-    margin-bottom: 15px;
+    font-family: var(--secondary-font); /* Bruger sekundær skrifttype */
+    font-size: 20px; /* Størrelse på tekst */
+    margin-bottom: 15px; /* Afstand under tekst */
 }
 
 .cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--text-color);
-    color: white;
-    background-color: #e7ad8d;
-    text-decoration: none;
-    font-family: var(--primary-font);
-    font-weight: 600;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+    display: inline-block; /* Gør knappen inline men med blok egenskaber */
+    padding: 10px 20px; /* Indvendig afstand */
+    background-color: var(--text-color); /* Bruger variabel farve */
+    color: white; /* Hvid tekst */
+    background-color: #e7ad8d; /* Knappens baggrund */
+    text-decoration: none; /* Fjerner understregning */
+    font-family: var(--primary-font); /* Primær skrifttype */
+    font-weight: 600; /* Fed skrift */
+    border-radius: 4px; /* Let afrunding */
+    transition: background-color 0.3s; /* Glidende farveskift ved hover */
 }
 
 .cta-button:hover {
-    background-color: #d58052;
+    background-color: #d58052; /* Mørkere baggrund ved hover */
 }
-
-
 
 
 /* Easy (Allerede eksisterende gavekurve) & Selection (Se vores udvalg) Sektioner */
 .easy-section,
 .selection-section {
-    padding: 3rem 0;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #fffdf6;
+    padding: 3rem 0; /* Lodret afstand */
+    max-width: 1200px; /* Maks bredde */
+    margin: 0 auto; /* Centreret */
+    background-color: #fffdf6; /* Lys baggrund */
 }
 
 .easy-section h2 {
-    font-size: 34px;
-    margin-bottom: 10px;
-    text-align: left;
-    color: #4A403D;
-    margin-left: 22px;
+    font-size: 34px; /* Stor overskrift */
+    margin-bottom: 10px; /* Afstand under */
+    text-align: left; /* Venstrejusteret */
+    color: #4A403D; /* Mørk farve */
+    margin-left: 22px; /* Indrykning fra venstre */
 }
 
 .subheading {
-    text-align: left;
-    color: #666;
-    margin-bottom: 60px;
-    font-size: 24px;
-    margin-left: 22px;
+    text-align: left; /* Venstrejusteret tekst */
+    color: #666; /* Grå farve */
+    margin-bottom: 60px; /* Stor afstand under */
+    font-size: 24px; /* Størrelse på undertitel */
+    margin-left: 22px; /* Indrykning */
 }
 
 .selection-section h2 {
-    font-size: 34px;
-    margin-bottom: 10px;
-    text-align: left;
-    color: #4A403D;
-    margin-left: 22px;
+    font-size: 34px; /* Overskriftsstørrelse */
+    margin-bottom: 10px; /* Afstand under */
+    text-align: left; /* Venstrejusteret */
+    color: #4A403D; /* Mørk farve */
+    margin-left: 22px; /* Indrykning fra venstre */
 }
 
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    padding: 1rem;
+    display: grid; /* Grid-layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsiv kolonne-inddeling */
+    gap: 2rem; /* Mellemrum mellem elementer */
+    padding: 1rem; /* Indvendig afstand */
 }
 
 .product {
-    position: relative;
-    overflow: hidden;
-    border-radius: 12px;
+    position: relative; /* Bruges til at positionere child-elementer */
+    overflow: hidden; /* Skjuler indhold der går udenfor */
+    border-radius: 12px; /* Afrundede hjørner */
 }
 
 .product-image {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    border-radius: 12px;
-    overflow: hidden;
+    position: relative; /* For absolut positionering af label */
+    width: 100%; /* Fylder hele bredden */
+    aspect-ratio: 1 / 1; /* Kvadratisk billede */
+    border-radius: 12px; /* Afrundede hjørner */
+    overflow: hidden; /* Skjuler overløb */
 }
 
 .product-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-    border-radius: 12px;
+    width: 100%; /* Fylder hele bredden */
+    height: 100%; /* Fylder hele højden */
+    object-fit: cover; /* Dækker hele området */
+    transition: transform 0.3s ease; /* Glidende zoom effekt */
+    border-radius: 12px; /* Samme afrunding som container */
 }
 
 .product-image:hover img {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Zoomer billede let ved hover */
 }
 
 
 /* Centeret label på billede */
 .product-label.center {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    background-color: rgba(206, 229, 242, 0.9);
-    padding: 1rem 1rem;
-    border-radius: 0px;
-    width: 100%;
+    position: absolute; /* Placeret ovenpå billede */
+    top: 50%; /* Midt på i højden */
+    transform: translateY(-50%); /* Justerer så det centrerer præcist */
+    left: 0; /* Starter fra venstre */
+    background-color: rgba(206, 229, 242, 0.9); /* Let gennemsigtig blå baggrund */
+    padding: 1rem 1rem; /* Indvendig afstand */
+    border-radius: 0px; /* Ingen afrunding */
+    width: 100%; /* Fylder hele bredden */
 }
 
 .product-label-title {
-    margin: 0;
-    text-align: center !important;
-    font-size: 16px;
-    font-weight: 500;
-    color: #333;
+    margin: 0; /* Ingen margin */
+    text-align: center !important; /* Tvinger centreret tekst */
+    font-size: 16px; /* Tekststørrelse */
+    font-weight: 500; /* Medium fed tekst */
+    color: #333; /* Mørk grå farve */
 }
 
 
 .about-section {
-    background-color: #d4ecf9;
-    padding: 80px 20px;
-    text-align: center;
+    background-color: #d4ecf9; /* Lyseblå baggrund */
+    padding: 80px 20px; /* Stor lodret og lidt vandret afstand */
+    text-align: center; /* Centreret tekst */
 }
 
 .about-section h2 {
-    font-size: 34px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #3e3e3e;
+    font-size: 34px; /* Stor overskrift */
+    font-weight: bold; /* Fed tekst */
+    margin-bottom: 20px; /* Afstand under */
+    color: #3e3e3e; /* Mørk grå farve */
 }
 
 .intro-text {
-    font-size: 16px;
-    color: #555;
-    max-width: 800px;
-    margin: 0 auto 40px auto;
-    line-height: 1.6;
+    font-size: 16px; /* Standard tekststørrelse */
+    color: #555; /* Mellemgrå farve */
+    max-width: 800px; /* Maksimal bredde */
+    margin: 0 auto 40px auto; /* Centreret med afstand under */
+    line-height: 1.6; /* Linjeafstand */
 }
 
 .steps {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    gap: 15px;
-    margin-bottom: 40px;
+    display: flex; /* Flex layout */
+    flex-wrap: wrap; /* Tillader linjeskift */
+    justify-content: center; /* Centrerer indholdet */
+    align-items: stretch; /* Strækker elementer til samme højde */
+    gap: 15px; /* Mellemrum mellem stepbokse */
+    margin-bottom: 40px; /* Afstand under */
 }
 
 .step-box {
-    background-color: #fff;
-    border: 2px solid #aaa;
-    padding: 15px 20px;
-    border-radius: 10px;
-    max-width: 200px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.4;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+    background-color: #fff; /* Hvid baggrund */
+    border: 2px solid #aaa; /* Grå kant */
+    padding: 15px 20px; /* Indvendig afstand */
+    border-radius: 10px; /* Afrundede hjørner */
+    max-width: 200px; /* Maks bredde */
+    font-size: 16px; /* Tekststørrelse */
+    font-weight: 500; /* Medium fed skrift */
+    line-height: 1.4; /* Linjeafstand */
+    display: flex; /* Flex layout */
+    flex-direction: column; /* Vertikal retning */
+    justify-content: center; /* Centrerer indhold lodret */
 }
 
 .arrow {
-    font-size: 1.5rem;
-    color: #555;
-    margin: auto 0;
+    font-size: 1.5rem; /* Størrelse på pil */
+    color: #555; /* Grå farve */
+    margin: auto 0; /* Vertikalt centreret */
 }
 
 .cta-button {
-    background-color: #faa285;
-    color: white;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 25px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-color: #faa285; /* Orange baggrund */
+    color: white; /* Hvid tekst */
+    padding: 12px 30px; /* Indvendig afstand */
+    border: none; /* Ingen kant */
+    border-radius: 25px; /* Meget afrundede hjørner */
+    font-size: 16px; /* Tekststørrelse */
+    cursor: pointer; /* Håndmarkør */
+    transition: background-color 0.3s ease; /* Glidende overgang */
 }
 
 .cta-button:hover {
-    background-color: #f8926f;
+    background-color: #f8926f; /* Mørkere orange ved hover */
 }
 
 .cta-subtext {
-    margin-top: 10px;
-    color: #555;
-    font-size: 14px;
+    margin-top: 10px; /* Afstand over */
+    color: #555; /* Grå tekst */
+    font-size: 14px; /* Mindre tekststørrelse */
 }
 
 
 
 
 /* Inspiration Sektion */
-.inspiration-section {
-    padding: 60px 0;
-    background-color: #f9f7f0;
+.inspiration-section { /* Definerer sektionens udseende */
+    padding: 60px 0; /* Lodret polstring */
+    background-color: #f9f7f0; /* Baggrundsfarve */
 }
 
-.inspiration-section h2 {
-    text-align: left;
-    font-size: 34px;
-    margin-bottom: 40px;
+.inspiration-section h2 { /* Styling af overskriften i inspiration-sektionen */
+    text-align: left; /* Venstrejusteret tekst */
+    font-size: 34px; /* Størrelse på skriften */
+    margin-bottom: 40px; /* Afstand under overskriften */
 }
 
-.inspiration-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.inspiration-grid { /* Gitterlayout til inspirationsindhold */
+    display: grid; /* Bruger grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Tre lige brede kolonner */
+    gap: 20px; /* Afstand mellem grid-elementer */
 }
 
-.inspiration-item {
-    overflow: hidden;
-    height: 300px;
+.inspiration-item { /* Styling af hvert inspirations-element */
+    overflow: hidden; /* Skjuler overløbende indhold */
+    height: 300px; /* Fast højde på hvert element */
 }
 
-.inspiration-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s;
+.inspiration-item img { /* Styling af billeder i inspiration */
+    width: 100%; /* Billedet fylder hele bredden */
+    height: 100%; /* Billedet fylder hele højden */
+    object-fit: cover; /* Billedet dækker hele elementet uden forvrængning */
+    transition: transform 0.5s; /* Blød overgang ved transform */
 }
 
-.inspiration-item:hover img {
-    transform: scale(1.05);
+.inspiration-item:hover img { /* Effekt når man holder musen over billedet */
+    transform: scale(1.05); /* Forstørrer billedet lidt */
 }
 
 
 
 
 /* Nyheder Sektion */
-.news-section {
-    padding: 80px 0;
-    text-align: center;
+.news-section { /* Styling for hele nyhedssektionen */
+    padding: 80px 0; /* Lodret polstring */
+    text-align: center; /* Centreret tekst */
 }
 
-.news-section h2 {
-    font-size: 34px;
-    margin-bottom: 40px;
+.news-section h2 { /* Overskrift for nyhedssektionen */
+    font-size: 34px; /* Skriftstørrelse */
+    margin-bottom: 40px; /* Afstand under overskriften */
 }
 
-.news-image {
-    height: 400px;
-    overflow: hidden;
+.news-image { /* Container til nyhedsbillede */
+    height: 400px; /* Fast højde på billedcontainer */
+    overflow: hidden; /* Skjuler overløb */
 }
 
-.news-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.news-image img { /* Styling af nyhedsbillede */
+    width: 100%; /* Fylder hele containerens bredde */
+    height: 100%; /* Fylder hele containerens højde */
+    object-fit: cover; /* Fylder container uden at forvrænge billedet */
 }
 
 
 /* SLIDESHOW */
-.mySlides {
+.mySlides { /* Skjuler slides som standard */
     display: none;
 }
 
-img {
-    vertical-align: middle;
+img { /* Standard billedjustering */
+    vertical-align: middle; /* Justerer billeder lodret i midten */
 }
 
 /*tilføj maks højde?*/
-.slideshow-container {
-    max-width: 80%;
-    position: relative;
-    margin: auto;
-    flex-wrap: wrap;
-    overflow: visible;
-    /* Vigtigt for at vise knapper udenfor */
+.slideshow-container { /* Container til slideshow */
+    max-width: 80%; /* Maks bredde på container */
+    position: relative; /* Relativ placering ift. knapper */
+    margin: auto; /* Centrerer container */
+    flex-wrap: wrap; /* Tillader wrap hvis nødvendigt */
+    overflow: visible; /* Viser knapper udenfor container */
 }
 
 /* style for previous and next buttoms */
 .prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: #4A403D;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    font-family: 'Open Sans';
+.next { /* Styling for pil-knapper */
+    cursor: pointer; /* Ændrer musemarkør til hånd */
+    position: absolute; /* Absolut positionering */
+    top: 50%; /* Vertikal centrering */
+    width: auto; /* Automatisk bredde */
+    padding: 16px; /* Indvendig afstand */
+    margin-top: -22px; /* Justering for præcis centrering */
+    color: #4A403D; /* Farve på pilen */
+    font-weight: bold; /* Fed skrift */
+    font-size: 18px; /* Skriftstørrelse */
+    transition: 0.6s ease; /* Overgangseffekt */
+    border-radius: 0 3px 3px 0; /* Afrundede hjørner */
+    user-select: none; /* Forhindrer markering af tekst */
+    font-family: 'Open Sans'; /* Skrifttype */
 }
 
-.next {
-    right: -60px;
-    border-radius: 3px 0 0 3px;
+.next { /* Placering og hjørneafrunding af højre pil */
+    right: -60px; /* Flytter højre pil udenfor container */
+    border-radius: 3px 0 0 3px; /* Hjørneafslutning for højre side */
 }
 
-.prev {
-    left: -60px;
-    border-radius: 0 3px 3px 0;
+.prev { /* Placering og hjørneafrunding af venstre pil */
+    left: -60px; /* Flytter venstre pil udenfor container */
+    border-radius: 0 3px 3px 0; /* Hjørneafslutning for venstre side */
 }
 
 
 /* style for dots */
-.dot {
-    cursor: pointer;
-    height: 10px;
-    width: 10px;
-    margin: 0 2px;
-    background-color: #F7D7C8;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+.dot { /* Styling af navigation dots */
+    cursor: pointer; /* Håndmarkør */
+    height: 10px; /* Højde på dot */
+    width: 10px; /* Bredde på dot */
+    margin: 0 2px; /* Vandret afstand mellem dots */
+    background-color: #F7D7C8; /* Standardfarve */
+    border-radius: 50%; /* Gør dots runde */
+    display: inline-block; /* Viser dots på linje */
+    transition: background-color 0.6s ease; /* Overgang ved hover */
 }
 
 .active,
-.dot:hover {
-    background-color: #4A403D;
+.dot:hover { /* Aktiv dot og hover-effekt */
+    background-color: #4A403D; /* Mørkere farve */
 }
 
 
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 3s;
-    animation-name: fade;
-    animation-duration: 3s;
+.fade { /* Fade animation til slides */
+    -webkit-animation-name: fade; /* Navn på animation for Safari */
+    -webkit-animation-duration: 3s; /* Varighed for Safari */
+    animation-name: fade; /* Navn på animation */
+    animation-duration: 3s; /* Varighed på animation */
 }
 
-@-webkit-keyframes fade {
+@-webkit-keyframes fade { /* Keyframes til fade effekt i Safari */
     from {
-        opacity: .9;
+        opacity: .9; /* Start med lidt gennemsigtighed */
     }
 
     to {
-        opacity: 1.5;
+        opacity: 1.5; /* Slutter med lidt mere intensitet */
     }
 }
 
-
-@keyframes fade {
+@keyframes fade { /* Keyframes til fade effekt i øvrige browsere */
     from {
         opacity: .9;
     }
@@ -830,136 +822,135 @@ img {
 
 
 
-
-/*Responsive*/
-@media only screen and (max-width:430px) {
+/* Responsive */
+@media only screen and (max-width:430px) { /* Mobil-venlig styling */
 
     .prev,
     .next {
-        font-size: 11px;
+        font-size: 11px; /* Mindre skriftstørrelse på pile */
     }
 
     .next {
-        right: -40px;
-
+        right: -40px; /* Justeret placering til mobil */
     }
 
     .prev {
-        left: -40px;
+        left: -40px; /* Justeret placering til mobil */
     }
 
     .dot {
-        height: 7px;
-        width: 7px;
+        height: 7px; /* Mindre dot-højde */
+        width: 7px; /* Mindre dot-bredde */
     }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:768px) { /* Tablet og små skærme */
 
     .prev,
     .next {
-        font-size: 14px;
+        font-size: 14px; /* Tilpasning af font til mellemstore skærme */
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* Tablet og små skærme */
     .news-content {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column; /* Stabler nyhedsindhold vertikalt */
+        text-align: center; /* Centrerer tekst */
     }
 
     .slideshow-container {
-        max-width: 80%;
+        max-width: 80%; /* Justeret bredde for slideshow */
     }
 }
+
 
 
 
 
 /* History Sektion (Liwiras historie) */
 .history-section {
-    padding: 80px 20px;
-    background-color: #F5DBCF;
-    opacity: 90%;
-    font-family: 'Helvetica Neue', sans-serif;
-    color: #3d3d3d;
+    padding: 80px 20px; /* Giver sektionen top/bund og side polstring */
+    background-color: #F5DBCF; /* Lyserød baggrundsfarve */
+    opacity: 90%; /* Gør sektionen let gennemsigtig */
+    font-family: 'Helvetica Neue', sans-serif; /* Skrifttype for sektionen */
+    color: #3d3d3d; /* Mørkegrå tekstfarve */
 }
 
 .history-section h2 {
-    text-align: left;
-    font-size: 34px;
-    margin-bottom: 40px;
-    font-weight: 600;
-    margin-left: 82px;
+    text-align: left; /* Venstrejusterer overskriften */
+    font-size: 34px; /* Størrelse på overskriften */
+    margin-bottom: 40px; /* Afstand under overskriften */
+    font-weight: 600; /* Halvfed tekst */
+    margin-left: 82px; /* Rykker overskriften lidt ind fra venstre */
 }
 
 .history-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    max-width: 1000px;
-    margin: 0 auto;
+    display: flex; /* Flexbox layout */
+    flex-wrap: wrap; /* Tillader indholdet at rykke ned hvis nødvendigt */
+    gap: 40px; /* Afstand mellem kolonner */
+    max-width: 1000px; /* Maks bredde på grid */
+    margin: 0 auto; /* Centrerer grid i midten */
 }
 
 .history-column {
-    flex: 1 1 450px;
-    font-size: 16px;
-    line-height: 1.8;
+    flex: 1 1 450px; /* Fleksibel bredde, starter ved 450px */
+    font-size: 16px; /* Standard tekststørrelse */
+    line-height: 1.8; /* Linjeafstand for bedre læsbarhed */
 }
 
 .history-column a {
-    color: #965f46;
-    text-decoration: underline;
+    color: #965f46; /* Brun farve til links */
+    text-decoration: underline; /* Understreger links */
 }
 
 .history-column strong {
-    font-weight: 700;
+    font-weight: 700; /* Gør teksten fed */
 }
 
 
 
 
-/*Samarbejdspartnere sektion*/
+/* Samarbejdspartnere sektion */
 .partner-slider-section {
-    background-color: #f9f7f0;
-    padding: 60px 0;
-    font-family: 'Georgia', serif;
-    text-align: center;
-    overflow: hidden;
+    background-color: #f9f7f0; /* Lys beige baggrund */
+    padding: 60px 0; /* Lodret polstring */
+    font-family: 'Georgia', serif; /* Klassisk serif-skrifttype */
+    text-align: center; /* Centreret tekst */
+    overflow: hidden; /* Skjuler indhold uden for boksen */
 }
 
 .partner-slider-section h2 {
-    font-size: 34px;
-    color: #3d3d3d;
-    margin-bottom: 30px;
+    font-size: 34px; /* Stor overskrift */
+    color: #3d3d3d; /* Mørkegrå farve */
+    margin-bottom: 30px; /* Afstand under overskriften */
 }
 
 .partner-slider {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+    position: relative; /* Relativ positionering til evt. elementer indeni */
+    width: 100%; /* Fylder hele bredden */
+    overflow: hidden; /* Skjuler indhold, der går ud over containeren */
 }
 
 .partner-track {
-    display: flex;
-    gap: 60px;
-    white-space: nowrap;
-    transition: transform 0.1s linear;
+    display: flex; /* Flex container til horisontalt rullefelt */
+    gap: 60px; /* Afstand mellem elementer */
+    white-space: nowrap; /* Forhindrer linjeskift */
+    transition: transform 0.1s linear; /* Glat overgang ved rulle-effekt */
 }
 
 .partner-track span {
-    font-size: 16px;
-    color: #333;
-    white-space: nowrap;
+    font-size: 16px; /* Tekststørrelse for partnerelementer */
+    color: #333; /* Mørk farve på teksten */
+    white-space: nowrap; /* Undgår linjeskift i spans */
 }
 
 @media (max-width: 768px) {
     .partner-track {
-        gap: 40px;
+        gap: 40px; /* Mindre afstand mellem elementer på små skærme */
     }
 
     .partner-track span {
-        font-size: 14px;
+        font-size: 14px; /* Mindre skriftstørrelse på små skærme */
     }
 }
 
@@ -968,679 +959,717 @@ img {
 
 /* Scroll up knap */
 .scroll-up {
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    width: 40px;
-    height: 40px;
-    background-color: #F2AA87;
-    /* Lys orange */
-    border: none;
-    border-radius: 50%;
-    /* Gør den cirkulær */
-    cursor: pointer;
-    transition: background-color 0.3s, opacity 0.3s;
-    opacity: 0;
-    visibility: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fast placering i forhold til skærmen */
+    bottom: 20px; /* Placering 20px fra bunden */
+    right: 30px; /* Placering 30px fra højre */
+    width: 40px; /* Knapbredde */
+    height: 40px; /* Knaphøjde */
+    background-color: #F2AA87; /* Lys orange farve */
+    border: none; /* Fjerner standard kant */
+    border-radius: 50%; /* Gør knappen rund */
+    cursor: pointer; /* Ændrer markør til hånd */
+    transition: background-color 0.3s, opacity 0.3s; /* Glat overgang ved hover og visning */
+    opacity: 0; /* Start usynlig */
+    visibility: hidden; /* Skjult fra DOM-visning */
+    display: flex; /* Flexbox til centrering */
+    align-items: center; /* Vertikal centrering af ikon */
+    justify-content: center; /* Horisontal centrering af ikon */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Skyggeeffekt */
 }
 
 /* Vis knappen ved scroll */
 .scroll-up.show {
-    opacity: 1;
-    visibility: visible;
+    opacity: 1; /* Gør knappen synlig */
+    visibility: visible; /* Gør knappen synlig for DOM */
 }
 
 /* Pil-ikon (sort og centreret) */
 .scroll-up svg {
-    width: 24px;
-    height: 24px;
-    stroke: #FFFDF5;
-    stroke-width: 2;
-    fill: none;
+    width: 24px; /* Ikonbredde */
+    height: 24px; /* Ikonhøjde */
+    stroke: #FFFDF5; /* Hvid stregfarve */
+    stroke-width: 2; /* Tykkelse af stregen */
+    fill: none; /* Ingen fyldfarve */
 }
 
 .scroll-up:hover {
-    background-color: #e8966f;
+    background-color: #e8966f; /* Mørkere orange ved hover */
 }
 
 
 
 
-/*Footer sektion*/
+/* Footer sektion */
 .footer {
-    background-color: #d2e4f1;
-    color: #2b2b2b;
-    padding: 60px 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    background-color: #d2e4f1; /* Lyseblå baggrund */
+    color: #2b2b2b; /* Mørk tekstfarve */
+    padding: 60px 5%; /* Polstring top/bund og sider */
+    display: flex; /* Flex layout */
+    flex-wrap: wrap; /* Indhold kan rykke ned */
+    justify-content: space-between; /* Fordeler kolonner med mellemrum */
 }
 
 .footer-column {
-    flex: 1 1;
+    flex: 1 1; /* Fleksibel bredde */
 }
 
 .footer-column h3 {
-    font-size: 16px;
-    font-weight: 700;
-    color: #3b3b3b;
-    margin-bottom: 15px;
+    font-size: 16px; /* Overskriftsstørrelse */
+    font-weight: 700; /* Fed skrift */
+    color: #3b3b3b; /* Mørk grå farve */
+    margin-bottom: 15px; /* Afstand under overskrift */
 }
 
 .footer-column p {
-    margin: 5px 0;
-    font-size: 14px;
-    line-height: 1.6;
+    margin: 5px 0; /* Lodret margin mellem afsnit */
+    font-size: 14px; /* Tekststørrelse */
+    line-height: 1.6; /* Linjeafstand */
 }
 
 .footer-column a {
-    color: inherit;
-    text-decoration: none;
+    color: inherit; /* Arver tekstfarve */
+    text-decoration: none; /* Fjerner understregning */
 }
 
 .social-icons {
-    margin-top: 20px;
-    display: flex;
-    gap: 15px;
+    margin-top: 20px; /* Afstand over ikoner */
+    display: flex; /* Flex layout */
+    gap: 15px; /* Afstand mellem ikoner */
 }
 
 .social-icons a {
-    color: #2b2b2b;
-    transition: color 0.2s ease;
+    color: #2b2b2b; /* Mørk ikonfarve */
+    transition: color 0.2s ease; /* Glat overgang ved hover */
 }
 
 .social-icons a:hover {
-    color: #555;
+    color: #555; /* Ændrer ikonfarve ved hover */
 }
 
 @media (max-width: 768px) {
     .footer {
-        flex-direction: column;
-        text-align: center;
-        align-items: flex-start;
-        padding: 60px 20%;
+        flex-direction: column; /* Stabler kolonner vertikalt */
+        text-align: center; /* Centrerer tekst */
+        align-items: flex-start; /* Venstrejusterer indhold */
+        padding: 60px 20%; /* Justerer polstring til små skærme */
     }
 
     .footer-column {
-        width: 100%;
-        margin-bottom: 30px;
+        width: 100%; /* Kolonner fylder hele bredden */
+        margin-bottom: 30px; /* Afstand mellem kolonner */
     }
 
     .footer .social-icons {
-        justify-content: center;
+        justify-content: center; /* Centrerer sociale ikoner */
     }
-
 }
+
 
 
 
 
 /* Gift Basket Page (Gavekurv underside) Styles */
 .basket-builder {
-    padding: 80px 0;
+    padding: 80px 0; /* Tilføjer lodret polstring omkring hele gavekurv-sektionen */
 }
 
 .basket-builder h1 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 40px;
+    text-align: center; /* Centrerer overskriften */
+    margin-bottom: 40px; /* Afstand under overskriften */
+    font-size: 40px; /* Gør overskriften stor */
 }
 
 .basket-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    align-items: center;
-    background-color: #f9f7f0;
-    margin: 30px;
-    max-height: 200px;
-    overflow: hidden;
-    border-radius: 1rem;
+    display: flex; /* Anvender flexbox til layout af elementer */
+    justify-content: space-between; /* Placerer indhold med jævn afstand imellem */
+    margin-bottom: 40px; /* Afstand under kurv-element */
+    align-items: center; /* Vertikal centrering af indhold */
+    background-color: #f9f7f0; /* Lys baggrundsfarve */
+    margin: 30px; /* Ydre margen omkring kurven */
+    max-height: 200px; /* Maksimal højde på kurven */
+    overflow: hidden; /* Skjuler indhold der går ud over containeren */
+    border-radius: 1rem; /* Afrundede hjørner */
 }
 
 .basket-image {
-    width: 40%;
+    width: 40%; /* Gør billeddelen til 40% af containerens bredde */
 }
 
 .basket-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100%; /* Fylder hele bredden af containeren */
+    height: 100%; /* Fylder hele højden af containeren */
+    object-fit: cover; /* Sørger for at billedet dækker uden at forvrænge */
 }
 
 .basket-details {
-    width: 55%;
+    width: 55%; /* Gør detaljer-delen til 55% af bredden */
 }
 
 .basket-details h2 {
-    font-size: 34px;
-    margin-bottom: 15px;
+    font-size: 34px; /* Størrelse på produktnavn */
+    margin-bottom: 15px; /* Afstand under overskriften */
 }
 
 .basket-price {
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 14px; /* Lille skriftstørrelse til pris */
+    font-weight: 600; /* Mellem fed skrifttype */
 }
 
 .back-button-container {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Afstand under tilbage-knappen */
 }
 
 .back-button {
-    display: inline-flex;
-    align-items: center;
-    color: #4a403d73;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    transition: color 0.3s ease;
+    display: inline-flex; /* Viser knappen som fleksibel inline-element */
+    align-items: center; /* Vertikal centrering af indhold */
+    color: #4a403d73; /* Farve på tekst/link */
+    text-decoration: none; /* Fjerner understregning */
+    font-family: 'Open Sans', sans-serif; /* Bruger sans-serif font */
+    font-size: 16px; /* Tekststørrelse */
+    transition: color 0.3s ease; /* Glidende overgang ved farveændring */
 }
 
 .back-button:hover {
-    color: #4A403D;
+    color: #4A403D; /* Mørkere farve ved hover */
 }
 
 .back-arrow {
-    margin-right: 8px;
-    font-size: 18px;
+    margin-right: 8px; /* Afstand mellem pil og tekst */
+    font-size: 18px; /* Størrelse på pilen */
 }
 
 .add-items {
-    text-align: center;
-    padding: 30px;
-    border-radius: 10px;
-    border: 0.5px dashed #000;
-    background: rgba(245, 219, 207, 0.50);
-    margin-top: 2rem;
+    text-align: center; /* Centrerer indhold */
+    padding: 30px; /* Indvendig afstand */
+    border-radius: 10px; /* Afrundede hjørner */
+    border: 0.5px dashed #000; /* Stiplet kant */
+    background: rgba(245, 219, 207, 0.50); /* Let transparent baggrund */
+    margin-top: 2rem; /* Lodret afstand ovenfor */
 }
 
 .add-items h3 {
-    margin-bottom: 20px;
-    font-size: 30px;
+    margin-bottom: 20px; /* Afstand under overskrift */
+    font-size: 30px; /* Stor skrifttype til h3 */
 }
 
 .add-button {
-    font-size: 2rem;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: var(--text-color);
-    color: white;
-    background-color: #e7ad8d;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 2rem; /* Stor skrifttype til knappen */
+    width: 60px; /* Bredde på knappen */
+    height: 60px; /* Højde på knappen */
+    border-radius: 50%; /* Gør knappen cirkulær */
+    background-color: var(--text-color); /* Bruger defineret variabel (overskrives nedenfor) */
+    color: white; /* Hvid tekst */
+    background-color: #e7ad8d; /* Baggrundsfarve */
+    border: none; /* Fjerner kant */
+    cursor: pointer; /* Gør musen til klik-hånd */
+    transition: background-color 0.3s; /* Blød farveændring ved hover */
 }
 
 .add-button:hover {
-    background-color: #6b5d56;
+    background-color: #6b5d56; /* Mørkere farve ved hover */
 }
 
 .checkout-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #f2aa87;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 30px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
-    z-index: 1000;
+    position: fixed; /* Fast placering i vinduet */
+    bottom: 20px; /* Placering fra bunden */
+    right: 20px; /* Placering fra højre */
+    background-color: #f2aa87; /* Baggrundsfarve */
+    color: white; /* Hvid tekst */
+    padding: 15px 30px; /* Indvendig afstand */
+    border-radius: 30px; /* Meget afrundede hjørner */
+    font-size: 16px; /* Skriftstørrelse */
+    font-weight: bold; /* Fed skrift */
+    text-decoration: none; /* Fjerner understregning */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Skyggeeffekt */
+    transition: background-color 0.3s ease; /* Glidende farveændring */
+    z-index: 1000; /* Sørger for knappen vises øverst */
 }
 
 .checkout-button:hover {
-    background-color: #e89d78;
+    background-color: #e89d78; /* Mørkere farve ved hover */
 }
-
-
 
 
 /* Add Items Page (Tilføj varer til kurv) Styles */
 .add-items-section {
-    padding: 80px 0;
+    padding: 80px 0; /* Lodret afstand over og under sektionen */
 }
 
 .add-items-section h1 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 40px;
+    text-align: center; /* Centrerer overskriften */
+    margin-bottom: 40px; /* Afstand under */
+    font-size: 40px; /* Stor skrifttype */
 }
 
 .category-buttons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 40px;
+    display: flex; /* Flex layout */
+    justify-content: center; /* Centrerer knapperne horisontalt */
+    flex-wrap: wrap; /* Tillader linjeskift */
+    gap: 10px; /* Afstand mellem knapper */
+    margin-bottom: 40px; /* Afstand under */
 }
 
 .category-buttons__button {
-    padding: 10px 20px;
-    background-color: #f9f7f0;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.3s;
+    padding: 10px 20px; /* Indvendig afstand */
+    background-color: #f9f7f0; /* Lys baggrund */
+    border: 1px solid #ddd; /* Lys kant */
+    border-radius: 20px; /* Runde hjørner */
+    cursor: pointer; /* Gør knappen klikbar */
+    transition: all 0.3s; /* Glidende overgang */
 }
 
 .category-buttons__button--active {
-    background-color: var(--text-color);
-    color: white;
+    background-color: var(--text-color); /* Aktiv knap får anden farve */
+    color: white; /* Hvid tekst */
 }
 
 .items-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 30px;
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 20px;
+    display: grid; /* CSS grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Dynamisk kolonneantal */
+    gap: 30px; /* Afstand mellem kort */
+    margin: 0 auto; /* Centreret grid */
+    max-width: 1200px; /* Maks bredde */
+    padding: 0 20px; /* Vandret polstring */
 }
 
 .text-left {
-    text-align: left;
+    text-align: left; /* Venstrejusteret tekst */
 }
 
 .item-card {
-    background-color: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    background-color: white; /* Hvid baggrund */
+    border-radius: 8px; /* Afrundede hjørner */
+    overflow: hidden; /* Skjuler overløb */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Blød skygge */
+    transition: transform 0.3s; /* Glidende animation */
 }
 
 .item-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Løfter kortet ved hover */
 }
 
 .item-image {
-    height: 200px;
-    overflow: hidden;
+    height: 200px; /* Fast højde til billede */
+    overflow: hidden; /* Skjuler dele der går ud over */
 }
 
 .item-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100%; /* Fylder hele bredden */
+    height: 100%; /* Fylder hele højden */
+    object-fit: cover; /* Fylder uden at forvrænge */
 }
 
 .item-details {
-    padding: 15px;
-    color: #4A403D;
+    padding: 15px; /* Indvendig afstand */
+    color: #4A403D; /* Mørk tekstfarve */
 }
 
 .item-name {
-    font-family: var(--primary-font);
-    font-weight: 400;
-    margin-bottom: 10px;
+    font-family: var(--primary-font); /* Bruger defineret font */
+    font-weight: 400; /* Normal skriftvægt */
+    margin-bottom: 10px; /* Afstand under navn */
 }
 
 .item-price {
-    font-weight: 600;
-    color: var(--text-color);
-    margin-bottom: 15px;
+    font-weight: 600; /* Fed pris */
+    color: var(--text-color); /* Defineret farve */
+    margin-bottom: 15px; /* Afstand under pris */
 }
 
 .item-quantity {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #4A403D;
+    display: flex; /* Flex layout */
+    align-items: center; /* Vertikal centrering */
+    justify-content: space-between; /* Fordeler plads mellem elementer */
+    color: #4A403D; /* Tekstfarve */
 }
 
 .quantity-btn {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #F2AA87;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fffdf6;
+    width: 30px; /* Knappens bredde */
+    height: 30px; /* Knappens højde */
+    border-radius: 50%; /* Gør knappen rund */
+    background-color: #F2AA87; /* Baggrundsfarve */
+    border: none; /* Fjerner kant */
+    cursor: pointer; /* Gør klikbar */
+    font-size: 1rem; /* Skriftstørrelse */
+    display: flex; /* Flex layout */
+    align-items: center; /* Vertikalt center */
+    justify-content: center; /* Horisontalt center */
+    color: #fffdf6; /* Lys tekstfarve */
 }
 
 .quantity-btn.remove {
-    background-color: transparent;
-    transition: background-color 0.2s ease;
+    background-color: transparent; /* Gennemsigtig baggrund */
+    transition: background-color 0.2s ease; /* Glidende farveskift */
 }
 
 .quantity-value {
-    font-weight: 600;
-    color: #4A403D;
+    font-weight: 600; /* Fed skrift til antal */
+    color: #4A403D; /* Mørk tekst */
 }
 
 .cart-items-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 1rem;
-    padding: 2rem;
-    flex-wrap: wrap;
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Dynamisk kolonneopdeling */
+    gap: 1rem; /* Afstand mellem elementer */
+    padding: 2rem; /* Indvendig afstand */
+    flex-wrap: wrap; /* Tillader linjeskift */
 }
 
 .cart-item {
-
-    display: flex;
-    align-content: stretch;
-    justify-content: space-between;
-    gap: 2rem;
-    max-height: 120px;
-    border-radius: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.18);
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
-    padding: 1rem;
+    display: flex; /* Flex layout */
+    align-content: stretch; /* Strækker indholdet */
+    justify-content: space-between; /* Placerer elementer med mellemrum */
+    gap: 2rem; /* Afstand mellem indhold */
+    max-height: 120px; /* Maks højde */
+    border-radius: 20px; /* Afrundede hjørner */
+    border: 1px solid rgba(0, 0, 0, 0.18); /* Lys kant */
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25); /* Skyggeeffekt */
+    padding: 1rem; /* Indvendig afstand */
 }
 
 .cart-item .cart-item-img img {
-    height: 100%;
-    aspect-ratio: 13/9;
-    object-fit: cover;
-    border-radius: 1rem;
+    height: 100%; /* Fylder hele højden */
+    aspect-ratio: 13/9; /* Billedformat */
+    object-fit: cover; /* Fylder uden at forvrænge */
+    border-radius: 1rem; /* Afrundede hjørner */
 }
 
 .cart-item-details {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
+    display: flex; /* Flex layout */
+    flex-direction: column; /* Vertikal stabling */
+    text-align: right; /* Højrejusteret tekst */
 }
 
 .cart-item-details .cart-item-title {
-    font-size: 16px;
+    font-size: 16px; /* Skriftstørrelse på titel */
 }
 
 .cart-item-details .cart-item-price {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 16px; /* Samme størrelse som titel */
+    font-weight: bold; /* Fed skrift */
 }
 
 .cart-item-details .cart-item-quantity {
-    display: flex;
-    gap: 1rem;
+    display: flex; /* Flex layout */
+    gap: 1rem; /* Afstand mellem knapper og tekst */
 }
 
 .cart-item-details .cart-item-quantity-minus {
-    outline: none;
+    outline: none; /* Fjerner omrids ved klik */
 }
 
 .spacer {
-    flex-grow: 1;
+    flex-grow: 1; /* Fylder resterende plads */
 }
 
-/*Faerdig button*/
+/* Faerdig button */
 .faerdig-button {
-    position: fixed;
-    bottom: 20px;
-    left: 45%;
-    /*what the heck*/
-    background-color: #f2aa87;
-    color: white;
-    padding: 15px 50px;
-    border-radius: 30px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
-    z-index: 1000;
+    position: fixed; /* Fast position i vindue */
+    bottom: 20px; /* Afstand fra bund */
+    left: 45%; /* Placering vandret */
+    background-color: #f2aa87; /* Baggrundsfarve */
+    color: white; /* Hvid tekst */
+    padding: 15px 50px; /* Indvendig afstand */
+    border-radius: 30px; /* Runde hjørner */
+    font-size: 16px; /* Skriftstørrelse */
+    font-weight: bold; /* Fed tekst */
+    text-decoration: none; /* Ingen understregning */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Skyggeeffekt */
+    transition: background-color 0.3s ease; /* Glidende farveskift */
+    z-index: 1000; /* Vis øverst */
 }
 
 .faerdig-button:hover {
-    background-color: #e89d78;
-}
-
-
-/*Kort sektion (Kort underside)*/
-.card-section {
-    padding: 80px 20px;
-    background-color: #fffdf6;
-    text-align: center;
-}
-
-.card-section p {
-    padding-bottom: 50px;
-}
-
-.back-button {
-    text-align: left;
-}
-
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 200px);
-    gap: 20px;
-    justify-content: center;
-    margin: 40px auto;
-}
-
-.card-image {
-    width: 200px;
-    height: 260px;
-    object-fit: cover;
-    border-radius: 8px;
-    border: 2px solid transparent;
-    cursor: pointer;
-    transition: 0.2s;
-
-}
-
-.card-image:hover {
-    transform: scale(1.05);
-}
-
-.card-image.selected {
-    border: 3px solid #f2aa87;
-    box-shadow: 0 0 10px rgba(242, 170, 135, 0.5);
-}
-
-.skip-button {
-    background-color: #fce8dc;
-    color: #4a403d;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    margin-top: 10px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: 0.2s;
-}
-
-.skip-button:hover {
-    background-color: #f2aa87;
-    color: white;
-}
-
-.message-area {
-    margin-top: 50px;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.message-area textarea {
-    width: 100%;
-    height: 120px;
-    padding: 15px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    resize: none;
-    font-family: inherit;
-}
-
-.next-button {
-    display: inline-block;
-    background-color: #f2aa87;
-    color: white;
-    border: none;
-    margin-top: 20px;
-    padding: 12px 30px;
-    border-radius: 30px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.2s;
-    text-decoration: none;
-}
-
-.next-button:hover {
-    background-color: #e89d78;
+    background-color: #e89d78; /* Mørkere ved hover */
 }
 
 
 
 
-/*Betaling sektion (Betalingsunderside)*/
-.payment-section {
-    padding: 60px 20px;
-    background-color: #fffdf6;
-    text-align: center;
+
+/* Kort sektion (Kort underside) */
+.card-section { /* Sektion for kortvalg med padding og baggrundsfarve */
+    padding: 80px 20px; /* Indvendig afstand øverst/nederst og til siderne */
+    background-color: #fffdf6; /* Lys baggrundsfarve */
+    text-align: center; /* Centrerer tekst i sektionen */
 }
 
-.back-button {
-    display: block;
-    margin-bottom: 20px;
-    color: #888;
-    text-align: left;
-    text-decoration: none;
-    font-size: 16px;
+.card-section p { /* Styling af tekstparagraf i kortsektionen */
+    padding-bottom: 50px; /* Afstand under teksten */
 }
 
-.payment-options {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin: 30px 0;
-    flex-wrap: wrap;
+.back-button { /* Placering af tilbage-knap */
+    text-align: left; /* Justerer knappen til venstre */
 }
 
-.payment-option {
-    text-align: center;
-    background: #f5f5ff;
-    padding: 20px;
-    border-radius: 10px;
-    width: 150px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.2s ease;
+/* Responsiv grid */
+.card-grid { /* Container for kortbillederne i et grid layout */
+    display: grid; /* Aktiverer CSS grid */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Automatisk antal kolonner, min. 150px bredde */
+    gap: 20px; /* Afstand mellem kort */
+    justify-content: center; /* Centrerer grid-indholdet */
+    margin: 40px auto; /* Vertikal margin og automatisk horisontal centrering */
+    max-width: 1000px; /* Maksimal bredde på hele grid-containeren */
+    padding: 0 20px; /* Indvendig afstand til siderne */
 }
 
-.payment-option:hover {
-    transform: scale(1.05);
+.card-image { /* Styling af selve kortbilledet */
+    width: 100%; /* Fylder hele kolonnebredden */
+    height: auto; /* Automatisk højde for at bevare forhold */
+    aspect-ratio: 3 / 4; /* Fast forhold mellem bredde og højde */
+    object-fit: cover; /* Billedet tilpasses uden forvrængning */
+    border-radius: 8px; /* Afrundede hjørner */
+    border: 2px solid transparent; /* Usynlig kant (bruges til selektion) */
+    cursor: pointer; /* Markøren ændres til hånd ved hover */
+    transition: transform 0.2s; /* Glat animation ved hover */
 }
 
-.payment-option img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+.card-image:hover { /* Når man holder musen over kortet */
+    transform: scale(1.05); /* Forstør kortet lidt */
 }
 
-.payment-summary {
-    margin: 30px 0;
-    font-size: 16px;
-    color: #333;
+.card-image.selected { /* Når et kort er valgt */
+    border: 3px solid #f2aa87; /* Orange kant omkring valgt kort */
+    box-shadow: 0 0 10px rgba(242, 170, 135, 0.5); /* Glød-effekt */
 }
 
-.payment-button {
-    background-color: #f2aa87;
-    color: white;
-    padding: 14px 40px;
-    font-size: 16px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
+.skip-button { /* Styling af spring-over-knap */
+    background-color: #fce8dc; /* Lys baggrund */
+    color: #4a403d; /* Mørk tekst */
+    border: none; /* Ingen kant */
+    padding: 10px 20px; /* Indvendig afstand */
+    border-radius: 20px; /* Runde kanter */
+    margin-top: 10px; /* Afstand over knappen */
+    cursor: pointer; /* Håndmarkør ved hover */
+    font-size: 14px; /* Tekststørrelse */
+    transition: 0.2s; /* Glidende overgangseffekt */
 }
 
-.payment-button:hover {
-    background-color: #e89d78;
+.skip-button:hover { /* Hover-effekt for spring-knap */
+    background-color: #f2aa87; /* Orange baggrund */
+    color: white; /* Hvid tekst */
 }
+
+.message-area { /* Sektion til tekstbesked */
+    margin-top: 50px; /* Afstand over sektionen */
+    max-width: 500px; /* Maksimal bredde */
+    margin-left: auto; /* Centreret horisontalt */
+    margin-right: auto; /* Centreret horisontalt */
+    padding: 0 20px; /* Indvendig afstand til siderne */
+}
+
+.message-area textarea { /* Tekstfelt til besked */
+    width: 100%; /* Fylder hele containerens bredde */
+    height: 120px; /* Fast højde */
+    padding: 15px; /* Indvendig afstand */
+    border-radius: 10px; /* Afrundede hjørner */
+    border: 1px solid #ccc; /* Lys grå kant */
+    resize: none; /* Brugeren kan ikke ændre størrelse */
+    font-family: inherit; /* Arver skrifttype */
+    font-size: 1rem; /* Standard tekststørrelse */
+}
+
+.next-button { /* Næste-knap styling */
+    display: inline-block; /* Tillader padding og margin */
+    background-color: #f2aa87; /* Orange baggrund */
+    color: white; /* Hvid tekst */
+    border: none; /* Ingen kant */
+    margin-top: 20px; /* Afstand over knappen */
+    padding: 12px 30px; /* Indvendig afstand */
+    border-radius: 30px; /* Meget runde kanter */
+    font-size: 16px; /* Tekststørrelse */
+    cursor: pointer; /* Markør som hånd ved hover */
+    transition: 0.2s; /* Glidende overgang */
+    text-decoration: none; /* Fjerner understregning */
+}
+
+.next-button:hover { /* Hover-effekt på næste-knap */
+    background-color: #e89d78; /* Mørkere orange baggrund */
+}
+
+@media (min-width: 1024px) { /* Større skærme */
+    .card-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 kolonner */
+        max-width: 900px; /* Mindre bredde end normalt */
+    }
+}
+
+@media (max-width: 768px) { /* Tablets og mindre skærme */
+    .card-section {
+        padding: 60px 15px; /* Mindre padding på tablets */
+    }
+
+    .card-section p {
+        padding-bottom: 30px; /* Mindre afstand under paragraf */
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Mindre minimum kolonnebredde */
+    }
+
+    .next-button {
+        width: 100%; /* Knappen fylder hele bredden */
+    }
+}
+
+@media (max-width: 480px) { /* Mobilskærme */
+    .card-grid {
+        grid-template-columns: 1fr; /* Én kolonne på små skærme */
+    }
+
+    .skip-button {
+        width: 100%; /* Knappen fylder hele bredden */
+    }
+
+    .message-area textarea {
+        height: 100px; /* Mindre tekstfelt højde */
+    }
+}
+
+/* Betaling sektion (Betalingsunderside) */
+.payment-section { /* Container for betaling */
+    padding: 60px 20px; /* Indvendig afstand */
+    background-color: #fffdf6; /* Lys baggrund */
+    text-align: center; /* Centreret indhold */
+}
+
+.back-button { /* Tilbageknap styling */
+    display: block; /* Egen linje */
+    margin-bottom: 20px; /* Afstand under knappen */
+    color: #888; /* Grå tekst */
+    text-align: left; /* Venstrejusteret */
+    text-decoration: none; /* Ingen understregning */
+    font-size: 16px; /* Tekststørrelse */
+}
+
+.payment-options { /* Container til valg af betalingsmetoder */
+    display: flex; /* Flex layout */
+    justify-content: center; /* Centrerer valgene */
+    gap: 40px; /* Afstand mellem valgene */
+    margin: 30px 0; /* Vertikal afstand */
+    flex-wrap: wrap; /* Gør det responsivt */
+}
+
+.payment-option { /* Hver betalingsmetode boks */
+    text-align: center; /* Centrerer indhold */
+    background: #f5f5ff; /* Lys lilla baggrund */
+    padding: 20px; /* Indvendig afstand */
+    border-radius: 10px; /* Runde hjørner */
+    width: 150px; /* Fast bredde */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Skyggeeffekt */
+    cursor: pointer; /* Markør som hånd */
+    transition: transform 0.2s ease; /* Glidende animation */
+}
+
+.payment-option:hover { /* Hover-effekt på betalingsvalg */
+    transform: scale(1.05); /* Let forstørrelse */
+}
+
+.payment-option img { /* Billeder i betalingsvalg */
+    width: 100%; /* Fylder hele boksens bredde */
+    height: auto; /* Automatisk højde */
+    margin-bottom: 10px; /* Afstand under billedet */
+}
+
+.payment-summary { /* Opsummering af betaling */
+    margin: 30px 0; /* Vertikal afstand */
+    font-size: 16px; /* Tekststørrelse */
+    color: #333; /* Mørk tekstfarve */
+}
+
+.payment-button { /* Knappen til at bekræfte betaling */
+    background-color: #f2aa87; /* Orange baggrund */
+    color: white; /* Hvid tekst */
+    padding: 14px 40px; /* Indvendig afstand */
+    font-size: 16px; /* Tekststørrelse */
+    border: none; /* Ingen kant */
+    border-radius: 30px; /* Runde hjørner */
+    cursor: pointer; /* Håndmarkør */
+    transition: background-color 0.2s ease; /* Hover transition */
+}
+
+.payment-button:hover { /* Hover-effekt på knappen */
+    background-color: #e89d78; /* Mørkere orange */
+}
+
 
 
 
 
 /* Responsive Styles */
-@media (max-width: 1201px) {
-    .nav__container--links {
-        display: none;
+@media (max-width: 1201px) { /* Gælder for skærme med maks. bredde på 1201px */
+    .nav__container--links { 
+        display: none; /* Skjuler navigationslinks i mobilvisning */
     }
 
-
     .video-overlay h1 {
-        font-size: 40px;
+        font-size: 40px; /* Mindsker fontstørrelsen på video-overlay overskrift */
     }
 
     .gift-baskets,
     .selection-grid,
     .inspiration-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* Viser 2 kolonner i grid-layoutet */
     }
 
     .basket {
-        width: 48%;
-        margin-bottom: 20px;
+        width: 48%; /* Gør hver kurv til cirka halvdelen af containerens bredde */
+        margin-bottom: 20px; /* Tilføjer afstand under hver kurv */
     }
 
     .history-content {
-        flex-direction: column;
+        flex-direction: column; /* Ændrer layoutet fra række til kolonne */
     }
 
     .history-part {
-        width: 100%;
-        margin-bottom: 20px;
+        width: 100%; /* Gør hvert historik-element fuld bredde */
+        margin-bottom: 20px; /* Afstand under hvert historik-element */
     }
 
     .items-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr); /* Viser 3 kolonner i gitteret */
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* Gælder for skærme med maks. bredde på 768px (typisk tablets) */
     .nav__container {
-        padding: 0 20px;
+        padding: 0 20px; /* Reducerer den vandrette padding i navigationscontainer */
     }
 
     .nav__container--logo {
-        margin-right: -80px;
+        margin-right: -80px; /* Flytter logoet til venstre */
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) { /* Gælder for skærme med maks. bredde på 480px (mobiler) */
     .video-overlay h1 {
-        font-size: 40px;
+        font-size: 40px; /* Beholder mindre fontstørrelse for overskrift */
     }
 
     .gift-baskets,
     .selection-grid,
     .inspiration-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Viser én kolonne i grid-layoutet */
     }
 
     .basket {
-        width: 100%;
+        width: 100%; /* Kurve fylder hele bredden */
     }
 
     .items-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Kun én kolonne i varer-gitteret */
     }
 
     .steps {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Ændrer layout af trin til kolonne */
+        align-items: center; /* Centrerer trinene horisontalt */
     }
 
     .step-box {
-        width: 100%;
+        width: 100%; /* Hvert trin fylder hele bredden */
     }
 
     .arrow {
-        transform: rotate(90deg);
+        transform: rotate(90deg); /* Roterer pilen 90 grader lodret */
     }
 }

@@ -1,146 +1,139 @@
-<!--Kode taget fra chatgpt og tilpasset efterfølgende-->
-
+<!-- Definerer dokumenttypen som HTML5 -->
 <!DOCTYPE html>
-<html lang="da">
+<html lang="da"> <!-- Starter HTML-dokumentet og angiver sproget som dansk -->
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Betaling - Liwi</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="js/burger-menu.js"></script>
-  <!-- Font Awesome for icons -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script src="js/video-toggles.js"></script>
+  <meta charset="UTF-8"> <!-- Angiver tegnsættet som UTF-8 for at understøtte danske tegn -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sikrer mobilvenligt layout -->
+  <title>Betaling - Liwi</title> <!-- Titel der vises i browserens faneblad -->
+  <link rel="stylesheet" href="styles.css"> <!-- Link til ekstern CSS-fil -->
+  <script src="js/burger-menu.js"></script> <!-- Script til burger-menu funktionalitet -->
+  
+  <!-- Font Awesome til brug af ikoner -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script src="js/video-toggles.js"></script> <!-- Script til funktioner med video (hvis brugt) -->
 </head>
 
-
-
-<!--Navigationsbar-->
+<!-- Navigationsbar -->
 <body>
-    <nav class="navbar">
-        <div class="nav__container">
-          <div class="nav__container--left">
-            <div class="nav__container--logo">
-              <a href="/">
-                <img src="img/logo_from_Convertio.svg" alt="LIWIRA Logo">
-              </a>
-            </div>
-            <ul class="nav__container--links">
-              <li><a href="#">Produkter</a></li>
-              <li><a href="gift-basket.html">Gavekurve</a></li>
-              <li><a href="#">Nyheder</a></li>
-              <li><a href="#">Inspiration</a></li>
-              <li><a href="#">Kontakt</a></li>
-            </ul>
-          </div>
-          <div class="nav-right">
-            <div class="search-bar">
-              <input type="text" placeholder="Søg...">
-              <a href="#" class="search-icon" aria-label="Søg">
-              <i class="fas fa-search"></i></a>
-            </div> 
-             <a href="gift-basket.html" class="shopping-bag" aria-label="Kurv">
-              <i class="fas fa-shopping-basket"></i></a>
-          </div>
+  <nav class="navbar"> <!-- Wrapper for navigationen -->
+    <div class="nav__container"> <!-- Container for nav-indhold -->
+      
+      <div class="nav__container--left"> <!-- Venstre side af navbar -->
+        <div class="nav__container--logo"> <!-- Logo container -->
+          <a href="/"> <!-- Link til forsiden -->
+            <img src="img/logo_from_Convertio.svg" alt="LIWIRA Logo"> <!-- Logo-billede -->
+          </a>
         </div>
-    
-
-
-        <!-- Mobile Navigation -->
-        <div class="mobile-nav">
-          <div class="burger-icon" id="burger-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          
-          <div class="logo-mobil-nav">
-            <a href="/">
-            <img src="img/logo_from_Convertio.svg" alt="LIWIRA Logo">
-            </a>
-          </div>
-          
-          <div class="mobile-right">
-            <a href="#" class="search-icon" aria-label="Søg">
-              <i class="fas fa-search"></i></a>
-            <a href="gift-basket.html" class="shopping-bag" aria-label="Kurv">
-              <i class="fas fa-shopping-basket"></i></a>
-          </div>
+        <ul class="nav__container--links"> <!-- Menu links -->
+          <li><a href="#">Produkter</a></li> <!-- Link til produkter -->
+          <li><a href="gift-basket.html">Gavekurve</a></li> <!-- Link til gavekurve -->
+          <li><a href="#">Nyheder</a></li> <!-- Link til nyheder -->
+          <li><a href="#">Inspiration</a></li> <!-- Link til inspiration -->
+          <li><a href="#">Kontakt</a></li> <!-- Link til kontakt -->
+        </ul>
+      </div>
+      
+      <div class="nav-right"> <!-- Højre side af navbar -->
+        <div class="search-bar"> <!-- Søgefelt -->
+          <input type="text" placeholder="Søg..."> <!-- Inputfelt til søgning -->
+          <a href="#" class="search-icon" aria-label="Søg"> <!-- Søg ikon -->
+            <i class="fas fa-search"></i>
+          </a>
         </div>
-    
+        <a href="gift-basket.html" class="shopping-bag" aria-label="Kurv"> <!-- Ikon for kurv -->
+          <i class="fas fa-shopping-basket"></i>
+        </a>
+      </div>
+    </div>
 
+    <!-- Mobil navigation -->
+    <div class="mobile-nav"> <!-- Wrapper for mobilnav -->
+      <div class="burger-icon" id="burger-icon"> <!-- Burger menu ikon -->
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <div class="logo-mobil-nav"> <!-- Mobil logo -->
+        <a href="/">
+          <img src="img/logo_from_Convertio.svg" alt="LIWIRA Logo"> <!-- Logo til mobil -->
+        </a>
+      </div>
+      
+      <div class="mobile-right"> <!-- Højre side af mobilnav -->
+        <a href="#" class="search-icon" aria-label="Søg"> <!-- Søg ikon -->
+          <i class="fas fa-search"></i>
+        </a>
+        <a href="gift-basket.html" class="shopping-bag" aria-label="Kurv"> <!-- Kurv ikon -->
+          <i class="fas fa-shopping-basket"></i>
+        </a>
+      </div>
+    </div>
 
-        <!-- Mobile Menu -->
-        <div class="mobile-menu" id="mobile-menu">
-          <div class="menu-header">
-          <div class="logo">
-              <a href="/" class="logo-text">LIWIRA</a>
-           </div>
-            <button class="close-menu" id="close-menu" aria-label="Close menu">✕</button>
-          </div>
-    
-        <div class="mobile-menu-content"></div>
-          <ul>
-          <li><a href="index.html">Produkter</a></li>
-          <li><a href="gift-basket.html">Gavekurve</a></li>
-          <li><a href="#Nyheder">Nyheder</a></li>
-          <li><a href="#inspiration">Inspiration</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
-          </ul>
+    <!-- Mobil menu indhold -->
+    <div class="mobile-menu" id="mobile-menu"> <!-- Dropdown menu til mobil -->
+      <div class="menu-header"> <!-- Toppen af menuen -->
+        <div class="logo">
+          <a href="/" class="logo-text">LIWIRA</a> <!-- Tekst-logo -->
         </div>
-      </nav>
+        <button class="close-menu" id="close-menu" aria-label="Close menu">✕</button> <!-- Lukke-knap -->
+      </div>
 
+      <div class="mobile-menu-content"></div> <!-- Plads til ekstra mobil-menu indhold -->
+      <ul> <!-- Menu-liste -->
+        <li><a href="index.html">Produkter</a></li>
+        <li><a href="gift-basket.html">Gavekurve</a></li>
+        <li><a href="#Nyheder">Nyheder</a></li>
+        <li><a href="#inspiration">Inspiration</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
 
+  <!-- Sektion for betalingsvalg -->
+  <section class="payment-section"> <!-- Wrapper til betaling -->
+    <div class="container text-center"> <!-- Centeret container -->
+      <a href="gift-card.html" class="back-button">← Tilbage</a> <!-- Tilbage-knap -->
+      <h1>Hvordan vil du betale?</h1> <!-- Overskrift -->
 
-<!--Betaling samt betalingsmuligheder-->
-  <section class="payment-section">
-    <div class="container text-center">
-      <a href="gift-card.html" class="back-button">← Tilbage</a>
-      <h1>Hvordan vil du betale?</h1>
-
-      <div class="payment-options">
-        <div class="payment-option">
-          <img src="img/mobilepay.webp" alt="MobilePay">
-          <p><strong>MobilePay</strong></p>
+      <div class="payment-options"> <!-- Container for betalingsmetoder -->
+        <div class="payment-option"> <!-- Betalingsmetode 1 -->
+          <img src="img/mobilepay.webp" alt="MobilePay"> <!-- MobilePay billede -->
+          <p><strong>MobilePay</strong></p> <!-- Tekst til metode -->
         </div>
-        <div class="payment-option">
-          <img src="img/kort.webp" alt="Kortbetaling">
-          <p><strong>Kort</strong></p>
+        <div class="payment-option"> <!-- Betalingsmetode 2 -->
+          <img src="img/kort.webp" alt="Kortbetaling"> <!-- Kort billede -->
+          <p><strong>Kort</strong></p> <!-- Tekst til metode -->
         </div>
       </div>
 
-      <div class="payment-summary">
-        <p>Beløb til betaling: <strong>375 kr</strong></p>
-        <p>Vare: <strong>350 kr</strong></p>
-        <p>Fragt: <strong>25 kr</strong></p>
+      <div class="payment-summary"> <!-- Oversigt over pris -->
+        <p>Beløb til betaling: <strong>375 kr</strong></p> <!-- Total pris -->
+        <p>Vare: <strong>350 kr</strong></p> <!-- Varepris -->
+        <p>Fragt: <strong>25 kr</strong></p> <!-- Forsendelsespris -->
       </div>
 
-      <button class="payment-button">Betal</button>
+      <button class="payment-button">Betal</button> <!-- Knap til betaling -->
     </div>
   </section>
 
-
-
   <!-- Footer sektion -->
-  <footer class="footer">
-    <div class="footer-column">
+  <footer class="footer"> <!-- Start på footer -->
+    <div class="footer-column"> <!-- Første kolonne -->
       <h3>Kontakt</h3>
-      <p>Mail: <a href="mailto:kontakt@dinpejs.dk">kontakt@dinpejs.dk</a></p>
-      <p>Tlf.: <a href="tel:+4524267071">24267071</a></p>
+      <p>Mail: <a href="mailto:kontakt@dinpejs.dk">kontakt@dinpejs.dk</a></p> <!-- Kontaktmail -->
+      <p>Tlf.: <a href="tel:+4524267071">24267071</a></p> <!-- Telefonnummer -->
 
-      <div class="social-icons">
-        <a href="#" aria-label="Facebook">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
+      <div class="social-icons"> <!-- Sociale medier -->
+        <a href="#" aria-label="Facebook"> <!-- Facebook ikon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-width="2" d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2z" />
           </svg>
         </a>
-        <a href="#" aria-label="Instagram">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
+        <a href="#" aria-label="Instagram"> <!-- Instagram ikon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-width="2"
               d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6-1.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
           </svg>
@@ -148,12 +141,12 @@
       </div>
     </div>
 
-    <div class="footer-column">
+    <div class="footer-column"> <!-- Anden kolonne -->
       <h3>Adresse</h3>
-      <p>Jernbanegade 16, 5550 Langeskov</p>
+      <p>Jernbanegade 16, 5550 Langeskov</p> <!-- Adresse -->
     </div>
 
-    <div class="footer-column">
+    <div class="footer-column"> <!-- Tredje kolonne -->
       <h3>Åbningstider</h3>
       <p>Mandag – fredag 11:00 – 17:00</p>
       <p>Lørdag 10:00 – 12:00 samt efter aftale</p>
@@ -162,8 +155,6 @@
   </footer>
 
 
-<!--Link til Javascript-->
-  <script src="Js/script.js"></script>
 </body>
 
 </html>

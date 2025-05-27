@@ -1,83 +1,87 @@
-<!DOCTYPE html>
-<html lang="da">
+<!DOCTYPE html> <!-- Deklarerer dokumenttypen som HTML5 -->
+<html lang="da"> <!-- Starter HTML-dokumentet og sætter sproget til dansk -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Byg din egen gavekurv - Liwi</title>
+<head> <!-- Start på metadata-sektionen for dokumentet -->
+  <meta charset="UTF-8"> <!-- Sætter tegnkodningen til UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Gør siden responsiv på mobile enheder -->
+  <title>Byg din egen gavekurv - Liwi</title> <!-- Titel, som vises i browserfanen -->
+  
+  <!-- Importerer skrifttyper fra Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="js/gift-basket.js" defer></script>
-  <script src="js/burger-menu.js"></script>
-  <!-- Font Awesome for icons -->
+
+  <link rel="stylesheet" href="styles.css"> <!-- Link til ekstern CSS-fil -->
+  <script src="js/gift-basket.js" defer></script> <!-- Indlæser JS-fil, som styrer gavekurven -->
+  <script src="js/burger-menu.js"></script> <!-- Indlæser JS-fil til burger-menu -->
+
+  <!-- Importerer Font Awesome ikoner -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body>
-  <nav class="navbar">
-    <div class="nav__container">
-      <div class="nav__container--left">
-        <div class="nav__container--logo">
-          <a href="/">
-            <img src="img/logo_from_Convertio.svg" alt="LIWIRA Logo">
+<body> <!-- Start på indholdet af siden -->
+
+  <nav class="navbar"> <!-- Navigationsmenu -->
+    <div class="nav__container"> <!-- Container til navigation -->
+      <div class="nav__container--left"> <!-- Venstre side af navbaren -->
+        <div class="nav__container--logo"> <!-- Logo container -->
+          <a href="/"> <!-- Link til forsiden -->
+            <img src="img/logo_from_Convertio.svg" alt="LIWIRA Logo"> <!-- Logo billede -->
           </a>
         </div>
-        <ul class="nav__container--links">
-          <li><a href="index.html">Produkter</a></li>
-          <li><a href="gift-basket.html">Gavekurve</a></li>
-          <li><a href="#Nyheder">Nyheder</a></li>
-          <li><a href="#Inspiration">Inspiration</a></li>
-          <li><a href="#Kontakt">Kontakt</a></li>
+        <ul class="nav__container--links"> <!-- Menu links -->
+          <li><a href="index.html">Produkter</a></li> <!-- Link til Produkter -->
+          <li><a href="gift-basket.html">Gavekurve</a></li> <!-- Link til Gavekurve -->
+          <li><a href="#Nyheder">Nyheder</a></li> <!-- Link til Nyheder -->
+          <li><a href="#Inspiration">Inspiration</a></li> <!-- Link til Inspiration -->
+          <li><a href="#Kontakt">Kontakt</a></li> <!-- Link til Kontakt -->
         </ul>
       </div>
-      <div class="nav-right">
-        <div class="search-bar">
-          <input type="text" placeholder="Søg...">
-          <!-- new icons-->
-          <a href="#" class="search-icon" aria-label="Søg">
-            <i class="fas fa-search"></i></a>
+
+      <div class="nav-right"> <!-- Højre side af navbaren -->
+        <div class="search-bar"> <!-- Søgbar container -->
+          <input type="text" placeholder="Søg..."> <!-- Søg inputfelt -->
+          <a href="#" class="search-icon" aria-label="Søg"> <!-- Søg ikon -->
+            <i class="fas fa-search"></i></a> <!-- Font Awesome søgeikon -->
         </div>
-        <!-- new icons-->
-        <a href="gift-basket.html" class="shopping-bag" aria-label="Kurv">
-          <i class="fas fa-shopping-basket"></i></a>
+        <a href="gift-basket.html" class="shopping-bag" aria-label="Kurv"> <!-- Indkøbskurv ikon -->
+          <i class="fas fa-shopping-basket"></i></a> <!-- Font Awesome kurv -->
       </div>
     </div>
 
     <!-- Mobile Navigation -->
-    <div class="mobile-nav">
-      <div class="burger-icon" id="burger-icon">
-        <span></span>
-        <span></span>
-        <span></span>
+    <div class="mobile-nav"> <!-- Mobil navigation wrapper -->
+      <div class="burger-icon" id="burger-icon"> <!-- Ikon til at åbne mobilmenu -->
+        <span></span> <!-- Streg 1 -->
+        <span></span> <!-- Streg 2 -->
+        <span></span> <!-- Streg 3 -->
       </div>
 
-      <div class="logo-mobil-nav">
+      <div class="logo-mobil-nav"> <!-- Logo i mobil version -->
         <a href="/">
-          <img src="img/logo_from_Convertio.svg" alt="LIWIRA Logo">
+          <img src="img/logo_from_Convertio.svg" alt="LIWIRA Logo"> <!-- Mobil logo -->
         </a>
       </div>
 
-      <div class="mobile-right">
-        <a href="#" class="search-icon" aria-label="Søg">
+      <div class="mobile-right"> <!-- Mobil søg/kurv ikoner -->
+        <a href="#" class="search-icon" aria-label="Søg"> <!-- Søg ikon -->
           <i class="fas fa-search"></i></a>
-        <a href="gift-basket.html" class="shopping-bag" aria-label="Kurv">
+        <a href="gift-basket.html" class="shopping-bag" aria-label="Kurv"> <!-- Kurv ikon -->
           <i class="fas fa-shopping-basket"></i></a>
       </div>
     </div>
 
     <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobile-menu">
-      <div class="menu-header">
+    <div class="mobile-menu" id="mobile-menu"> <!-- Mobilmenu dropdown -->
+      <div class="menu-header"> <!-- Header med luk-knap -->
         <div class="logo">
-          <a href="/" class="logo-text">LIWIRA</a>
+          <a href="/" class="logo-text">LIWIRA</a> <!-- Tekstbaseret logo -->
         </div>
-        <button class="close-menu" id="close-menu" aria-label="Close menu">✕</button>
+        <button class="close-menu" id="close-menu" aria-label="Close menu">✕</button> <!-- Luk-knap -->
       </div>
 
-      <div class="mobile-menu-content"></div>
-      <ul>
+      <div class="mobile-menu-content"></div> <!-- Tom container til evt. dynamisk indhold -->
+      <ul> <!-- Mobilmenu links -->
         <li><a href="index.html">Produkter</a></li>
         <li><a href="gift-basket.html">Gavekurve</a></li>
         <li><a href="#">Nyheder</a></li>
@@ -88,64 +92,66 @@
   </nav>
 
   <!-- Gift Basket Builder -->
-  <section class="basket-builder">
-    <div class="container">
-      <div class="back-button-container">
-        <a href="index.html" class="back-button">
+  <section class="basket-builder"> <!-- Sektion til at bygge gavekurven -->
+    <div class="container"> <!-- Wrapper container -->
+      <div class="back-button-container"> <!-- Tilbage-knap container -->
+        <a href="index.html" class="back-button"> <!-- Link tilbage til forsiden -->
           <span class="back-arrow">←</span> Tilbage til forsiden
         </a>
       </div>
-      <h1>Byg din egen gavekurv</h1>
-      <div class="basket-container">
-        <div class="basket-image">
+      <h1>Byg din egen gavekurv</h1> <!-- Overskrift -->
+      <div class="basket-container"> <!-- Gavekurv container -->
+        <div class="basket-image"> <!-- Billede af gavekurv -->
           <img src="img/gavekurv1.webp" alt="Gavekurv">
         </div>
-        <div class="basket-details">
-          <h2>Gavekurv, 1 stk.</h2>
-          <p class="basket-price">Samlet pris: 0 kr.</p>
+        <div class="basket-details"> <!-- Detaljer om kurven -->
+          <h2>Gavekurv, 1 stk.</h2> <!-- Titel -->
+          <p class="basket-price">Samlet pris: 0 kr.</p> <!-- Pris (opdateres i JS) -->
         </div>
       </div>
-      <div id="cartItemsContainer" class="cart-items-list">
-        <div class="cart-item" id="cartItemTemplate">
-          <div class="cart-item-img">
+
+      <div id="cartItemsContainer" class="cart-items-list"> <!-- Container til valgte varer -->
+        <div class="cart-item" id="cartItemTemplate"> <!-- Skabelon for en vare i kurven -->
+          <div class="cart-item-img"> <!-- Varebillede -->
             <img src="https://picsum.photos/200" alt="">
           </div>
-          <div class="cart-item-details">
-            <div class="cart-item-title">Some title</div>
-            <div class="cart-item-price">Some price</div>
-            <div class="spacer"></div>
-            <div class="cart-item-quantity">
-              <button class="quantity-btn minus">-</button>
-              <div class=" cart-item-quantity value"></div>
-              <button class="quantity-btn plus">+</button>
-              <div class="vertical-divider"></div>
-              <div class="quantity-btn remove">🗑</div>
-              <div class="cart-item-quantity value-label">1 stk</div>
+          <div class="cart-item-details"> <!-- Varedetaljer -->
+            <div class="cart-item-title">Some title</div> <!-- Varenavn -->
+            <div class="cart-item-price">Some price</div> <!-- Pris -->
+            <div class="spacer"></div> <!-- Mellemrum/afstand -->
+            <div class="cart-item-quantity"> <!-- Antal og knapper -->
+              <button class="quantity-btn minus">-</button> <!-- Minus-knap -->
+              <div class=" cart-item-quantity value"></div> <!-- Værdi (antal) -->
+              <button class="quantity-btn plus">+</button> <!-- Plus-knap -->
+              <div class="vertical-divider"></div> <!-- Lodret skillelinje -->
+              <div class="quantity-btn remove">🗑</div> <!-- Fjern-knap -->
+              <div class="cart-item-quantity value-label">1 stk</div> <!-- Visning af antal -->
             </div>
           </div>
         </div>
       </div>
-      <div class="add-items">
+
+      <div class="add-items"> <!-- Sektion til at tilføje varer -->
         <h3>Tilføj vare til din kurv</h3>
-        <button class="add-button" onclick="window.location.href='add-items.html'">+</button>
+        <button class="add-button" onclick="window.location.href='add-items.html'">+</button> <!-- Gå til tilføj vare side -->
       </div>
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="footer-column">
+  <footer class="footer"> <!-- Sidefod -->
+    <div class="footer-column"> <!-- Kolonne med kontaktinfo -->
       <h3>Kontakt</h3>
-      <p>Mail: <a href="mailto:kontakt@dinpejs.dk">kontakt@dinpejs.dk</a></p>
-      <p>Tlf.: <a href="tel:+4524267071">24267071</a></p>
+      <p>Mail: <a href="mailto:kontakt@dinpejs.dk">kontakt@dinpejs.dk</a></p> <!-- E-mail -->
+      <p>Tlf.: <a href="tel:+4524267071">24267071</a></p> <!-- Telefonnummer -->
 
-      <div class="social-icons">
-        <a href="#" aria-label="Facebook">
+      <div class="social-icons"> <!-- Sociale medier ikoner -->
+        <a href="#" aria-label="Facebook"> <!-- Facebook ikon -->
           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24"
             stroke="currentColor">
             <path stroke-width="2" d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2z" />
           </svg>
         </a>
-        <a href="#" aria-label="Instagram">
+        <a href="#" aria-label="Instagram"> <!-- Instagram ikon -->
           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24"
             stroke="currentColor">
             <path stroke-width="2"
@@ -155,12 +161,12 @@
       </div>
     </div>
 
-    <div class="footer-column">
+    <div class="footer-column"> <!-- Adressekolonne -->
       <h3>Adresse</h3>
       <p>Jernbanegade 16, 5550 Langeskov</p>
     </div>
 
-    <div class="footer-column">
+    <div class="footer-column"> <!-- Åbningstider -->
       <h3>Åbningstider</h3>
       <p>Mandag – fredag 11:00 – 17:00</p>
       <p>Lørdag 10:00 – 12:00 samt efter aftale</p>
@@ -168,7 +174,7 @@
     </div>
   </footer>
 
-  <a href="gift-card.html" class="checkout-button">Gå til betaling</a>
+  <a href="gift-card.html" class="checkout-button">Gå til betaling</a> <!-- Knap til næste trin (betaling) -->
 
 </body>
 
