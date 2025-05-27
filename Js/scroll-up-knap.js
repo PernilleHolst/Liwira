@@ -1,3 +1,5 @@
+//Hjælp af chatgpt til at tilpasse kode.
+
 document.addEventListener("DOMContentLoaded", function () {
     // === DOM Elementer ===
     let scrollBtn = document.getElementById("scrollUpBtn");
