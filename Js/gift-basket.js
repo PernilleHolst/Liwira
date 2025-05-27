@@ -3,84 +3,84 @@ const itemsData = [
         id: 1,
         name: "Rødvin fra Toscana",
         price: 199,
-        image: "https://picsum.photos/200",
+        image: "img/rødvin.webp",
         category: "wine"
     },
     {
         id: 2,
         name: "Håndlavet IPA",
         price: 59,
-        image: "https://picsum.photos/200",
+        image: "img/rødvin.webp",
         category: "beer"
     },
     {
         id: 3,
         name: "Single Malt Whisky",
         price: 399,
-        image: "https://picsum.photos/200",
+        image: "img/rødvin.webp",
         category: "spirits"
     },
     {
         id: 4,
         name: "Mørk chokolade med havsalt",
         price: 89,
-        image: "https://picsum.photos/200",
+        image: "img/rødvin.webp",
         category: "chocolate"
     },
     {
         id: 5,
         name: "Hvidvin fra Loire",
         price: 179,
-        image: "https://picsum.photos/200",
+        image: "img/rødvin.webp",
         category: "wine"
     },
     {
         id: 6,
         name: "Kraftig Porter",
         price: 65,
-        image: "https://picsum.photos/200",
+        image: "img/rødvin.webp",
         category: "beer"
     },
     {
         id: 7,
         name: "Premium Gin",
         price: 299,
-        image: "https://picsum.photos/200",
+        image: "img/rødvin.webp",
         category: "spirits"
     },
     {
         id: 8,
         name: "Mælkechokolade med nødder",
         price: 79,
-        image: "https://picsum.photos/200",
+        image: "img/rødvin.webp",
         category: "chocolate"
     },
     {
         id: 9,
         name: "Rosévin fra Provence",
         price: 159,
-        image: "https://picsum.photos/200",
+        image: "img/rødvin.webp",
         category: "wine"
     },
     {
         id: 10,
         name: "Håndlavet glas",
         price: 149,
-        image: "https://picsum.photos/200",
+        image: "img/rødvin.webp",
         category: "other"
     },
     {
         id: 11,
         name: "Håndskrevet kort",
         price: 29,
-        image: "https://picsum.photos/200",
+        image: "img/rødvin.webp",
         category: "other"
     },
     {
         id: 12,
         name: "Hjemmelavet marmelade",
         price: 69,
-        image: "https://picsum.photos/200",
+        image: "img/rødvin.webp",
         category: "other"
     }
 ];
@@ -125,6 +125,9 @@ function loadItemsIntoItemsContainer() {
         const quantityValue = itemCard.querySelector(".quantity-value")
         quantityValue.innerText = cart[item.id] ?? 0
 
+        const itemImg = itemCard.querySelector('.item-image img')
+        itemImg.src = item.image
+
         const minusBtn = itemCard.querySelector('.quantity-btn.minus')
         minusBtn.addEventListener("click", () => {
             const newQuantity = changeQuantity(item.id, -1)
@@ -156,7 +159,7 @@ function loadCartItemsIntoCartItemsContainer() {
         const cartItemCard = cartItemTemplate.cloneNode(true)
 
         const cartItemImg = cartItemCard.querySelector(".cart-item-img img")
-        cartItemImg.src = "https://picsum.photos/200?v=" + itemId
+        cartItemImg.src = item.image
 
         const cartItemTitle = cartItemCard.querySelector(".cart-item-title")
         cartItemTitle.innerText = item.name

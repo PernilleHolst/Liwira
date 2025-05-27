@@ -2,66 +2,63 @@
 <html lang="da">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Byg din egen gavekurv - Liwi</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="js/gift-basket.js" defer></script>
-   <script src="js/burger-menu.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Byg din egen gavekurv - Liwi</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="js/gift-basket.js" defer></script>
+  <script src="js/burger-menu.js"></script>
   <!-- Font Awesome for icons -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script src="js/video-toggles.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="nav__container">
-          <div class="nav__container--left">
-            <div class="nav__container--logo">
-              <a href="/">
-                <img src="img/logo_from_Convertio.svg" alt="LIWIRA Logo">
-              </a>
-            </div>
-            <ul class="nav__container--links">
-              <li><a href="index.html">Produkter</a></li>
-              <li><a href="gift-basket.html">Gavekurve</a></li>
-              <li><a href="#Nyheder">Nyheder</a></li>
-              <li><a href="#Inspiration">Inspiration</a></li>
-              <li><a href="#Kontakt">Kontakt</a></li>
-            </ul>
-          </div>
-          <div class="nav-right">
-            <div class="search-bar">
-              <input type="text" placeholder="Søg...">
-              <!-- new icons-->
-              <a href="#" class="search-icon" aria-label="Søg">
-              <i class="fas fa-search"></i></a>
-            </div> 
-            <!-- new icons-->
-             <a href="gift-basket.html" class="shopping-bag" aria-label="Kurv">
-              <i class="fas fa-shopping-basket"></i></a>
-          </div>
+  <nav class="navbar">
+    <div class="nav__container">
+      <div class="nav__container--left">
+        <div class="nav__container--logo">
+          <a href="/">
+            <img src="img/logo_from_Convertio.svg" alt="LIWIRA Logo">
+          </a>
         </div>
-    
-         <!-- Mobile Navigation -->
+        <ul class="nav__container--links">
+          <li><a href="index.html">Produkter</a></li>
+          <li><a href="gift-basket.html">Gavekurve</a></li>
+          <li><a href="#Nyheder">Nyheder</a></li>
+          <li><a href="#Inspiration">Inspiration</a></li>
+          <li><a href="#Kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-bar">
+          <input type="text" placeholder="Søg...">
+          <!-- new icons-->
+          <a href="#" class="search-icon" aria-label="Søg">
+            <i class="fas fa-search"></i></a>
+        </div>
+        <!-- new icons-->
+        <a href="gift-basket.html" class="shopping-bag" aria-label="Kurv">
+          <i class="fas fa-shopping-basket"></i></a>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
     <div class="mobile-nav">
       <div class="burger-icon" id="burger-icon">
         <span></span>
         <span></span>
         <span></span>
       </div>
-      
+
       <div class="logo-mobil-nav">
         <a href="/">
-        <img src="img/logo_from_Convertio.svg" alt="LIWIRA Logo">
+          <img src="img/logo_from_Convertio.svg" alt="LIWIRA Logo">
         </a>
       </div>
-      
+
       <div class="mobile-right">
         <a href="#" class="search-icon" aria-label="Søg">
           <i class="fas fa-search"></i></a>
@@ -73,13 +70,13 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobile-menu">
       <div class="menu-header">
-      <div class="logo">
+        <div class="logo">
           <a href="/" class="logo-text">LIWIRA</a>
-       </div>
+        </div>
         <button class="close-menu" id="close-menu" aria-label="Close menu">✕</button>
       </div>
 
-    <div class="mobile-menu-content"></div>
+      <div class="mobile-menu-content"></div>
       <ul>
         <li><a href="index.html">Produkter</a></li>
         <li><a href="gift-basket.html">Gavekurve</a></li>
@@ -88,90 +85,90 @@
         <li><a href="#">Kontakt</a></li>
       </ul>
     </div>
-      </nav>
+  </nav>
 
-    <!-- Gift Basket Builder -->
-    <section class="basket-builder">
-        <div class="container">
-            <div class="back-button-container">
-                <a href="index.html" class="back-button">
-                    <span class="back-arrow">←</span> Tilbage til forsiden
-                </a>
-            </div>
-            <h1>Byg din egen gavekurv</h1>
-            <div class="basket-container">
-                <div class="basket-image">
-                    <img src="img/gavekurv1.webp" alt="Gavekurv">
-                </div>
-                <div class="basket-details">
-                    <h2>Gavekurv, 1 stk.</h2>
-                    <p class="basket-price">Samlet pris: 0 kr.</p>
-                </div>
-            </div>
-            <div id="cartItemsContainer" class="cart-items-list">
-                <div class="cart-item" id="cartItemTemplate">
-                    <div class="cart-item-img">
-                        <img src="https://picsum.photos/200" alt="">
-                    </div>
-                    <div class="cart-item-details">
-                        <div class="cart-item-title">Some title</div>
-                        <div class="cart-item-price">Some price</div>
-                        <div class="spacer"></div>
-                        <div class="cart-item-quantity">
-                            <button class="quantity-btn minus">-</button>
-                            <button class="quantity-btn plus">+</button>
-                            <div class="vertical-divider"></div>
-                            <div class="quantity-btn remove">🗑</div>
-                            <div class="cart-item-quantity value-label">1 stk</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="add-items">
-                <h3>Tilføj vare til din kurv</h3>
-                <button class="add-button" onclick="window.location.href='add-items.html'">+</button>
-            </div>
+  <!-- Gift Basket Builder -->
+  <section class="basket-builder">
+    <div class="container">
+      <div class="back-button-container">
+        <a href="index.html" class="back-button">
+          <span class="back-arrow">←</span> Tilbage til forsiden
+        </a>
+      </div>
+      <h1>Byg din egen gavekurv</h1>
+      <div class="basket-container">
+        <div class="basket-image">
+          <img src="img/gavekurv1.webp" alt="Gavekurv">
         </div>
-    </section>
-
-    <footer class="footer">
-        <div class="footer-column">
-            <h3>Kontakt</h3>
-            <p>Mail: <a href="mailto:kontakt@dinpejs.dk">kontakt@dinpejs.dk</a></p>
-            <p>Tlf.: <a href="tel:+4524267071">24267071</a></p>
-
-            <div class="social-icons">
-                <a href="#" aria-label="Facebook">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-width="2"
-                            d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2z" />
-                    </svg>
-                </a>
-                <a href="#" aria-label="Instagram">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-width="2"
-                            d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6-1.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
-                    </svg>
-                </a>
+        <div class="basket-details">
+          <h2>Gavekurv, 1 stk.</h2>
+          <p class="basket-price">Samlet pris: 0 kr.</p>
+        </div>
+      </div>
+      <div id="cartItemsContainer" class="cart-items-list">
+        <div class="cart-item" id="cartItemTemplate">
+          <div class="cart-item-img">
+            <img src="https://picsum.photos/200" alt="">
+          </div>
+          <div class="cart-item-details">
+            <div class="cart-item-title">Some title</div>
+            <div class="cart-item-price">Some price</div>
+            <div class="spacer"></div>
+            <div class="cart-item-quantity">
+              <button class="quantity-btn minus">-</button>
+              <div class=" cart-item-quantity value"></div>
+              <button class="quantity-btn plus">+</button>
+              <div class="vertical-divider"></div>
+              <div class="quantity-btn remove">🗑</div>
+              <div class="cart-item-quantity value-label">1 stk</div>
             </div>
+          </div>
         </div>
+      </div>
+      <div class="add-items">
+        <h3>Tilføj vare til din kurv</h3>
+        <button class="add-button" onclick="window.location.href='add-items.html'">+</button>
+      </div>
+    </div>
+  </section>
 
-        <div class="footer-column">
-            <h3>Adresse</h3>
-            <p>Jernbanegade 16, 5550 Langeskov</p>
-        </div>
+  <footer class="footer">
+    <div class="footer-column">
+      <h3>Kontakt</h3>
+      <p>Mail: <a href="mailto:kontakt@dinpejs.dk">kontakt@dinpejs.dk</a></p>
+      <p>Tlf.: <a href="tel:+4524267071">24267071</a></p>
 
-        <div class="footer-column">
-            <h3>Åbningstider</h3>
-            <p>Mandag – fredag 11:00 – 17:00</p>
-            <p>Lørdag 10:00 – 12:00 samt efter aftale</p>
-            <p>Lukket søndag og helligdage</p>
-        </div>
-    </footer>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-width="2" d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2z" />
+          </svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-width="2"
+              d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6-1.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+          </svg>
+        </a>
+      </div>
+    </div>
 
-    <a href="gift-card.html" class="checkout-button">Gå til betaling</a>
+    <div class="footer-column">
+      <h3>Adresse</h3>
+      <p>Jernbanegade 16, 5550 Langeskov</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Åbningstider</h3>
+      <p>Mandag – fredag 11:00 – 17:00</p>
+      <p>Lørdag 10:00 – 12:00 samt efter aftale</p>
+      <p>Lukket søndag og helligdage</p>
+    </div>
+  </footer>
+
+  <a href="gift-card.html" class="checkout-button">Gå til betaling</a>
 
 </body>
 
