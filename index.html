@@ -3,33 +3,33 @@
 
 <head>
   <meta charset="UTF-8"> <!-- Angiver tegnsættet som UTF-8 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sikrer korrekt visning på mobile enheder -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Sikrer korrekt visning på mobile enheder -->
   <title>Liwira - Kunst, Interiør og Delikatesser</title> <!-- Titel på siden vist i browserfanen -->
-  
+
   <!-- Import af Google Fonts til brug i designet -->
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css"> <!-- Linker til det eksterne stylesheet -->
-  
+
   <!-- Import af forskellige JavaScript-filer til funktionalitet -->
   <script src="Js/pauseknap.js"></script>
   <script defer src="js/slideshow.js"></script>
   <script src="js/samarbejdspartnere.js"></script>
   <script src="js/scroll-up-knap.js"></script>
   <script src="js/burger-menu.js"></script>
-  
-  
+
+
   <!-- Font Awesome for icons -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script src="js/video-toggles.js"></script> <!-- Kode til videoens play/pause funktion -->
 </head>
 
 
 
 <!--Navigationsbar-->
+
 <body>
   <nav class="navbar"> <!-- Hovednavigation -->
     <div class="nav__container"> <!-- Container til nav-indhold -->
@@ -54,15 +54,15 @@
           <input type="text" placeholder="Søg..."> <!-- Søg inputfelt -->
           <!-- new icons-->
           <a href="#" class="search-icon" aria-label="Søg"> <!-- Søg ikon -->
-          <i class="fas fa-search"></i></a>
-        </div> 
-         <a href="gift-basket.html" class="shopping-bag" aria-label="Kurv"> <!-- Indkøbskurv ikon -->
+            <i class="fas fa-search"></i></a>
+        </div>
+        <a href="gift-basket.html" class="shopping-bag" aria-label="Kurv"> <!-- Indkøbskurv ikon -->
           <i class="fas fa-shopping-basket"></i></a>
       </div>
     </div>
 
-   
-   
+
+
     <!-- Mobile Navigation -->
     <div class="mobile-nav"> <!--Navigationen på mobilen/Wrapperen-->
       <div class="burger-icon" id="burger-icon"> <!--Burger ikonet-->
@@ -70,13 +70,13 @@
         <span></span>
         <span></span>
       </div>
-      
+
       <div class="logo-mobil-nav">
         <a href="/">
-        <img src="img/logo_from_Convertio.svg" alt="LIWIRA Logo"> <!--Logoet-->
+          <img src="img/logo_from_Convertio.svg" alt="LIWIRA Logo"> <!--Logoet-->
         </a>
       </div>
-      
+
       <div class="mobile-right">
         <a href="#" class="search-icon" aria-label="Søg"> <!--Søgeikonet-->
           <i class="fas fa-search"></i></a>
@@ -85,18 +85,19 @@
       </div>
     </div>
 
-    
-    
+
+
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobile-menu">
       <div class="menu-header">
-      <div class="logo">
+        <div class="logo">
           <a href="/" class="logo-text">LIWIRA</a> <!--Logo tekst-->
-       </div>
-        <button class="close-menu" id="close-menu" aria-label="Close menu">✕</button> <!--Lukkeknappen på burgermenuen-->
+        </div>
+        <button class="close-menu" id="close-menu" aria-label="Close menu">✕</button>
+        <!--Lukkeknappen på burgermenuen-->
       </div>
 
-    <div class="mobile-menu-content"></div> <!--Links til undersiderne i burgermenuen-->
+      <div class="mobile-menu-content"></div> <!--Links til undersiderne i burgermenuen-->
       <ul>
         <li><a href="index.html">Produkter</a></li>
         <li><a href="gift-basket.html">Gavekurve</a></li>
@@ -125,12 +126,12 @@
         </div>
 
         <!-- Pause/Play knap -->
-      <button class="video-toggle" aria-label="Pause video"> <!-- Knap til at pause video -->
-        <i class="fas fa-pause"></i> <!-- Pause-ikon -->
-      </button>
+        <button class="video-toggle" aria-label="Pause video"> <!-- Knap til at pause video -->
+          <i class="fas fa-pause"></i> <!-- Pause-ikon -->
+        </button>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
@@ -140,7 +141,7 @@
       <h2>Vi gør det <b>nemt</b> for dig at <b>glæde</b> andre</h2> <!-- Overskrift -->
       <p class="subheading">Udbringning til erhverv og privat</p> <!-- Underoverskrift -->
       <h2>Gavekurve</h2> <!-- Titel til gavekurvafsnit -->
-      
+
       <!--Gavekurv -->
       <div class="product-grid"> <!-- Grid med gavekurve -->
         <div class="product"> <!-- Enkelt produkt -->
@@ -176,12 +177,12 @@
 
 
   <!-- Selection Section/Se vores udvalg -->
-<!-- Selection Section/Se vores udvalg -->
-<section class="selection-section"> <!-- Sektion med andre produkter end gavekurve -->
-  <div class="container">
-    <h2 class="text-left">Se vores udvalg</h2> <!-- Titel -->
-    <div class="product-grid"> <!-- Grid med produkter -->
-    
+  <!-- Selection Section/Se vores udvalg -->
+  <section class="selection-section"> <!-- Sektion med andre produkter end gavekurve -->
+    <div class="container">
+      <h2 class="text-left">Se vores udvalg</h2> <!-- Titel -->
+      <div class="product-grid"> <!-- Grid med produkter -->
+
         <div class="product">
           <div class="product-image">
             <img src="img/legetoej.webp" alt="Legetøj"> <!--Billede af produkt-->
@@ -190,7 +191,7 @@
             </div>
           </div>
         </div>
-        
+
         <!-- Gentaget produkt-element -->
         <div class="product">
           <div class="product-image">
@@ -275,10 +276,10 @@
 
       <a href="gift-basket.html" class="cta-button">Tryk her</a> <!-- Call-to-action knap -->
       <p id="inspiration" class="cta-subtext">for at komme i gang.</p>
-    </div> 
+    </div>
   </section>
 
-  
+
 
   <!-- Inspiration Sektion -->
   <section class="inspiration-section">
@@ -286,7 +287,7 @@
       <h2>Inspiration</h2> <!-- Overskrift -->
       <div class="inspiration-grid"> <!-- Grid med billeder -->
         <div class="inspiration-item">
-          <img src="img/rødvin.webp" alt="Inspiration 1"> <!--Billede i inspirationsgrid-->
+          <img src="img/rodvin.webp" alt="Inspiration 1"> <!--Billede i inspirationsgrid-->
         </div>
         <div class="inspiration-item">
           <img src="img/kop.webp" alt="Inspiration 2"> <!--Billede i inspirationsgrid-->
@@ -303,16 +304,16 @@
         <div class="inspiration-item">
           <img src="img/slik.webp" alt="Inspiration 6"> <!--Billede i inspirationsgrid-->
         </div>
-      </div> 
+      </div>
     </div>
     <div id="Nyheder"></div> <!-- Ankerpunkt til næste sektion -->
   </section>
 
-  
-  
+
+
   <!-- Nyheder sektion -->
   <section class="news-section">
-    <div class="container"> 
+    <div class="container">
       <h2>Nyheder</h2> <!-- Overskrift -->
       <div class="news-content">
         <div class="slideshow-image">
@@ -332,7 +333,8 @@
               <img src="img/duft.webp" style="width: 100%;" alt="duft pinde"> <!--Billede i slideshow-->
             </div>
             <div class="mySlides fade">
-              <img src="img/dottir.webp" style="width: 100%;" alt="starinlys og vaser fra mærket Dottir"> <!--Billede i slideshow-->
+              <img src="img/dottir.webp" style="width: 100%;" alt="starinlys og vaser fra mærket Dottir">
+              <!--Billede i slideshow-->
             </div>
 
             <!-- previous and next buttons -->
@@ -366,7 +368,8 @@
       <div class="history-grid">
         <div class="history-column">
           <p>Liwira er en lokal butik, der er opstartet som en del af
-            <a href="https://www.pejsemontering.dk/liwira-kunst-interioer/">Pejsemontørring Fyn</a>. Butikken befinder sig i Langeskov på Fyn. <!--Indeholder direkte link til deres hjemmeside-->
+            <a href="https://www.pejsemontering.dk/liwira-kunst-interioer/">Pejsemontørring Fyn</a>. Butikken befinder
+            sig i Langeskov på Fyn. <!--Indeholder direkte link til deres hjemmeside-->
             Liwira startede med ønsket om at sælge produkter med <strong>følelsen af hygge</strong> og <strong>dansk
               kvalitet</strong>.
             Vi bestræber os på at give alle mulighed for at købe <strong>gode produkter</strong> af <strong>høj
@@ -386,7 +389,8 @@
 
         <div class="history-column">
           <p>Hos Liwira går vi op i socialt ansvar, og det er blandt andet derfor, at vi
-            <strong>støtter lokale</strong> producenter og leverandører, tager praktikanter ind i butikken og sikrer <!--Strong giver bold effekt til teksten-->
+            <strong>støtter lokale</strong> producenter og leverandører, tager praktikanter ind i butikken og sikrer
+            <!--Strong giver bold effekt til teksten-->
             arbejdsforholdene hos vores leverandører.
             Som del af Liwiras <strong>sociale ansvar</strong>, giver vi en del af vores overskud tilbage til
             <strong>Langeskovs lokalsamfund</strong>,
@@ -415,7 +419,7 @@
   </section>
 
 
- 
+
   <!--Scroll up knap-->
   <button class="scroll-up" id="scrollUpBtn" aria-label="Scroll to top">
     <svg viewBox="0 0 24 24">
@@ -463,7 +467,7 @@
   </footer>
 
 
-<!--Link til Javascript-->
+  <!--Link til Javascript-->
   <script src="Js/script.js"></script> <!-- Indlæser Hero video JavaScript -->
 </body>
 

@@ -5,84 +5,84 @@ const itemsData = [
         id: 1,
         name: "Rødvin fra Toscana",
         price: 199,
-        image: "img/rødvin.webp",
+        image: "img/rodvin.webp",
         category: "wine"
     },
     {
         id: 2,
         name: "Håndlavet IPA",
         price: 59,
-        image: "img/rødvin.webp",
+        image: "img/rodvin.webp",
         category: "beer"
     },
     {
         id: 3,
         name: "Single Malt Whisky",
         price: 399,
-        image: "img/rødvin.webp",
+        image: "img/rodvin.webp",
         category: "spirits"
     },
     {
         id: 4,
         name: "Mørk chokolade med havsalt",
         price: 89,
-        image: "img/rødvin.webp",
+        image: "img/rodvin.webp",
         category: "chocolate"
     },
     {
         id: 5,
         name: "Hvidvin fra Loire",
         price: 179,
-        image: "img/rødvin.webp",
+        image: "img/rodvin.webp",
         category: "wine"
     },
     {
         id: 6,
         name: "Kraftig Porter",
         price: 65,
-        image: "img/rødvin.webp",
+        image: "img/rodvin.webp",
         category: "beer"
     },
     {
         id: 7,
         name: "Premium Gin",
         price: 299,
-        image: "img/rødvin.webp",
+        image: "img/rodvin.webp",
         category: "spirits"
     },
     {
         id: 8,
         name: "Mælkechokolade med nødder",
         price: 79,
-        image: "img/rødvin.webp",
+        image: "img/rodvin.webp",
         category: "chocolate"
     },
     {
         id: 9,
         name: "Rosévin fra Provence",
         price: 159,
-        image: "img/rødvin.webp",
+        image: "img/rodvin.webp",
         category: "wine"
     },
     {
         id: 10,
         name: "Håndlavet glas",
         price: 149,
-        image: "img/rødvin.webp",
+        image: "img/rodvin.webp",
         category: "other"
     },
     {
         id: 11,
         name: "Håndskrevet kort",
         price: 29,
-        image: "img/rødvin.webp",
+        image: "img/rodvin.webp",
         category: "other"
     },
     {
         id: 12,
         name: "Hjemmelavet marmelade",
         price: 69,
-        image: "img/rødvin.webp",
+        image: "img/rodvin.webp",
         category: "other"
     }
 ];
