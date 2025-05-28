@@ -1,3 +1,5 @@
+//Hjælp og inspiration fra chatgpt, W3 school og bekendt. Se bilag kode i zip filen.
+
 const itemsData = [
     {
         id: 1,

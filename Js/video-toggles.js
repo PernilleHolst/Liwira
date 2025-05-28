@@ -1,3 +1,5 @@
+//Kode taget fra chatgpt og tilpasset efterfølgende, se bilag kode i zip-fil.
+
 document.addEventListener("DOMContentLoaded", function () {
   const video = document.querySelector("video");
   const toggleBtn = document.querySelector(".video-toggle");

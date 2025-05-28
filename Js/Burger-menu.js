@@ -1,4 +1,4 @@
-// Hjælp af chatgpt til at tilpasse kode.
+//Kode taget fra chatgpt og tilpasset efterfølgende, se bilag kode i zip-fil.
 
 // 1. Placering og udførelse af JS (external JS file, placed at end of HTML with defer)
 document.addEventListener("DOMContentLoaded", function () {

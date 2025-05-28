@@ -1,4 +1,4 @@
-//Hjælp af chatgpt til at tilpasse kode.
+//Hjælp og inspiration fra chatgpt Se bilag kode i zip filen.
 
 document.addEventListener("DOMContentLoaded", function () {
     // === DOM Elementer ===
