@@ -1,5 +1,4 @@
-// Simple and beginner-friendly JavaScript for burger menu
-// Includes all pensumkrav (curriculum requirements)
+// Hjælp af chatgpt til at tilpasse kode.
 
 // 1. Placering og udførelse af JS (external JS file, placed at end of HTML with defer)
 document.addEventListener("DOMContentLoaded", function () {
